@@ -1,0 +1,15 @@
+{
+  "itemGroup.kamaeninfo": "Kamaen Info",
+  "item.kamaeninfo.kamaen_crystal_raw": "Raw Kamaen Crystal",
+  "item.kamaeninfo.kamaen_crystal_tuned": "Tuned Kamaen Crystal",
+  "item.kamaeninfo.info_probe": "Kamaen Info Probe",
+  "block.kamaeninfo.fractionating_tower": "Fractionating Tower",
+  "block.kamaeninfo.explosion_chamber_controller": "Explosion Chamber Controller",
+  "block.kamaeninfo.black_hole_parser_core": "Black Hole Parser Core",
+
+  "kamaeninfo.configuration.title": "Kamaen Info Configs",
+  "kamaeninfo.configuration.section.kamaeninfo.common.toml": "Kamaen Info Configs",
+  "kamaeninfo.configuration.section.kamaeninfo.common.toml.title": "Kamaen Info Configs",
+  "kamaeninfo.configuration.enableWorldgenPlaceholders": "Enable Worldgen Placeholders",
+  "kamaeninfo.configuration.fractionatingBaseTicks": "Fractionating Base Ticks"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kamaeninfo:block/explosion_chamber_controller"
+    }
+  }
+}

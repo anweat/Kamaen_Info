@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kamaeninfo:block/block_black_hole_parser_core"
+  }
+}
