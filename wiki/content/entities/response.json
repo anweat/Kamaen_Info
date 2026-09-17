@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:response",
+  "kind": "model",
+  "title": "响应窗口模型",
+  "summary": "拖动参数，观察峰值、工作窗口与测量位置的关系。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/response.md",
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/data.svg"
+  },
+  "model": "response-window",
+  "relations": [
+    {
+      "target": "kamaen:sensor",
+      "label": "测量来源"
+    }
+  ]
+}
+

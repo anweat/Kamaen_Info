@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "id": "development",
+  "title": "模组发展地图",
+  "revision": 2,
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 70,
+      "y": 35,
+      "width": 690,
+      "height": 125,
+      "title": "从一份差异，画出一个世界",
+      "body": "自由发展地图 · 先摆放对象，再描述它们之间的故事。",
+      "fontSize": 28,
+      "color": "#344b40"
+    },
+    {
+      "id": "group-early",
+      "type": "rect",
+      "x": 60,
+      "y": 190,
+      "width": 540,
+      "height": 430,
+      "title": "01 / 材料留下差异",
+      "color": "#8b9d78"
+    },
+    {
+      "id": "group-work",
+      "type": "rect",
+      "x": 675,
+      "y": 190,
+      "width": 500,
+      "height": 430,
+      "title": "02 / 改变与观察",
+      "color": "#8aab9d"
+    },
+    {
+      "id": "group-knowledge",
+      "type": "rect",
+      "x": 1250,
+      "y": 190,
+      "width": 410,
+      "height": 430,
+      "title": "03 / 记录成为理解",
+      "color": "#b2a17e"
+    },
+    {
+      "id": "seed",
+      "type": "entity",
+      "x": 100,
+      "y": 270,
+      "width": 116,
+      "height": 134,
+      "ref": "kamaen:white_seed"
+    },
+    {
+      "id": "crystal",
+      "type": "entity",
+      "x": 362,
+      "y": 270,
+      "width": 136,
+      "height": 154,
+      "ref": "kamaen:raw_crystal"
+    },
+    {
+      "id": "bench",
+      "type": "entity",
+      "x": 730,
+      "y": 267,
+      "width": 148,
+      "height": 158,
+      "ref": "kamaen:pulse_bench"
+    },
+    {
+      "id": "sensor",
+      "type": "entity",
+      "x": 988,
+      "y": 276,
+      "width": 134,
+      "height": 144,
+      "ref": "kamaen:sensor"
+    },
+    {
+      "id": "data",
+      "type": "entity",
+      "x": 1312,
+      "y": 273,
+      "width": 118,
+      "height": 140,
+      "ref": "kamaen:sample_data"
+    },
+    {
+      "id": "response",
+      "type": "entity",
+      "x": 1490,
+      "y": 277,
+      "width": 116,
+      "height": 134,
+      "ref": "kamaen:response"
+    },
+    {
+      "id": "grow",
+      "type": "arrow",
+      "x": 213,
+      "y": 335,
+      "width": 135,
+      "height": 1,
+      "from": "seed",
+      "to": "crystal",
+      "title": "生长参照",
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 135,
+          "y": 0
+        }
+      ],
+      "color": "#72816b"
+    },
+    {
+      "id": "shape",
+      "type": "arrow",
+      "x": 510,
+      "y": 335,
+      "width": 209,
+      "height": 1,
+      "from": "crystal",
+      "to": "bench",
+      "title": "一次加工",
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 209,
+          "y": 0
+        }
+      ],
+      "color": "#72816b"
+    },
+    {
+      "id": "observe",
+      "type": "arrow",
+      "x": 890,
+      "y": 335,
+      "width": 82,
+      "height": 1,
+      "from": "bench",
+      "to": "sensor",
+      "title": "复测",
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 82,
+          "y": 0
+        }
+      ],
+      "color": "#72816b"
+    },
+    {
+      "id": "record",
+      "type": "arrow",
+      "x": 1130,
+      "y": 335,
+      "width": 176,
+      "height": 1,
+      "from": "sensor",
+      "to": "data",
+      "title": "留下记录",
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 176,
+          "y": 0
+        }
+      ],
+      "color": "#72816b"
+    },
+    {
+      "id": "relate",
+      "type": "line",
+      "x": 1436,
+      "y": 335,
+      "width": 42,
+      "height": 1,
+      "from": "data",
+      "to": "response",
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 42,
+          "y": 0
+        }
+      ],
+      "color": "#a29473"
+    },
+    {
+      "id": "story-1",
+      "type": "text",
+      "x": 94,
+      "y": 461,
+      "width": 455,
+      "height": 123,
+      "title": "保留参照，再改变另一份样本",
+      "body": "同批晶体的来源、朝向与加工记录，让材料的变化成为可以讲述的线索。",
+      "fontSize": 17
+    },
+    {
+      "id": "story-2",
+      "type": "text",
+      "x": 710,
+      "y": 461,
+      "width": 428,
+      "height": 123,
+      "title": "让空间关系参与描述",
+      "body": "把脉冲源、晶坯和缓冲件放到同一空间；下面的演示可单独旋转、拆解和剖层。",
+      "fontSize": 17
+    },
+    {
+      "id": "story-3",
+      "type": "text",
+      "x": 1280,
+      "y": 461,
+      "width": 343,
+      "height": 123,
+      "title": "观察 → 假设 → 下一次实验",
+      "body": "NBT 保留状态，模型解释关系。具体数值和规则仍等待后续讨论。",
+      "fontSize": 17
+    },
+    {
+      "id": "space",
+      "type": "space3d",
+      "x": 677,
+      "y": 720,
+      "width": 498,
+      "height": 388,
+      "ref": "impact",
+      "title": "冲击空间 / 3D 示意"
+    },
+    {
+      "id": "model",
+      "type": "space2d",
+      "x": 1249,
+      "y": 720,
+      "width": 410,
+      "height": 422,
+      "ref": "response-window",
+      "title": "工作窗口 / 2D 模型"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "x": 94,
+      "y": 745,
+      "width": 433,
+      "height": 176,
+      "title": "这片空间没有固定的排列方式",
+      "body": "贴图、文字、箭头和实验展示可以自由摆放。\n\n虚线框与画笔仅作关系标注。格点是视觉参照，拖动和绘制均不吸附。",
+      "fontSize": 19
+    },
+    {
+      "id": "annotation",
+      "type": "pen",
+      "x": 84,
+      "y": 957,
+      "width": 470,
+      "height": 94,
+      "points": [
+        {
+          "x": 0,
+          "y": 34
+        },
+        {
+          "x": 40,
+          "y": 14
+        },
+        {
+          "x": 113,
+          "y": 3
+        },
+        {
+          "x": 189,
+          "y": 13
+        },
+        {
+          "x": 226,
+          "y": 40
+        },
+        {
+          "x": 275,
+          "y": 67
+        },
+        {
+          "x": 359,
+          "y": 77
+        },
+        {
+          "x": 428,
+          "y": 50
+        },
+        {
+          "x": 470,
+          "y": 21
+        }
+      ],
+      "color": "#ad9671",
+      "title": "也可以直接画下一个想法"
+    },
+    {
+      "id": "custom",
+      "type": "custom",
+      "x": 1250,
+      "y": 1234,
+      "width": 410,
+      "height": 244,
+      "ref": "signal-window",
+      "title": "自定义 / 信号窗口"
+    }
+  ]
+}

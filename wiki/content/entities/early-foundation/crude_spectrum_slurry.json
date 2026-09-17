@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:crude_spectrum_slurry",
+  "kind": "nbt",
+  "title": "粗频谱泥浆",
+  "summary": "槽内固液批次；容器只转移同一份料，不重复计量。",
+  "status": "F01 首批试作 · 待审核",
+  "tags": [
+    "前期基础",
+    "F01",
+    "工艺批次"
+  ],
+  "description": "descriptions/early-foundation/slurry.md",
+  "runtimeRef": null,
+  "lifecycle": {
+    "design": "逐项制作卡草案",
+    "runtime": "尚未实现",
+    "art": "32px 容器示意稿",
+    "verification": "内容与静态校验；无游戏实测"
+  },
+  "designRefs": [
+    {
+      "document": "EARLY_F01_FIRST_SLICE.md",
+      "label": "本批操作、数据边界与验收"
+    },
+    {
+      "document": "EARLY_E11_PROCESS_MANUFACTURING.md",
+      "label": "E1.1 从工艺推导装置"
+    },
+    {
+      "document": "EARLY_E1_CONTENT.md",
+      "label": "E1 原对象索引",
+      "legacyId": "crude_spectrum_slurry"
+    }
+  ],
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/early-foundation/crude_spectrum_slurry.png"
+  },
+  "relations": [
+    {
+      "target": "kamaen:spectrum_membrane",
+      "label": "安装与清洗可复用滤框"
+    },
+    {
+      "target": "kamaen:processing_trough",
+      "label": "在处理槽中继续"
+    }
+  ]
+}

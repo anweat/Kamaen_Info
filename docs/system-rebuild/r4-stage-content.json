@@ -1,0 +1,7109 @@
+{
+  "version": "R4-complete-stage-candidate",
+  "stages": [
+    "A0 起步资源",
+    "A1 晶体与粗工具",
+    "A2 器件实验",
+    "A3 封装与单板",
+    "A4 机柜与集群",
+    "A5 学习与主动实验"
+  ],
+  "items": [
+    {
+      "id": "wood",
+      "name": "木材",
+      "stage": 0,
+      "kind": "起始资源",
+      "note": "开局可再生树木；不以稀有树种为前置"
+    },
+    {
+      "id": "stone",
+      "name": "圆石",
+      "stage": 0,
+      "kind": "起始资源",
+      "note": "开局可再生来源"
+    },
+    {
+      "id": "water",
+      "name": "水份",
+      "stage": 0,
+      "kind": "起始资源",
+      "note": "就地装入容器；一份为配方计量，不吞掉无限水源"
+    },
+    {
+      "id": "fiber",
+      "name": "粗纤维",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "carbon",
+      "name": "碳材",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "scrap",
+      "name": "粗频谱碎屑",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "iron_powder",
+      "name": "铁粉",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "copper_powder",
+      "name": "铜粉",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "silica",
+      "name": "硅质粉",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "clay",
+      "name": "陶土料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "slag",
+      "name": "频谱滤渣",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "iron",
+      "name": "铁料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "copper",
+      "name": "铜料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "glass",
+      "name": "玻璃料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "ceramic",
+      "name": "陶瓷料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "binder",
+      "name": "树脂粘结料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "wire",
+      "name": "绝缘导线段",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "frame",
+      "name": "机架结构件",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "contact",
+      "name": "接触件",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "board_blank",
+      "name": "绝缘覆铜板坯",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "heat_pad",
+      "name": "热界面片",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "coolant",
+      "name": "冷却液份",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "wastewater",
+      "name": "待处理废水",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "residue",
+      "name": "回收残料",
+      "stage": 0,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "sieve",
+      "name": "木质手筛",
+      "stage": 0,
+      "kind": "设备",
+      "note": "无金属前置"
+    },
+    {
+      "id": "basin",
+      "name": "沉降滤盆",
+      "stage": 0,
+      "kind": "设备",
+      "note": "采用粗纤维滤网，后续滤膜升级"
+    },
+    {
+      "id": "furnace",
+      "name": "石炉",
+      "stage": 0,
+      "kind": "设备",
+      "note": "普通燃料加热"
+    },
+    {
+      "id": "fractionator",
+      "name": "搅拌分馏塔",
+      "stage": 0,
+      "kind": "设备",
+      "note": "自动化已有分离，不解锁新的元素集合"
+    },
+    {
+      "id": "crucible",
+      "name": "热噪坩埚",
+      "stage": 0,
+      "kind": "设备",
+      "note": "先手动按保守温程操作"
+    },
+    {
+      "id": "spectroscope",
+      "name": "初级分光镜",
+      "stage": 0,
+      "kind": "设备",
+      "note": "只给粗谱与可测性质"
+    },
+    {
+      "id": "mechanical_bench",
+      "name": "机械制备台",
+      "stage": 0,
+      "kind": "设备",
+      "note": "手动切磨、夹持、粗模板；不是精密注入机"
+    },
+    {
+      "id": "generator",
+      "name": "燃料供能机",
+      "stage": 0,
+      "kind": "设备",
+      "note": "碳材供能，额定64 E/s；1碳材提供3200 E，余热归此机"
+    },
+    {
+      "id": "neutral",
+      "name": "均值化基底",
+      "stage": 1,
+      "kind": "料件",
+      "note": "合格窗内的平均背景材料"
+    },
+    {
+      "id": "seed",
+      "name": "白噪晶种",
+      "stage": 1,
+      "kind": "料件",
+      "note": "初始结晶；不是随机特化词条"
+    },
+    {
+      "id": "raw_crystal",
+      "name": "粗卡玛恩晶体",
+      "stage": 1,
+      "kind": "料件",
+      "note": "可追溯母批、组成与应力；显示名别名统一"
+    },
+    {
+      "id": "wafer",
+      "name": "空白晶片",
+      "stage": 1,
+      "kind": "料件",
+      "note": "来自定向切片，保留母批/取向"
+    },
+    {
+      "id": "debris",
+      "name": "晶体碎料",
+      "stage": 1,
+      "kind": "料件",
+      "note": "不能无损恢复原结构"
+    },
+    {
+      "id": "stable_piece",
+      "name": "稳谱片",
+      "stage": 1,
+      "kind": "料件",
+      "note": "相应用途检验，不等于全属性提高"
+    },
+    {
+      "id": "guide_piece",
+      "name": "导波片",
+      "stage": 1,
+      "kind": "料件",
+      "note": "取向与传输窗经测量"
+    },
+    {
+      "id": "blank_mask",
+      "name": "接触掩膜坯",
+      "stage": 1,
+      "kind": "料件",
+      "note": "可刻粗图案"
+    },
+    {
+      "id": "record_sheet",
+      "name": "研究记录载体",
+      "stage": 1,
+      "kind": "料件",
+      "note": "静态记录，不提供工作内存"
+    },
+    {
+      "id": "mount",
+      "name": "器件夹具",
+      "stage": 1,
+      "kind": "料件",
+      "note": "限制姿态并形成接触"
+    },
+    {
+      "id": "book",
+      "name": "工程册",
+      "stage": 1,
+      "kind": "料件",
+      "note": "统一入口的初版；只查询、记图、投影和做有限规则检查"
+    },
+    {
+      "id": "probe",
+      "name": "粗读出探头",
+      "stage": 1,
+      "kind": "模块",
+      "note": "机械/光学刻度与固定读出，不能运行任意模型"
+    },
+    {
+      "id": "scanner",
+      "name": "固定步进测试器",
+      "stage": 1,
+      "kind": "模块",
+      "note": "机械步进/固定测试序列，无可编程CPU自举要求"
+    },
+    {
+      "id": "power_module",
+      "name": "供给模块",
+      "stage": 1,
+      "kind": "模块",
+      "note": "固定供给与保护，额定64 E/s，输出能量不能超过输入"
+    },
+    {
+      "id": "fan",
+      "name": "风冷模块",
+      "stage": 1,
+      "kind": "模块",
+      "note": "由驱动、散热与风口组成，自身有耗散与振源"
+    },
+    {
+      "id": "crystal_frame",
+      "name": "I型力学框架",
+      "stage": 1,
+      "kind": "设备",
+      "note": "普通机械夹具首版，不以偏振晶体/应力传感器为前置"
+    },
+    {
+      "id": "device_bench",
+      "name": "晶体实验台",
+      "stage": 1,
+      "kind": "设备",
+      "note": "拼接、扫描、调谐；源和读出工具可外接"
+    },
+    {
+      "id": "annealer",
+      "name": "晶格退火炉",
+      "stage": 1,
+      "kind": "设备",
+      "note": "首版固定温程，后接终点芯片与模型控制"
+    },
+    {
+      "id": "treat_a",
+      "name": "A型组成处理剂",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "treat_b",
+      "name": "B型组成处理剂",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "etchant",
+      "name": "刻蚀处理液",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "resist",
+      "name": "感光/保护涂料",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "pattern_mask",
+      "name": "已刻接触掩膜",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "region_wafer",
+      "name": "区域处理晶片",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "filter",
+      "name": "选频器件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "gate",
+      "name": "电门控器件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "hold",
+      "name": "电保持器件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "window",
+      "name": "连续窗口模块",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "oscillator",
+      "name": "粗晶振模块",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "guide",
+      "name": "加工导波器件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "coupler",
+      "name": "分束/耦合件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "phase",
+      "name": "相位调谐器",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "light_source",
+      "name": "粗稳谱光源",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "encoder",
+      "name": "强度编码模块",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "reader",
+      "name": "强度读出模块",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "mzi",
+      "name": "双路干涉模块",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "case",
+      "name": "可拆封装壳",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "socket",
+      "name": "安装插座",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "data_cable",
+      "name": "铜数据线段",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "optical_cable",
+      "name": "世界光纤段",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "panel",
+      "name": "端口面板",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "tray",
+      "name": "主板托盘",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "duct",
+      "name": "导风/封口件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "cable_tray",
+      "name": "理线槽段",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "damper",
+      "name": "可调支撑/阻尼件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "local_filter",
+      "name": "局部供给滤波件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "shield",
+      "name": "屏蔽/返回路径套件",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "sensor_head",
+      "name": "可换环境探头",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "fluid_pipe",
+      "name": "冷却管段",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "cold_plate",
+      "name": "冷板",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "pump",
+      "name": "循环泵",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "exchanger",
+      "name": "换热器",
+      "stage": 2,
+      "kind": "料件",
+      "note": ""
+    },
+    {
+      "id": "packager",
+      "name": "封装与装板工位",
+      "stage": 2,
+      "kind": "设备",
+      "note": "模块/裸片两条路线，板级工装复用"
+    },
+    {
+      "id": "etch_station",
+      "name": "刻蚀/清洗工位",
+      "stage": 2,
+      "kind": "设备",
+      "note": "粗版接触图案先行，液体与样品分账"
+    },
+    {
+      "id": "working_array_wafer",
+      "name": "8192位工作阵列片",
+      "stage": 2,
+      "kind": "料件",
+      "note": "区域片经保持阵列模板加工与逐地址测试；不是空白原料"
+    },
+    {
+      "id": "logic_program_wafer",
+      "name": "固定微程序片",
+      "stage": 2,
+      "kind": "料件",
+      "note": "256×16位结构编码程序区，属于控制模板的实际内件"
+    },
+    {
+      "id": "record_array_wafer",
+      "name": "65536位记录阵列片",
+      "stage": 2,
+      "kind": "料件",
+      "note": "非易失记录材料与刻写阵列模板，需断供复读"
+    },
+    {
+      "id": "endpoint_chip",
+      "name": "退火终点芯片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "封装实际选频/读出/判据/窗口结构"
+    },
+    {
+      "id": "control_chip",
+      "name": "可编程电控制芯片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "粗模块堆叠首版；可执行有限标量/固定服务"
+    },
+    {
+      "id": "ram",
+      "name": "工作页载片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "已测2 KiB易失容量；复制数据不增加容量"
+    },
+    {
+      "id": "storage",
+      "name": "持久记录载片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "已测16 KiB非易失容量；未通电仍保留已提交记录"
+    },
+    {
+      "id": "bus_controller",
+      "name": "存储与总线控制模块",
+      "stage": 3,
+      "kind": "模块",
+      "note": "同一本地地址空间的页寻址/通路"
+    },
+    {
+      "id": "nic",
+      "name": "数据接口模块",
+      "stage": 3,
+      "kind": "模块",
+      "note": "铜包接口；不免费转为光强或相位口"
+    },
+    {
+      "id": "matrix",
+      "name": "电矩阵模块",
+      "stage": 3,
+      "kind": "模块",
+      "note": "登记小矩阵内核，实际数据计算"
+    },
+    {
+      "id": "activation",
+      "name": "电激活模块",
+      "stage": 3,
+      "kind": "模块",
+      "note": "可选；没有它时由兼容控制芯片处理"
+    },
+    {
+      "id": "populated_board",
+      "name": "B01已装控制计算板",
+      "stage": 3,
+      "kind": "模块",
+      "note": "见装配表；含512 B系统工作内存预留"
+    },
+    {
+      "id": "bare_die",
+      "name": "精密裸片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "受控模板整片制造产物；材料账不再收完整离散器件"
+    },
+    {
+      "id": "integrated_chip",
+      "name": "集成控制芯片",
+      "stage": 3,
+      "kind": "模块",
+      "note": "与粗控制芯片功能族兼容，密度/工况另测"
+    },
+    {
+      "id": "optic_array",
+      "name": "2×2强度算子模块",
+      "stage": 3,
+      "kind": "模块",
+      "note": "MZI/编码/读出已包含；限定映射，不承诺任意有符号MatMul"
+    },
+    {
+      "id": "world_base",
+      "name": "通用模型组件底座",
+      "stage": 3,
+      "kind": "模块",
+      "note": "世界表达图需实物，编辑器图元不消耗底座"
+    },
+    {
+      "id": "terminal",
+      "name": "工程工作台",
+      "stage": 3,
+      "kind": "设备",
+      "note": "工程册的同一项目界面；承担登记的编译/预测服务"
+    },
+    {
+      "id": "diagnostic",
+      "name": "硬件诊断台",
+      "stage": 3,
+      "kind": "设备",
+      "note": "复用粗测试服务再提高通道/精度；不是初次检测前置"
+    },
+    {
+      "id": "injector",
+      "name": "精密组成注入机",
+      "stage": 3,
+      "kind": "设备",
+      "note": "粗控制板首版制造后再升级精度"
+    },
+    {
+      "id": "projector",
+      "name": "光刻投影器",
+      "stage": 3,
+      "kind": "设备",
+      "note": "接触模板/粗光源先行；改进有效工艺窗口"
+    },
+    {
+      "id": "process_frame",
+      "name": "II型工艺框架",
+      "stage": 3,
+      "kind": "设备",
+      "note": "组织实际工位，不替代缺失模块"
+    },
+    {
+      "id": "rack_monitor",
+      "name": "机柜监测/控制模块",
+      "stage": 4,
+      "kind": "模块",
+      "note": "固定结构发现和遥测；不赠送通用计算节点"
+    },
+    {
+      "id": "power_backplane",
+      "name": "供能背板",
+      "stage": 4,
+      "kind": "模块",
+      "note": "两个独立受控输出，共享上游额定能力"
+    },
+    {
+      "id": "data_backplane",
+      "name": "数据背板",
+      "stage": 4,
+      "kind": "模块",
+      "note": "含真实交换与缓存内件；共享出口64 B/调度步"
+    },
+    {
+      "id": "service_panel",
+      "name": "检修/支撑内件",
+      "stage": 4,
+      "kind": "模块",
+      "note": "维护包络与实际支撑"
+    },
+    {
+      "id": "rack_shell",
+      "name": "R04小柜结构",
+      "stage": 4,
+      "kind": "模块",
+      "note": "2×2×3，两个前维护托盘；不含计算板"
+    },
+    {
+      "id": "rack_node",
+      "name": "R04单板机柜节点",
+      "stage": 4,
+      "kind": "模块",
+      "note": "一块B01装到A托盘，B托盘空置"
+    },
+    {
+      "id": "switch",
+      "name": "柜间交换节点",
+      "stage": 4,
+      "kind": "模块",
+      "note": "多口与总转发能力分别受限"
+    },
+    {
+      "id": "sensor_hub",
+      "name": "传感汇聚节点",
+      "stage": 4,
+      "kind": "模块",
+      "note": "输入通道和缓存，断网有界记录"
+    },
+    {
+      "id": "storage_node",
+      "name": "记录/参数库节点",
+      "stage": 4,
+      "kind": "模块",
+      "note": "板、介质、地址与实际链路共同提供服务"
+    },
+    {
+      "id": "cluster_core",
+      "name": "集群编排节点",
+      "stage": 4,
+      "kind": "模块",
+      "note": "固定管理服务，自己消耗板/内存/网络资源"
+    },
+    {
+      "id": "hybrid_board",
+      "name": "B02光电混合板",
+      "stage": 4,
+      "kind": "模块",
+      "note": "实际B01加已测2×2光模块，不重复收编码/读出内件"
+    },
+    {
+      "id": "quiet_reference",
+      "name": "稳谱参考模块",
+      "stage": 4,
+      "kind": "模块",
+      "note": "改进源/供给/安装，需当前工况校准"
+    },
+    {
+      "id": "sync_backplane",
+      "name": "同步/参考背板",
+      "stage": 4,
+      "kind": "模块",
+      "note": "可选分配模块；参考域、实际分支与抖动预算保留"
+    },
+    {
+      "id": "wireless_frontend",
+      "name": "有限无线前端",
+      "stage": 4,
+      "kind": "模块",
+      "note": "控制/记录首版；真实编解码、缓存、供给与载频"
+    },
+    {
+      "id": "wireless_antenna",
+      "name": "无线收发天线",
+      "stage": 4,
+      "kind": "模块",
+      "note": "与前端分开；方向、遮挡和频带匹配"
+    },
+    {
+      "id": "nonlinear",
+      "name": "非线性晶体器件",
+      "stage": 5,
+      "kind": "模块",
+      "note": "开放阈值/脉冲/保持的光学专化"
+    },
+    {
+      "id": "opt_gate",
+      "name": "光门模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "真值、供给与工作窗均需验收"
+    },
+    {
+      "id": "opt_hold",
+      "name": "光保持模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "有写读复位/刷新成本，不替代持久介质"
+    },
+    {
+      "id": "opt_control",
+      "name": "光控制模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "有限控制模板；替换角色须逐接口检查"
+    },
+    {
+      "id": "opt_pulse",
+      "name": "光脉冲模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "支持已测有限非线性函数"
+    },
+    {
+      "id": "opt_ram",
+      "name": "光RAM模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "短期激活/状态，容量由实际胞与刷新能力产生"
+    },
+    {
+      "id": "opt_coprocessor",
+      "name": "光协处理模块",
+      "stage": 5,
+      "kind": "模块",
+      "note": "转移/编码；计算需登记内核"
+    },
+    {
+      "id": "pump_tower",
+      "name": "集中激励/参考架",
+      "stage": 5,
+      "kind": "模块",
+      "note": "共享服务，自身供电散热和故障范围保留"
+    },
+    {
+      "id": "sky_head",
+      "name": "可见光巡天头",
+      "stage": 5,
+      "kind": "模块",
+      "note": "有限天空目录与粗谱；不具备微波/量子测量"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "wood_fiber",
+      "station": "hand",
+      "inputs": {
+        "wood": 1,
+        "water": 1
+      },
+      "outputs": {
+        "fiber": 2,
+        "wastewater": 1
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "first_sieve",
+      "station": "hand",
+      "inputs": {
+        "wood": 3,
+        "fiber": 2
+      },
+      "outputs": {
+        "sieve": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "first_basin",
+      "station": "hand",
+      "inputs": {
+        "wood": 4,
+        "fiber": 2
+      },
+      "outputs": {
+        "basin": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "first_furnace",
+      "station": "hand",
+      "inputs": {
+        "stone": 8
+      },
+      "outputs": {
+        "furnace": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "sifting",
+      "station": "sieve",
+      "inputs": {
+        "stone": 8
+      },
+      "outputs": {
+        "scrap": 8
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "separate",
+      "station": "basin",
+      "inputs": {
+        "scrap": 8,
+        "water": 2
+      },
+      "outputs": {
+        "iron_powder": 1,
+        "copper_powder": 1,
+        "silica": 2,
+        "clay": 1,
+        "slag": 3,
+        "wastewater": 2
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "separate_auto",
+      "station": "fractionator",
+      "inputs": {
+        "stone": 8,
+        "water": 2
+      },
+      "outputs": {
+        "iron_powder": 1,
+        "copper_powder": 1,
+        "silica": 2,
+        "clay": 1,
+        "slag": 3,
+        "wastewater": 2
+      },
+      "seconds": 3,
+      "energy": 96,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "wash_water",
+      "station": "basin",
+      "inputs": {
+        "wastewater": 4
+      },
+      "outputs": {
+        "water": 3,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "charcoal",
+      "station": "furnace",
+      "inputs": {
+        "wood": 2
+      },
+      "outputs": {
+        "carbon": 1,
+        "residue": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fire_iron",
+      "station": "furnace",
+      "inputs": {
+        "iron_powder": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "iron": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fire_copper",
+      "station": "furnace",
+      "inputs": {
+        "copper_powder": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "copper": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fire_glass",
+      "station": "furnace",
+      "inputs": {
+        "silica": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "glass": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fire_ceramic",
+      "station": "furnace",
+      "inputs": {
+        "clay": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "ceramic": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "binder",
+      "station": "furnace",
+      "inputs": {
+        "wood": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "binder": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "wire",
+      "station": "hand",
+      "inputs": {
+        "copper": 1,
+        "fiber": 1,
+        "binder": 1
+      },
+      "outputs": {
+        "wire": 4
+      },
+      "seconds": 6,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "frame",
+      "station": "hand",
+      "inputs": {
+        "iron": 2
+      },
+      "outputs": {
+        "frame": 2
+      },
+      "seconds": 6,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "contact",
+      "station": "hand",
+      "inputs": {
+        "copper": 1
+      },
+      "outputs": {
+        "contact": 4
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "board_blank",
+      "station": "hand",
+      "inputs": {
+        "ceramic": 2,
+        "copper": 1,
+        "binder": 1
+      },
+      "outputs": {
+        "board_blank": 1
+      },
+      "seconds": 10,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "heat_pad",
+      "station": "hand",
+      "inputs": {
+        "copper": 1,
+        "carbon": 1,
+        "binder": 1
+      },
+      "outputs": {
+        "heat_pad": 4
+      },
+      "seconds": 6,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "coolant",
+      "station": "basin",
+      "inputs": {
+        "water": 4,
+        "carbon": 1
+      },
+      "outputs": {
+        "coolant": 4,
+        "residue": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "mechanical_bench",
+      "station": "hand",
+      "inputs": {
+        "frame": 2,
+        "iron": 2,
+        "ceramic": 1
+      },
+      "outputs": {
+        "mechanical_bench": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fractionator",
+      "station": "hand",
+      "inputs": {
+        "frame": 3,
+        "copper": 2,
+        "glass": 2,
+        "basin": 1
+      },
+      "outputs": {
+        "fractionator": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "crucible",
+      "station": "hand",
+      "inputs": {
+        "furnace": 1,
+        "iron": 2,
+        "ceramic": 2,
+        "slag": 1
+      },
+      "outputs": {
+        "crucible": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "spectroscope",
+      "station": "hand",
+      "inputs": {
+        "glass": 2,
+        "iron": 1,
+        "carbon": 1
+      },
+      "outputs": {
+        "spectroscope": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "generator",
+      "station": "hand",
+      "inputs": {
+        "frame": 3,
+        "copper": 3,
+        "wire": 4,
+        "carbon": 1
+      },
+      "outputs": {
+        "generator": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "neutral",
+      "station": "crucible",
+      "inputs": {
+        "slag": 3,
+        "carbon": 1
+      },
+      "outputs": {
+        "neutral": 2,
+        "residue": 2
+      },
+      "seconds": 30,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "seed",
+      "station": "crucible",
+      "inputs": {
+        "neutral": 1,
+        "carbon": 1
+      },
+      "outputs": {
+        "seed": 1,
+        "residue": 1
+      },
+      "seconds": 30,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "crystal_frame",
+      "station": "hand",
+      "inputs": {
+        "mechanical_bench": 1,
+        "frame": 4,
+        "iron": 2
+      },
+      "outputs": {
+        "crystal_frame": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "raw_crystal",
+      "station": "crystal_frame",
+      "inputs": {
+        "seed": 1,
+        "neutral": 3
+      },
+      "outputs": {
+        "raw_crystal": 1,
+        "debris": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "reclaim_debris",
+      "station": "crucible",
+      "inputs": {
+        "debris": 4,
+        "carbon": 1
+      },
+      "outputs": {
+        "neutral": 2,
+        "residue": 3
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "wafer",
+      "station": "mechanical_bench",
+      "inputs": {
+        "raw_crystal": 1,
+        "silica": 1
+      },
+      "outputs": {
+        "wafer": 4,
+        "debris": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "stable_piece",
+      "station": "crystal_frame",
+      "inputs": {
+        "wafer": 1
+      },
+      "outputs": {
+        "stable_piece": 1
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [
+        "spectroscope"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "guide_piece",
+      "station": "crystal_frame",
+      "inputs": {
+        "wafer": 1
+      },
+      "outputs": {
+        "guide_piece": 1
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [
+        "spectroscope"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "blank_mask",
+      "station": "mechanical_bench",
+      "inputs": {
+        "glass": 1,
+        "carbon": 1
+      },
+      "outputs": {
+        "blank_mask": 2
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "record_sheet",
+      "station": "hand",
+      "inputs": {
+        "fiber": 1,
+        "carbon": 1
+      },
+      "outputs": {
+        "record_sheet": 8
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "mount",
+      "station": "hand",
+      "inputs": {
+        "iron": 1,
+        "ceramic": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "mount": 2
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "book",
+      "station": "hand",
+      "inputs": {
+        "record_sheet": 2,
+        "wood": 1
+      },
+      "outputs": {
+        "book": 1
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "probe",
+      "station": "hand",
+      "inputs": {
+        "spectroscope": 1,
+        "mount": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "probe": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "scanner",
+      "station": "mechanical_bench",
+      "inputs": {
+        "iron": 2,
+        "contact": 2,
+        "mount": 1
+      },
+      "outputs": {
+        "scanner": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "power_module",
+      "station": "hand",
+      "inputs": {
+        "copper": 2,
+        "wire": 2,
+        "ceramic": 1
+      },
+      "outputs": {
+        "power_module": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "fan",
+      "station": "mechanical_bench",
+      "inputs": {
+        "iron": 2,
+        "copper": 1,
+        "wire": 2,
+        "heat_pad": 1
+      },
+      "outputs": {
+        "fan": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "device_bench",
+      "station": "hand",
+      "inputs": {
+        "frame": 3,
+        "mount": 4,
+        "wire": 4,
+        "power_module": 1
+      },
+      "outputs": {
+        "device_bench": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "annealer",
+      "station": "hand",
+      "inputs": {
+        "crucible": 1,
+        "frame": 2,
+        "probe": 1,
+        "power_module": 1
+      },
+      "outputs": {
+        "annealer": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "treat_a",
+      "station": "basin",
+      "inputs": {
+        "copper_powder": 1,
+        "carbon": 1,
+        "water": 2
+      },
+      "outputs": {
+        "treat_a": 2,
+        "wastewater": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "treat_b",
+      "station": "basin",
+      "inputs": {
+        "iron_powder": 1,
+        "silica": 1,
+        "water": 2
+      },
+      "outputs": {
+        "treat_b": 2,
+        "wastewater": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "etchant",
+      "station": "basin",
+      "inputs": {
+        "slag": 1,
+        "water": 2,
+        "carbon": 1
+      },
+      "outputs": {
+        "etchant": 2,
+        "residue": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "resist",
+      "station": "basin",
+      "inputs": {
+        "binder": 1,
+        "carbon": 1,
+        "water": 1
+      },
+      "outputs": {
+        "resist": 2
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "pattern_mask",
+      "station": "mechanical_bench",
+      "inputs": {
+        "blank_mask": 1
+      },
+      "outputs": {
+        "pattern_mask": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [
+        "scanner"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "etch_station",
+      "station": "hand",
+      "inputs": {
+        "ceramic": 4,
+        "glass": 2,
+        "frame": 2
+      },
+      "outputs": {
+        "etch_station": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "region_wafer",
+      "station": "etch_station",
+      "inputs": {
+        "wafer": 2,
+        "treat_a": 1,
+        "treat_b": 1,
+        "etchant": 1,
+        "water": 1
+      },
+      "outputs": {
+        "region_wafer": 2,
+        "wastewater": 2
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [
+        "pattern_mask"
+      ],
+      "evidence": [
+        "composition"
+      ]
+    },
+    {
+      "id": "filter",
+      "station": "device_bench",
+      "inputs": {
+        "guide_piece": 1,
+        "mount": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "filter": 1
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [],
+      "evidence": [
+        "response"
+      ]
+    },
+    {
+      "id": "gate",
+      "station": "device_bench",
+      "inputs": {
+        "region_wafer": 1,
+        "contact": 3,
+        "mount": 1
+      },
+      "outputs": {
+        "gate": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": [
+        "composition"
+      ],
+      "array_template": "gate",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "hold",
+      "station": "device_bench",
+      "inputs": {
+        "gate": 2,
+        "wire": 2
+      },
+      "outputs": {
+        "hold": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": [
+        "gate_response"
+      ],
+      "array_template": "hold",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "window",
+      "station": "device_bench",
+      "inputs": {
+        "gate": 2,
+        "hold": 2,
+        "scanner": 1
+      },
+      "outputs": {
+        "window": 1
+      },
+      "seconds": 20,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "state_response"
+      ]
+    },
+    {
+      "id": "oscillator",
+      "station": "device_bench",
+      "inputs": {
+        "stable_piece": 1,
+        "contact": 2,
+        "mount": 1
+      },
+      "outputs": {
+        "oscillator": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": [
+        "response"
+      ]
+    },
+    {
+      "id": "guide",
+      "station": "etch_station",
+      "inputs": {
+        "guide_piece": 1,
+        "etchant": 1,
+        "water": 1
+      },
+      "outputs": {
+        "guide": 1,
+        "wastewater": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [
+        "pattern_mask"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "coupler",
+      "station": "device_bench",
+      "inputs": {
+        "guide": 1,
+        "glass": 1,
+        "mount": 1
+      },
+      "outputs": {
+        "coupler": 1
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "phase",
+      "station": "device_bench",
+      "inputs": {
+        "wafer": 1,
+        "guide": 1,
+        "contact": 2,
+        "heat_pad": 1
+      },
+      "outputs": {
+        "phase": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "light_source",
+      "station": "device_bench",
+      "inputs": {
+        "stable_piece": 1,
+        "glass": 2,
+        "power_module": 1
+      },
+      "outputs": {
+        "light_source": 1
+      },
+      "seconds": 20,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "response"
+      ]
+    },
+    {
+      "id": "encoder",
+      "station": "device_bench",
+      "inputs": {
+        "gate": 2,
+        "phase": 1,
+        "power_module": 1
+      },
+      "outputs": {
+        "encoder": 1
+      },
+      "seconds": 20,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "gate_response"
+      ]
+    },
+    {
+      "id": "reader",
+      "station": "device_bench",
+      "inputs": {
+        "region_wafer": 1,
+        "probe": 1,
+        "power_module": 1
+      },
+      "outputs": {
+        "reader": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "mzi",
+      "station": "device_bench",
+      "inputs": {
+        "guide": 2,
+        "coupler": 2,
+        "phase": 1,
+        "mount": 1
+      },
+      "outputs": {
+        "mzi": 1
+      },
+      "seconds": 24,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "interference"
+      ]
+    },
+    {
+      "id": "case",
+      "station": "mechanical_bench",
+      "inputs": {
+        "iron": 1,
+        "ceramic": 1
+      },
+      "outputs": {
+        "case": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "socket",
+      "station": "mechanical_bench",
+      "inputs": {
+        "ceramic": 1,
+        "contact": 4
+      },
+      "outputs": {
+        "socket": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "data_cable",
+      "station": "hand",
+      "inputs": {
+        "wire": 2,
+        "contact": 2
+      },
+      "outputs": {
+        "data_cable": 2
+      },
+      "seconds": 6,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "optical_cable",
+      "station": "mechanical_bench",
+      "inputs": {
+        "glass": 2,
+        "binder": 1,
+        "fiber": 1
+      },
+      "outputs": {
+        "optical_cable": 4
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "panel",
+      "station": "mechanical_bench",
+      "inputs": {
+        "frame": 1,
+        "socket": 2,
+        "contact": 4
+      },
+      "outputs": {
+        "panel": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "tray",
+      "station": "mechanical_bench",
+      "inputs": {
+        "frame": 2,
+        "heat_pad": 2,
+        "socket": 1
+      },
+      "outputs": {
+        "tray": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "duct",
+      "station": "hand",
+      "inputs": {
+        "iron": 1
+      },
+      "outputs": {
+        "duct": 2
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "cable_tray",
+      "station": "hand",
+      "inputs": {
+        "iron": 1,
+        "fiber": 1
+      },
+      "outputs": {
+        "cable_tray": 4
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "damper",
+      "station": "mechanical_bench",
+      "inputs": {
+        "iron": 1,
+        "binder": 2,
+        "ceramic": 1
+      },
+      "outputs": {
+        "damper": 2
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "local_filter",
+      "station": "device_bench",
+      "inputs": {
+        "copper": 1,
+        "ceramic": 1,
+        "wire": 2
+      },
+      "outputs": {
+        "local_filter": 1
+      },
+      "seconds": 12,
+      "energy": 64,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "shield",
+      "station": "mechanical_bench",
+      "inputs": {
+        "copper": 2,
+        "contact": 2
+      },
+      "outputs": {
+        "shield": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "sensor_head",
+      "station": "device_bench",
+      "inputs": {
+        "wafer": 1,
+        "probe": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "sensor_head": 1
+      },
+      "seconds": 16,
+      "energy": 96,
+      "tools": [],
+      "evidence": [
+        "response"
+      ]
+    },
+    {
+      "id": "fluid_pipe",
+      "station": "mechanical_bench",
+      "inputs": {
+        "copper": 1,
+        "binder": 1
+      },
+      "outputs": {
+        "fluid_pipe": 4
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "cold_plate",
+      "station": "mechanical_bench",
+      "inputs": {
+        "copper": 2,
+        "heat_pad": 2
+      },
+      "outputs": {
+        "cold_plate": 1
+      },
+      "seconds": 12,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "pump",
+      "station": "mechanical_bench",
+      "inputs": {
+        "fan": 1,
+        "copper": 2,
+        "ceramic": 1
+      },
+      "outputs": {
+        "pump": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "exchanger",
+      "station": "mechanical_bench",
+      "inputs": {
+        "fluid_pipe": 4,
+        "fan": 1,
+        "frame": 2
+      },
+      "outputs": {
+        "exchanger": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "packager",
+      "station": "hand",
+      "inputs": {
+        "frame": 3,
+        "mount": 2,
+        "power_module": 1
+      },
+      "outputs": {
+        "packager": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "working_array_wafer",
+      "station": "etch_station",
+      "inputs": {
+        "region_wafer": 1,
+        "resist": 1,
+        "etchant": 1,
+        "water": 1
+      },
+      "outputs": {
+        "working_array_wafer": 1,
+        "wastewater": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [
+        "pattern_mask",
+        "scanner"
+      ],
+      "evidence": [
+        "memory_array"
+      ],
+      "array_template": "working_array_wafer",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "logic_program_wafer",
+      "station": "mechanical_bench",
+      "inputs": {
+        "region_wafer": 1,
+        "carbon": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "logic_program_wafer": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [
+        "pattern_mask",
+        "scanner"
+      ],
+      "evidence": [
+        "control_program"
+      ],
+      "array_template": "logic_program_wafer",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "record_array_wafer",
+      "station": "device_bench",
+      "inputs": {
+        "neutral": 1,
+        "wafer": 1,
+        "carbon": 1
+      },
+      "outputs": {
+        "record_array_wafer": 1,
+        "debris": 1
+      },
+      "seconds": 24,
+      "energy": 96,
+      "tools": [
+        "pattern_mask",
+        "scanner"
+      ],
+      "evidence": [
+        "persistent_record"
+      ],
+      "array_template": "record_array_wafer",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "endpoint_chip",
+      "station": "packager",
+      "inputs": {
+        "filter": 1,
+        "reader": 1,
+        "gate": 2,
+        "window": 1,
+        "case": 1,
+        "heat_pad": 1,
+        "wire": 4
+      },
+      "outputs": {
+        "endpoint_chip": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "endpoint"
+      ]
+    },
+    {
+      "id": "control_chip",
+      "station": "packager",
+      "inputs": {
+        "gate": 8,
+        "hold": 4,
+        "logic_program_wafer": 1,
+        "oscillator": 1,
+        "case": 1,
+        "wire": 8
+      },
+      "outputs": {
+        "control_chip": 1
+      },
+      "seconds": 32,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "control_program"
+      ],
+      "array_template": "control_chip",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "ram",
+      "station": "packager",
+      "inputs": {
+        "hold": 4,
+        "working_array_wafer": 2,
+        "contact": 4,
+        "case": 1
+      },
+      "outputs": {
+        "ram": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "memory_array"
+      ],
+      "array_template": "ram",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "storage",
+      "station": "packager",
+      "inputs": {
+        "record_array_wafer": 2,
+        "contact": 4,
+        "case": 1
+      },
+      "outputs": {
+        "storage": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "persistent_record"
+      ],
+      "array_template": "storage",
+      "internal_steps": [
+        "选择已验证图案",
+        "模板重复加工/互连",
+        "逐通道或地址测试",
+        "按通过范围分档",
+        "封装复测"
+      ]
+    },
+    {
+      "id": "bus_controller",
+      "station": "packager",
+      "inputs": {
+        "gate": 4,
+        "hold": 2,
+        "wire": 4,
+        "case": 1
+      },
+      "outputs": {
+        "bus_controller": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "state_response"
+      ]
+    },
+    {
+      "id": "nic",
+      "station": "packager",
+      "inputs": {
+        "gate": 4,
+        "hold": 2,
+        "contact": 4,
+        "case": 1
+      },
+      "outputs": {
+        "nic": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "state_response"
+      ]
+    },
+    {
+      "id": "matrix",
+      "station": "packager",
+      "inputs": {
+        "gate": 8,
+        "hold": 4,
+        "case": 1,
+        "heat_pad": 2
+      },
+      "outputs": {
+        "matrix": 1
+      },
+      "seconds": 32,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "state_response"
+      ]
+    },
+    {
+      "id": "activation",
+      "station": "packager",
+      "inputs": {
+        "gate": 4,
+        "case": 1
+      },
+      "outputs": {
+        "activation": 1
+      },
+      "seconds": 20,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "gate_response"
+      ]
+    },
+    {
+      "id": "populated_board",
+      "station": "packager",
+      "inputs": {
+        "board_blank": 1,
+        "socket": 8,
+        "control_chip": 1,
+        "matrix": 1,
+        "nic": 1,
+        "bus_controller": 1,
+        "ram": 2,
+        "storage": 1,
+        "oscillator": 1,
+        "wire": 12,
+        "heat_pad": 4
+      },
+      "outputs": {
+        "populated_board": 1
+      },
+      "seconds": 40,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "board_test"
+      ]
+    },
+    {
+      "id": "terminal",
+      "station": "hand",
+      "inputs": {
+        "populated_board": 1,
+        "panel": 1,
+        "glass": 1,
+        "frame": 2
+      },
+      "outputs": {
+        "terminal": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "diagnostic",
+      "station": "hand",
+      "inputs": {
+        "probe": 1,
+        "scanner": 1,
+        "control_chip": 1,
+        "storage": 1,
+        "frame": 2,
+        "board_blank": 1,
+        "socket": 2,
+        "wire": 8,
+        "power_module": 1
+      },
+      "outputs": {
+        "diagnostic": 1
+      },
+      "seconds": 24,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "injector",
+      "station": "hand",
+      "inputs": {
+        "frame": 4,
+        "control_chip": 1,
+        "power_module": 1,
+        "sensor_head": 1,
+        "ceramic": 2
+      },
+      "outputs": {
+        "injector": 1
+      },
+      "seconds": 32,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "projector",
+      "station": "hand",
+      "inputs": {
+        "frame": 4,
+        "control_chip": 1,
+        "light_source": 1,
+        "phase": 1,
+        "glass": 2
+      },
+      "outputs": {
+        "projector": 1
+      },
+      "seconds": 32,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "process_frame",
+      "station": "hand",
+      "inputs": {
+        "frame": 6,
+        "control_chip": 1,
+        "nic": 1
+      },
+      "outputs": {
+        "process_frame": 1
+      },
+      "seconds": 32,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "bare_die",
+      "station": "projector",
+      "inputs": {
+        "wafer": 2,
+        "treat_a": 1,
+        "treat_b": 1,
+        "resist": 1,
+        "etchant": 2,
+        "water": 2
+      },
+      "outputs": {
+        "bare_die": 2,
+        "wastewater": 3,
+        "debris": 1
+      },
+      "seconds": 60,
+      "energy": 768,
+      "tools": [
+        "pattern_mask",
+        "injector",
+        "etch_station",
+        "annealer"
+      ],
+      "evidence": [
+        "precision"
+      ]
+    },
+    {
+      "id": "integrated_chip",
+      "station": "packager",
+      "inputs": {
+        "bare_die": 1,
+        "case": 1,
+        "contact": 4,
+        "heat_pad": 1
+      },
+      "outputs": {
+        "integrated_chip": 1
+      },
+      "seconds": 20,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "precision"
+      ]
+    },
+    {
+      "id": "optic_array",
+      "station": "packager",
+      "inputs": {
+        "mzi": 1,
+        "encoder": 2,
+        "reader": 2,
+        "case": 1,
+        "heat_pad": 2
+      },
+      "outputs": {
+        "optic_array": 1
+      },
+      "seconds": 32,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "interference"
+      ]
+    },
+    {
+      "id": "world_base",
+      "station": "hand",
+      "inputs": {
+        "ceramic": 1,
+        "contact": 2
+      },
+      "outputs": {
+        "world_base": 1
+      },
+      "seconds": 4,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "rack_monitor",
+      "station": "packager",
+      "inputs": {
+        "gate": 4,
+        "hold": 2,
+        "probe": 1,
+        "panel": 1
+      },
+      "outputs": {
+        "rack_monitor": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "power_backplane",
+      "station": "mechanical_bench",
+      "inputs": {
+        "copper": 4,
+        "power_module": 1,
+        "contact": 8
+      },
+      "outputs": {
+        "power_backplane": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "data_backplane",
+      "station": "packager",
+      "inputs": {
+        "nic": 2,
+        "bus_controller": 1,
+        "ram": 1,
+        "board_blank": 1,
+        "wire": 8
+      },
+      "outputs": {
+        "data_backplane": 1
+      },
+      "seconds": 24,
+      "energy": 192,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "service_panel",
+      "station": "mechanical_bench",
+      "inputs": {
+        "frame": 1,
+        "duct": 1
+      },
+      "outputs": {
+        "service_panel": 1
+      },
+      "seconds": 8,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "rack_shell",
+      "station": "hand",
+      "inputs": {
+        "frame": 12,
+        "rack_monitor": 1,
+        "panel": 1,
+        "fan": 1,
+        "duct": 2,
+        "tray": 2,
+        "data_backplane": 1,
+        "power_module": 1,
+        "power_backplane": 1,
+        "service_panel": 2
+      },
+      "outputs": {
+        "rack_shell": 1
+      },
+      "seconds": 40,
+      "energy": 0,
+      "tools": [],
+      "evidence": [
+        "rack_fit"
+      ]
+    },
+    {
+      "id": "rack_node",
+      "station": "hand",
+      "inputs": {
+        "rack_shell": 1,
+        "populated_board": 1,
+        "data_cable": 2
+      },
+      "outputs": {
+        "rack_node": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": [
+        "sustained"
+      ]
+    },
+    {
+      "id": "switch",
+      "station": "hand",
+      "inputs": {
+        "data_backplane": 1,
+        "panel": 2,
+        "power_module": 1,
+        "frame": 2
+      },
+      "outputs": {
+        "switch": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "sensor_hub",
+      "station": "hand",
+      "inputs": {
+        "control_chip": 1,
+        "ram": 1,
+        "nic": 1,
+        "sensor_head": 2,
+        "case": 1,
+        "board_blank": 1,
+        "socket": 3,
+        "wire": 8,
+        "power_module": 1
+      },
+      "outputs": {
+        "sensor_hub": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "storage_node",
+      "station": "hand",
+      "inputs": {
+        "populated_board": 1,
+        "storage": 4,
+        "frame": 2,
+        "board_blank": 1,
+        "socket": 4,
+        "bus_controller": 1,
+        "wire": 8,
+        "data_cable": 2
+      },
+      "outputs": {
+        "storage_node": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "cluster_core",
+      "station": "hand",
+      "inputs": {
+        "populated_board": 1,
+        "storage": 1,
+        "panel": 1
+      },
+      "outputs": {
+        "cluster_core": 1
+      },
+      "seconds": 20,
+      "energy": 0,
+      "tools": [],
+      "evidence": [
+        "cluster"
+      ]
+    },
+    {
+      "id": "hybrid_board",
+      "station": "packager",
+      "inputs": {
+        "populated_board": 1,
+        "board_blank": 1,
+        "frame": 1,
+        "optic_array": 1,
+        "light_source": 1,
+        "socket": 1,
+        "optical_cable": 2,
+        "heat_pad": 2
+      },
+      "outputs": {
+        "hybrid_board": 1
+      },
+      "seconds": 24,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "interference"
+      ]
+    },
+    {
+      "id": "quiet_reference",
+      "station": "device_bench",
+      "inputs": {
+        "light_source": 1,
+        "oscillator": 1,
+        "damper": 2,
+        "local_filter": 1
+      },
+      "outputs": {
+        "quiet_reference": 1
+      },
+      "seconds": 32,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "environment"
+      ]
+    },
+    {
+      "id": "sync_backplane",
+      "station": "packager",
+      "inputs": {
+        "board_blank": 1,
+        "oscillator": 1,
+        "gate": 2,
+        "contact": 8,
+        "wire": 4
+      },
+      "outputs": {
+        "sync_backplane": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "wireless_frontend",
+      "station": "packager",
+      "inputs": {
+        "nic": 1,
+        "oscillator": 1,
+        "gate": 2,
+        "hold": 2,
+        "power_module": 1,
+        "case": 1,
+        "wire": 4,
+        "contact": 4
+      },
+      "outputs": {
+        "wireless_frontend": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "wireless_antenna",
+      "station": "mechanical_bench",
+      "inputs": {
+        "copper": 2,
+        "frame": 1,
+        "wire": 2
+      },
+      "outputs": {
+        "wireless_antenna": 1
+      },
+      "seconds": 16,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "nonlinear",
+      "station": "annealer",
+      "inputs": {
+        "wafer": 2,
+        "treat_a": 1,
+        "treat_b": 1
+      },
+      "outputs": {
+        "nonlinear": 2
+      },
+      "seconds": 32,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_gate",
+      "station": "packager",
+      "inputs": {
+        "nonlinear": 1,
+        "guide": 2,
+        "coupler": 1,
+        "case": 1
+      },
+      "outputs": {
+        "opt_gate": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_hold",
+      "station": "packager",
+      "inputs": {
+        "nonlinear": 1,
+        "guide": 2,
+        "coupler": 2,
+        "case": 1
+      },
+      "outputs": {
+        "opt_hold": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_control",
+      "station": "packager",
+      "inputs": {
+        "opt_gate": 8,
+        "opt_hold": 4,
+        "oscillator": 1,
+        "case": 1
+      },
+      "outputs": {
+        "opt_control": 1
+      },
+      "seconds": 40,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_pulse",
+      "station": "packager",
+      "inputs": {
+        "opt_gate": 4,
+        "nonlinear": 2,
+        "case": 1
+      },
+      "outputs": {
+        "opt_pulse": 1
+      },
+      "seconds": 32,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_ram",
+      "station": "packager",
+      "inputs": {
+        "opt_hold": 8,
+        "window": 1,
+        "case": 1
+      },
+      "outputs": {
+        "opt_ram": 1
+      },
+      "seconds": 40,
+      "energy": 256,
+      "tools": [],
+      "evidence": [
+        "nonlinear"
+      ]
+    },
+    {
+      "id": "opt_coprocessor",
+      "station": "packager",
+      "inputs": {
+        "nic": 1,
+        "encoder": 2,
+        "reader": 2,
+        "case": 1
+      },
+      "outputs": {
+        "opt_coprocessor": 1
+      },
+      "seconds": 32,
+      "energy": 192,
+      "tools": [],
+      "evidence": [
+        "interference"
+      ]
+    },
+    {
+      "id": "pump_tower",
+      "station": "hand",
+      "inputs": {
+        "quiet_reference": 2,
+        "power_backplane": 1,
+        "exchanger": 1,
+        "pump": 1,
+        "cold_plate": 2,
+        "fluid_pipe": 8,
+        "coolant": 4,
+        "frame": 6
+      },
+      "outputs": {
+        "pump_tower": 1
+      },
+      "seconds": 40,
+      "energy": 0,
+      "tools": [],
+      "evidence": []
+    },
+    {
+      "id": "sky_head",
+      "station": "device_bench",
+      "inputs": {
+        "glass": 4,
+        "reader": 1,
+        "mount": 2
+      },
+      "outputs": {
+        "sky_head": 1
+      },
+      "seconds": 24,
+      "energy": 128,
+      "tools": [],
+      "evidence": [
+        "interference"
+      ]
+    }
+  ],
+  "stations": {
+    "hand": {
+      "name": "手工制作",
+      "item": null,
+      "capacity": 1,
+      "modes": "起步构件/装配"
+    },
+    "sieve": {
+      "name": "木质手筛",
+      "item": "sieve",
+      "capacity": 8,
+      "modes": "累计有效筛分；可暂停"
+    },
+    "basin": {
+      "name": "沉降滤盆",
+      "item": "basin",
+      "capacity": 8,
+      "modes": "沉降、粗滤、废水分离"
+    },
+    "fractionator": {
+      "name": "搅拌分馏塔",
+      "item": "fractionator",
+      "capacity": 8,
+      "modes": "集成粗碎/筛分与搅拌，直接处理圆石和水；同干料预算，3秒/批连续作业"
+    },
+    "furnace": {
+      "name": "石炉",
+      "item": "furnace",
+      "capacity": 8,
+      "modes": "燃料熔炼/烧制；失热保存实际热历史"
+    },
+    "mechanical_bench": {
+      "name": "机械制备台",
+      "item": "mechanical_bench",
+      "capacity": 4,
+      "modes": "切磨、压合、刻粗模板"
+    },
+    "crucible": {
+      "name": "热噪坩埚",
+      "item": "crucible",
+      "capacity": 4,
+      "modes": "均值化、成核；不混用未处理滤渣"
+    },
+    "crystal_frame": {
+      "name": "I型力学框架",
+      "item": "crystal_frame",
+      "capacity": 1,
+      "modes": "生长冲击、定向/应力写入"
+    },
+    "device_bench": {
+      "name": "晶体实验台",
+      "item": "device_bench",
+      "capacity": 16,
+      "modes": "器件拼接/调谐/扫描；模块可超过单格"
+    },
+    "annealer": {
+      "name": "晶格退火炉",
+      "item": "annealer",
+      "capacity": 4,
+      "modes": "升温/保持/冷却，独立固定控制"
+    },
+    "etch_station": {
+      "name": "刻蚀/清洗工位",
+      "item": "etch_station",
+      "capacity": 4,
+      "modes": "接触图案、粗刻蚀、清洗、废液管理"
+    },
+    "packager": {
+      "name": "封装与装板工位",
+      "item": "packager",
+      "capacity": 1,
+      "modes": "按结构占用装配；1个在制工程，料盒容量另计"
+    },
+    "projector": {
+      "name": "精密图案工位",
+      "item": "projector",
+      "capacity": 4,
+      "modes": "投影/多步流片；需注入、刻蚀、退火协作"
+    }
+  },
+  "evidence": {
+    "response": {
+      "needs": [],
+      "objects": [
+        "wafer",
+        "stable_piece",
+        "guide_piece",
+        "probe",
+        "scanner"
+      ],
+      "experiment": "同母批、换方向/加载、重复扫描"
+    },
+    "composition": {
+      "needs": [
+        "response"
+      ],
+      "objects": [
+        "wafer",
+        "treat_a",
+        "treat_b",
+        "basin",
+        "annealer"
+      ],
+      "experiment": "粗表层处理的未封装试片，交叉剂量/应力；不是先要合格区域晶片"
+    },
+    "gate_response": {
+      "needs": [
+        "composition"
+      ],
+      "objects": [
+        "gate",
+        "probe",
+        "scanner"
+      ],
+      "experiment": "输入扫描、真值和扰动窗口"
+    },
+    "state_response": {
+      "needs": [
+        "gate_response"
+      ],
+      "objects": [
+        "hold",
+        "scanner"
+      ],
+      "experiment": "写、等待、读、复位和断供"
+    },
+    "memory_array": {
+      "needs": [
+        "state_response"
+      ],
+      "objects": [
+        "region_wafer",
+        "pattern_mask",
+        "device_bench",
+        "scanner"
+      ],
+      "experiment": "未封装8192位保持阵列试片；实际模板加工，地址花纹/保持测试，容量按通过范围登记"
+    },
+    "control_program": {
+      "needs": [
+        "state_response"
+      ],
+      "objects": [
+        "region_wafer",
+        "pattern_mask",
+        "gate",
+        "hold",
+        "scanner"
+      ],
+      "experiment": "未封装固定微程序区域的刻写复读与有限解释器测试；不先要求成品控制芯片"
+    },
+    "interference": {
+      "needs": [
+        "response"
+      ],
+      "objects": [
+        "guide",
+        "coupler",
+        "phase",
+        "light_source",
+        "reader"
+      ],
+      "experiment": "台上双臂试装；未封装MZI也能测"
+    },
+    "endpoint": {
+      "needs": [
+        "state_response"
+      ],
+      "objects": [
+        "filter",
+        "reader",
+        "gate",
+        "window"
+      ],
+      "experiment": "台上原型运行短脉冲、过期输入、三帧与复位测试"
+    },
+    "persistent_record": {
+      "needs": [
+        "response"
+      ],
+      "objects": [
+        "neutral",
+        "wafer",
+        "contact",
+        "probe",
+        "scanner"
+      ],
+      "experiment": "未封装刻写记录试片，断电再读取；虚构记录材料模板"
+    },
+    "board_test": {
+      "needs": [
+        "state_response",
+        "persistent_record"
+      ],
+      "objects": [
+        "board_blank",
+        "control_chip",
+        "ram",
+        "bus_controller",
+        "nic"
+      ],
+      "experiment": "未封装板台上布置、逐口验通和读写；不以成品B01为前置"
+    },
+    "precision": {
+      "needs": [
+        "board_test"
+      ],
+      "objects": [
+        "projector",
+        "injector",
+        "etch_station",
+        "annealer",
+        "wafer"
+      ],
+      "experiment": "校正图案试片；检查对位、层一致与指定响应"
+    },
+    "rack_fit": {
+      "needs": [
+        "board_test"
+      ],
+      "objects": [
+        "frame",
+        "tray",
+        "panel",
+        "power_backplane",
+        "data_backplane"
+      ],
+      "experiment": "空结构试装/对接/引出，材料保留，未要求成品柜"
+    },
+    "sustained": {
+      "needs": [
+        "rack_fit"
+      ],
+      "objects": [
+        "rack_shell",
+        "populated_board",
+        "fan",
+        "generator"
+      ],
+      "experiment": "已插装但尚未登记的板柜，长窗口负载与余热测试"
+    },
+    "cluster": {
+      "needs": [
+        "sustained"
+      ],
+      "objects": [
+        "rack_node",
+        "nic",
+        "data_cable"
+      ],
+      "minimum_instances": {
+        "rack_node": 2
+      },
+      "experiment": "现有单板的固定直连管理服务，登记两个真实节点；不要求独立编排节点"
+    },
+    "environment": {
+      "needs": [
+        "sustained",
+        "interference"
+      ],
+      "objects": [
+        "sensor_head",
+        "scanner",
+        "damper",
+        "local_filter"
+      ],
+      "experiment": "热机、振源与供电切换三组独立对照"
+    },
+    "nonlinear": {
+      "needs": [
+        "composition",
+        "interference"
+      ],
+      "objects": [
+        "wafer",
+        "treat_a",
+        "treat_b",
+        "annealer",
+        "light_source",
+        "reader"
+      ],
+      "experiment": "未封装共处理试片，扫描非线性与迟滞，不能拿慢响应冒充保持"
+    }
+  },
+  "array_templates": {
+    "gate": {
+      "units": 16,
+      "role": "16路门控响应单元；样片模板和测试范围固定"
+    },
+    "hold": {
+      "bits": 16,
+      "gate_arrays": 2,
+      "role": "16个保持状态；反馈、写读、复位与供给真实存在"
+    },
+    "ram": {
+      "array_wafers": 2,
+      "bits_per_wafer": 8192,
+      "bytes": 2048,
+      "role": "工作保持阵列＋独立寻址/写读控制；region_wafer须按此模板处理"
+    },
+    "storage": {
+      "array_wafers": 2,
+      "bits_per_wafer": 65536,
+      "bytes": 16384,
+      "role": "独立非易失记录阵列模板；一次成功刻写与断供复读证据"
+    },
+    "control_chip": {
+      "internal_state_bits": 64,
+      "microcode_words": 256,
+      "microcode_word_bits": 16,
+      "role": "固定微程序区域片＋有限标量/控制引擎；通用数据栈与程序存放在外接实际内存/存储"
+    },
+    "working_array_wafer": {
+      "bits": 8192,
+      "role": "保持阵列处理与地址检验后的真实半成品"
+    },
+    "logic_program_wafer": {
+      "words": 256,
+      "word_bits": 16,
+      "role": "结构编码的固定微程序；不是通用运行内存"
+    },
+    "record_array_wafer": {
+      "bits": 65536,
+      "role": "独立刻写记录阵列；非易失测试覆盖"
+    }
+  },
+  "assembly_recipes": [
+    "endpoint_chip",
+    "control_chip",
+    "ram",
+    "storage",
+    "bus_controller",
+    "nic",
+    "matrix",
+    "activation",
+    "populated_board",
+    "terminal",
+    "diagnostic",
+    "optic_array",
+    "rack_shell",
+    "rack_node",
+    "storage_node",
+    "cluster_core",
+    "hybrid_board",
+    "opt_control",
+    "opt_pulse",
+    "opt_ram",
+    "pump_tower"
+  ],
+  "bills": {
+    "first_endpoint": {
+      "roots": {
+        "stone": 432,
+        "wood": 199,
+        "water": 132
+      },
+      "total_energy": 6464,
+      "serial_recipe_seconds": 3395,
+      "runs": {
+        "first_furnace": 3,
+        "wood_fiber": 7,
+        "first_basin": 2,
+        "first_sieve": 1,
+        "sifting": 6,
+        "separate": 6,
+        "charcoal": 86,
+        "fire_iron": 24,
+        "frame": 12,
+        "fire_copper": 17,
+        "fire_glass": 5,
+        "fractionator": 1,
+        "binder": 4,
+        "wire": 6,
+        "generator": 1,
+        "separate_auto": 45,
+        "fire_ceramic": 12,
+        "mechanical_bench": 2,
+        "crystal_frame": 1,
+        "crucible": 2,
+        "neutral": 6,
+        "seed": 3,
+        "raw_crystal": 3,
+        "wafer": 3,
+        "spectroscope": 2,
+        "stable_piece": 1,
+        "guide_piece": 1,
+        "contact": 13,
+        "mount": 9,
+        "probe": 2,
+        "scanner": 1,
+        "treat_a": 3,
+        "treat_b": 3,
+        "power_module": 4,
+        "annealer": 1,
+        "device_bench": 1,
+        "etch_station": 1,
+        "blank_mask": 1,
+        "pattern_mask": 1,
+        "etchant": 3,
+        "region_wafer": 5,
+        "gate": 8,
+        "hold": 2,
+        "filter": 1,
+        "reader": 1,
+        "window": 1,
+        "packager": 1,
+        "case": 1,
+        "heat_pad": 1,
+        "endpoint_chip": 1,
+        "record_sheet": 1,
+        "book": 1
+      },
+      "remaining": {
+        "annealer": 1,
+        "basin": 1,
+        "binder": 1,
+        "blank_mask": 1,
+        "book": 1,
+        "clay": 27,
+        "contact": 2,
+        "copper": 1,
+        "copper_powder": 14,
+        "crucible": 1,
+        "crystal_frame": 1,
+        "debris": 6,
+        "device_bench": 1,
+        "endpoint_chip": 1,
+        "etch_station": 1,
+        "etchant": 1,
+        "fiber": 1,
+        "fractionator": 1,
+        "furnace": 1,
+        "generator": 1,
+        "glass": 1,
+        "heat_pad": 3,
+        "mechanical_bench": 1,
+        "packager": 1,
+        "pattern_mask": 1,
+        "record_sheet": 6,
+        "region_wafer": 1,
+        "residue": 166,
+        "sieve": 1,
+        "silica": 86,
+        "slag": 130,
+        "stable_piece": 1,
+        "treat_a": 1,
+        "treat_b": 1,
+        "wastewater": 125
+      },
+      "evidence": [
+        "composition",
+        "endpoint",
+        "gate_response",
+        "response",
+        "state_response"
+      ],
+      "log": [
+        "first_furnace ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "wood_fiber ×1",
+        "first_sieve ×1",
+        "sifting ×4",
+        "separate ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "fractionator ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "sifting ×2",
+        "separate ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "generator ×1",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "crystal_frame ×1",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "stable_piece ×1",
+        "guide_piece ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "probe ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "contact ×1",
+        "scanner ×1",
+        "验证条件 response",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "power_module ×1",
+        "annealer ×1",
+        "验证条件 composition",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "device_bench ×1",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "etch_station ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "blank_mask ×1",
+        "pattern_mask ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×1",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "probe ×1",
+        "验证条件 gate_response",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "hold ×1",
+        "验证条件 state_response",
+        "filter ×1",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "power_module ×1",
+        "reader ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "mount ×1",
+        "gate ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×1",
+        "window ×1",
+        "验证条件 endpoint",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "power_module ×1",
+        "packager ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "gate ×2",
+        "case ×1",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "endpoint_chip ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "record_sheet ×1",
+        "book ×1"
+      ]
+    },
+    "first_board": {
+      "roots": {
+        "stone": 1112,
+        "wood": 598,
+        "water": 439
+      },
+      "total_energy": 27392,
+      "serial_recipe_seconds": 12040,
+      "runs": {
+        "first_furnace": 3,
+        "wood_fiber": 14,
+        "first_basin": 2,
+        "first_sieve": 1,
+        "sifting": 6,
+        "separate": 6,
+        "charcoal": 273,
+        "fire_iron": 43,
+        "frame": 12,
+        "fire_copper": 59,
+        "fire_glass": 6,
+        "fractionator": 1,
+        "binder": 13,
+        "wire": 20,
+        "generator": 1,
+        "separate_auto": 130,
+        "fire_ceramic": 34,
+        "mechanical_bench": 2,
+        "crystal_frame": 1,
+        "crucible": 2,
+        "neutral": 39,
+        "seed": 19,
+        "raw_crystal": 19,
+        "wafer": 19,
+        "spectroscope": 3,
+        "stable_piece": 2,
+        "guide_piece": 1,
+        "contact": 82,
+        "mount": 38,
+        "probe": 2,
+        "scanner": 1,
+        "treat_a": 18,
+        "treat_b": 18,
+        "power_module": 3,
+        "annealer": 1,
+        "device_bench": 1,
+        "etch_station": 1,
+        "blank_mask": 1,
+        "pattern_mask": 1,
+        "etchant": 20,
+        "region_wafer": 35,
+        "gate": 64,
+        "hold": 20,
+        "board_blank": 1,
+        "packager": 1,
+        "logic_program_wafer": 1,
+        "oscillator": 2,
+        "case": 7,
+        "control_chip": 1,
+        "resist": 2,
+        "working_array_wafer": 4,
+        "ram": 2,
+        "bus_controller": 1,
+        "nic": 1,
+        "socket": 8,
+        "heat_pad": 2,
+        "matrix": 1,
+        "record_array_wafer": 2,
+        "storage": 1,
+        "populated_board": 1,
+        "fan": 1,
+        "record_sheet": 1,
+        "book": 1
+      },
+      "remaining": {
+        "annealer": 1,
+        "basin": 1,
+        "binder": 1,
+        "blank_mask": 1,
+        "book": 1,
+        "clay": 68,
+        "copper": 1,
+        "crucible": 1,
+        "crystal_frame": 1,
+        "debris": 40,
+        "device_bench": 1,
+        "etch_station": 1,
+        "etchant": 1,
+        "fan": 1,
+        "fiber": 1,
+        "fractionator": 1,
+        "furnace": 1,
+        "generator": 1,
+        "glass": 1,
+        "guide_piece": 1,
+        "heat_pad": 1,
+        "iron_powder": 32,
+        "mechanical_bench": 1,
+        "mount": 1,
+        "packager": 1,
+        "pattern_mask": 1,
+        "populated_board": 1,
+        "probe": 1,
+        "record_sheet": 6,
+        "region_wafer": 1,
+        "residue": 545,
+        "scanner": 1,
+        "sieve": 1,
+        "silica": 223,
+        "slag": 269,
+        "spectroscope": 1,
+        "treat_a": 1,
+        "treat_b": 1,
+        "wafer": 1,
+        "wastewater": 396
+      },
+      "evidence": [
+        "board_test",
+        "composition",
+        "control_program",
+        "gate_response",
+        "memory_array",
+        "persistent_record",
+        "response",
+        "state_response"
+      ],
+      "log": [
+        "first_furnace ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "wood_fiber ×1",
+        "first_sieve ×1",
+        "sifting ×4",
+        "separate ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "fractionator ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "sifting ×2",
+        "separate ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "generator ×1",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "crystal_frame ×1",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "stable_piece ×1",
+        "guide_piece ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "probe ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "contact ×1",
+        "scanner ×1",
+        "验证条件 response",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "power_module ×1",
+        "annealer ×1",
+        "验证条件 composition",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "device_bench ×1",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "etch_station ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "blank_mask ×1",
+        "pattern_mask ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×1",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "probe ×1",
+        "验证条件 gate_response",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "hold ×1",
+        "验证条件 state_response",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "验证条件 persistent_record",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "board_blank ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "gate ×1",
+        "验证条件 control_program",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "mount ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "packager ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×2",
+        "treat_a ×2",
+        "separate_auto ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×3",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×5",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×7",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×3",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×5",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×3",
+        "gate ×6",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×3",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "logic_program_wafer ×1",
+        "oscillator ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "control_chip ×1",
+        "验证条件 memory_array",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "separate_auto ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "charcoal ×1",
+        "gate ×8",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "resist ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "working_array_wafer ×2",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "ram ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "gate ×4",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×2",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "bus_controller ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "hold ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "nic ×1",
+        "验证条件 board_test",
+        "charcoal ×4",
+        "fire_ceramic ×4",
+        "separate_auto ×8",
+        "charcoal ×4",
+        "fire_copper ×4",
+        "contact ×8",
+        "socket ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "charcoal ×1",
+        "gate ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "charcoal ×1",
+        "matrix ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "charcoal ×1",
+        "resist ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "working_array_wafer ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "ram ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×2",
+        "record_array_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "storage ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "stable_piece ×1",
+        "contact ×1",
+        "mount ×1",
+        "oscillator ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×3",
+        "charcoal ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "heat_pad ×1",
+        "populated_board ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "fan ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "record_sheet ×1",
+        "book ×1"
+      ]
+    },
+    "two_racks": {
+      "roots": {
+        "stone": 3448,
+        "wood": 1692,
+        "water": 1367
+      },
+      "total_energy": 87680,
+      "serial_recipe_seconds": 35306,
+      "runs": {
+        "first_furnace": 3,
+        "wood_fiber": 34,
+        "first_basin": 2,
+        "first_sieve": 1,
+        "sifting": 6,
+        "separate": 6,
+        "charcoal": 785,
+        "fire_iron": 113,
+        "frame": 34,
+        "fire_copper": 186,
+        "fire_glass": 7,
+        "fractionator": 1,
+        "binder": 38,
+        "wire": 60,
+        "generator": 2,
+        "separate_auto": 422,
+        "fire_ceramic": 93,
+        "mechanical_bench": 2,
+        "crystal_frame": 1,
+        "crucible": 2,
+        "neutral": 118,
+        "seed": 58,
+        "raw_crystal": 58,
+        "wafer": 58,
+        "spectroscope": 4,
+        "stable_piece": 4,
+        "guide_piece": 1,
+        "contact": 269,
+        "mount": 111,
+        "probe": 3,
+        "scanner": 1,
+        "treat_a": 56,
+        "treat_b": 56,
+        "power_module": 7,
+        "annealer": 1,
+        "device_bench": 1,
+        "etch_station": 1,
+        "blank_mask": 1,
+        "pattern_mask": 1,
+        "etchant": 62,
+        "region_wafer": 111,
+        "gate": 208,
+        "hold": 64,
+        "board_blank": 4,
+        "packager": 1,
+        "logic_program_wafer": 2,
+        "oscillator": 4,
+        "case": 22,
+        "control_chip": 2,
+        "resist": 6,
+        "working_array_wafer": 12,
+        "ram": 6,
+        "bus_controller": 4,
+        "nic": 6,
+        "heat_pad": 6,
+        "socket": 28,
+        "tray": 4,
+        "panel": 4,
+        "power_backplane": 2,
+        "data_backplane": 2,
+        "rack_monitor": 2,
+        "fan": 2,
+        "duct": 4,
+        "service_panel": 4,
+        "rack_shell": 2,
+        "matrix": 2,
+        "record_array_wafer": 4,
+        "storage": 2,
+        "populated_board": 2,
+        "data_cable": 4,
+        "rack_node": 2,
+        "record_sheet": 1,
+        "book": 1
+      },
+      "remaining": {
+        "annealer": 1,
+        "basin": 1,
+        "blank_mask": 1,
+        "book": 1,
+        "clay": 242,
+        "contact": 2,
+        "copper": 1,
+        "crucible": 1,
+        "crystal_frame": 1,
+        "data_cable": 4,
+        "debris": 120,
+        "device_bench": 1,
+        "etch_station": 1,
+        "etchant": 1,
+        "fiber": 1,
+        "fractionator": 1,
+        "frame": 1,
+        "furnace": 1,
+        "generator": 2,
+        "glass": 1,
+        "guide_piece": 1,
+        "heat_pad": 2,
+        "iron": 1,
+        "iron_powder": 146,
+        "mechanical_bench": 1,
+        "packager": 1,
+        "pattern_mask": 1,
+        "rack_node": 2,
+        "record_sheet": 6,
+        "residue": 1578,
+        "scanner": 1,
+        "sieve": 1,
+        "silica": 728,
+        "slag": 866,
+        "spectroscope": 1,
+        "treat_a": 1,
+        "treat_b": 1,
+        "wafer": 1,
+        "wastewater": 1236,
+        "wire": 2
+      },
+      "evidence": [
+        "board_test",
+        "composition",
+        "control_program",
+        "gate_response",
+        "memory_array",
+        "persistent_record",
+        "rack_fit",
+        "response",
+        "state_response",
+        "sustained"
+      ],
+      "log": [
+        "first_furnace ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "wood_fiber ×1",
+        "first_sieve ×1",
+        "sifting ×4",
+        "separate ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "fractionator ×1",
+        "wood_fiber ×1",
+        "first_basin ×1",
+        "sifting ×2",
+        "separate ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "generator ×1",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "crystal_frame ×1",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "stable_piece ×1",
+        "guide_piece ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×1",
+        "probe ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mechanical_bench ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "contact ×1",
+        "scanner ×1",
+        "验证条件 response",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "power_module ×1",
+        "annealer ×1",
+        "验证条件 composition",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "device_bench ×1",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "etch_station ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "blank_mask ×1",
+        "pattern_mask ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×1",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "probe ×1",
+        "验证条件 gate_response",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×1",
+        "gate ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "hold ×1",
+        "验证条件 state_response",
+        "first_furnace ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "crucible ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "验证条件 persistent_record",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "board_blank ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "gate ×1",
+        "验证条件 control_program",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "mount ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "packager ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×2",
+        "treat_a ×2",
+        "separate_auto ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×3",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×5",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×7",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×3",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×5",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×3",
+        "gate ×6",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×3",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "logic_program_wafer ×1",
+        "oscillator ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "control_chip ×1",
+        "验证条件 memory_array",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "separate_auto ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "charcoal ×1",
+        "gate ×8",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "resist ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "working_array_wafer ×2",
+        "contact ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "ram ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "separate_auto ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "gate ×4",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×2",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "bus_controller ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "hold ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "nic ×1",
+        "验证条件 board_test",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "socket ×1",
+        "tray ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "socket ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "panel ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "power_module ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "power_backplane ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "nic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "data_backplane ×1",
+        "验证条件 rack_fit",
+        "charcoal ×6",
+        "fire_iron ×6",
+        "frame ×6",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "wood_fiber ×1",
+        "wire ×1",
+        "hold ×2",
+        "rack_monitor ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "socket ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "panel ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "fan ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "duct ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "socket ×1",
+        "tray ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "duct ×1",
+        "service_panel ×2",
+        "rack_shell ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "board_blank ×1",
+        "charcoal ×4",
+        "fire_ceramic ×4",
+        "separate_auto ×8",
+        "charcoal ×4",
+        "fire_copper ×4",
+        "contact ×8",
+        "socket ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "charcoal ×1",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "charcoal ×1",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "matrix ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "wire ×1",
+        "hold ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "nic ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "gate ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×2",
+        "wood_fiber ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "bus_controller ×1",
+        "charcoal ×2",
+        "neutral ×2",
+        "charcoal ×4",
+        "seed ×4",
+        "charcoal ×6",
+        "neutral ×6",
+        "raw_crystal ×4",
+        "wafer ×4",
+        "separate_auto ×4",
+        "charcoal ×4",
+        "treat_a ×4",
+        "treat_b ×4",
+        "charcoal ×4",
+        "etchant ×4",
+        "region_wafer ×8",
+        "separate_auto ×12",
+        "charcoal ×6",
+        "fire_copper ×6",
+        "contact ×12",
+        "charcoal ×4",
+        "fire_iron ×4",
+        "charcoal ×4",
+        "fire_ceramic ×4",
+        "charcoal ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×4",
+        "mount ×8",
+        "gate ×16",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×2",
+        "charcoal ×2",
+        "binder ×2",
+        "wire ×4",
+        "hold ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "charcoal ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "binder ×1",
+        "charcoal ×2",
+        "resist ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "working_array_wafer ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×2",
+        "ram ×2",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "record_array_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "storage ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "stable_piece ×1",
+        "contact ×1",
+        "mount ×1",
+        "oscillator ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×1",
+        "charcoal ×2",
+        "binder ×2",
+        "wire ×3",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "populated_board ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "fan ×1",
+        "验证条件 sustained",
+        "charcoal ×6",
+        "fire_iron ×6",
+        "frame ×6",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wire ×1",
+        "hold ×2",
+        "contact ×1",
+        "probe ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "socket ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "panel ×1",
+        "rack_monitor ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "socket ×2",
+        "contact ×1",
+        "panel ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "duct ×1",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "heat_pad ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "socket ×2",
+        "tray ×2",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "charcoal ×1",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×2",
+        "nic ×2",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "wood_fiber ×1",
+        "wire ×1",
+        "hold ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "bus_controller ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×1",
+        "charcoal ×1",
+        "resist ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "working_array_wafer ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "ram ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "board_blank ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "data_backplane ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "power_module ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "wire ×1",
+        "power_module ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "power_backplane ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "frame ×1",
+        "duct ×1",
+        "service_panel ×2",
+        "rack_shell ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "board_blank ×1",
+        "charcoal ×4",
+        "fire_ceramic ×4",
+        "separate_auto ×8",
+        "charcoal ×4",
+        "fire_copper ×4",
+        "contact ×8",
+        "socket ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "charcoal ×1",
+        "gate ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "logic_program_wafer ×1",
+        "charcoal ×1",
+        "fire_glass ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "spectroscope ×1",
+        "charcoal ×1",
+        "stable_piece ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "mount ×1",
+        "oscillator ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "control_chip ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×2",
+        "seed ×2",
+        "charcoal ×3",
+        "neutral ×3",
+        "raw_crystal ×2",
+        "wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×2",
+        "treat_a ×2",
+        "treat_b ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "charcoal ×1",
+        "region_wafer ×4",
+        "separate_auto ×6",
+        "charcoal ×3",
+        "fire_copper ×3",
+        "contact ×6",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "charcoal ×2",
+        "fire_ceramic ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "mount ×4",
+        "gate ×8",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×2",
+        "hold ×4",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "heat_pad ×1",
+        "matrix ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "hold ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "nic ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "charcoal ×1",
+        "gate ×4",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×3",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "mount ×2",
+        "gate ×4",
+        "wood_fiber ×1",
+        "wire ×1",
+        "hold ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×1",
+        "bus_controller ×1",
+        "charcoal ×2",
+        "neutral ×2",
+        "charcoal ×4",
+        "seed ×4",
+        "charcoal ×6",
+        "neutral ×6",
+        "raw_crystal ×4",
+        "wafer ×4",
+        "separate_auto ×4",
+        "charcoal ×4",
+        "treat_a ×4",
+        "treat_b ×4",
+        "charcoal ×4",
+        "etchant ×4",
+        "charcoal ×1",
+        "region_wafer ×8",
+        "separate_auto ×12",
+        "charcoal ×6",
+        "fire_copper ×6",
+        "contact ×12",
+        "charcoal ×4",
+        "fire_iron ×4",
+        "charcoal ×4",
+        "fire_ceramic ×4",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "contact ×4",
+        "mount ×8",
+        "gate ×16",
+        "charcoal ×1",
+        "separate_auto ×4",
+        "charcoal ×2",
+        "fire_copper ×2",
+        "wood_fiber ×2",
+        "charcoal ×2",
+        "binder ×2",
+        "wire ×4",
+        "hold ×8",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "separate_auto ×1",
+        "charcoal ×1",
+        "treat_a ×1",
+        "treat_b ×1",
+        "charcoal ×1",
+        "etchant ×1",
+        "region_wafer ×2",
+        "charcoal ×1",
+        "binder ×1",
+        "charcoal ×2",
+        "resist ×2",
+        "charcoal ×2",
+        "etchant ×2",
+        "working_array_wafer ×4",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×2",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "charcoal ×1",
+        "fire_ceramic ×1",
+        "case ×2",
+        "ram ×2",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "charcoal ×1",
+        "seed ×1",
+        "charcoal ×1",
+        "neutral ×1",
+        "raw_crystal ×1",
+        "wafer ×1",
+        "charcoal ×2",
+        "record_array_wafer ×2",
+        "contact ×1",
+        "charcoal ×1",
+        "fire_iron ×1",
+        "case ×1",
+        "storage ×1",
+        "stable_piece ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "oscillator ×1",
+        "charcoal ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×2",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×3",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "charcoal ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "heat_pad ×1",
+        "populated_board ×1",
+        "wire ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "data_cable ×2",
+        "rack_node ×2",
+        "charcoal ×2",
+        "fire_iron ×2",
+        "frame ×2",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "binder ×1",
+        "wire ×1",
+        "charcoal ×1",
+        "generator ×1",
+        "wire ×1",
+        "separate_auto ×2",
+        "charcoal ×1",
+        "fire_copper ×1",
+        "contact ×1",
+        "data_cable ×2",
+        "wood_fiber ×1",
+        "charcoal ×1",
+        "record_sheet ×1",
+        "book ×1"
+      ]
+    }
+  },
+  "legacy": {
+    "kamaen_crystal_t2": {
+      "meaning": "按母批/处理状态与器件模板组织；二代是用途检验名，N/P是目标响应族",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "kamaen_wafer": {
+      "meaning": "按母批/处理状态与器件模板组织；二代是用途检验名，N/P是目标响应族",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "kamaen_dopant": {
+      "meaning": "按母批/处理状态与器件模板组织；二代是用途检验名，N/P是目标响应族",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "kamaen_pn_junction": {
+      "meaning": "按母批/处理状态与器件模板组织；二代是用途检验名，N/P是目标响应族",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "electronic_logic_gate": {
+      "meaning": "门控阵列片、明确状态模块、按尺度分开的互连与实际晶振",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "timing_structure_cell": {
+      "meaning": "门控阵列片、明确状态模块、按尺度分开的互连与实际晶振",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "crystal_interconnect": {
+      "meaning": "门控阵列片、明确状态模块、按尺度分开的互连与实际晶振",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "kamaen_oscillator": {
+      "meaning": "门控阵列片、明确状态模块、按尺度分开的互连与实际晶振",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "lithography_mask": {
+      "meaning": "粗接触模板先行，精密层组后续；防护按实际覆盖与用途",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "lithography_mask_set": {
+      "meaning": "粗接触模板先行，精密层组后续；防护按实际覆盖与用途",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "process_protection_kit": {
+      "meaning": "粗接触模板先行，精密层组后续；防护按实际覆盖与用途",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "ion_implanter": {
+      "meaning": "保留对应实物工位及顺序历史，统一面板向已连接工位派任务",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "lattice_annealing_furnace": {
+      "meaning": "保留对应实物工位及顺序历史，统一面板向已连接工位派任务",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "lithography_projector": {
+      "meaning": "保留对应实物工位及顺序历史，统一面板向已连接工位派任务",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "etching_tank": {
+      "meaning": "保留对应实物工位及顺序历史，统一面板向已连接工位派任务",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "tier2_optical_process_framework": {
+      "meaning": "保留对应实物工位及顺序历史，统一面板向已连接工位派任务",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "hardware_diagnostic_station": {
+      "meaning": "工程台统一入口，诊断/封装仍由实体设备执行；初版无需计算板自举",
+      "destination": "R4_UNIFIED_WORKBENCH.md"
+    },
+    "chip_blueprint_writer": {
+      "meaning": "工程台统一入口，诊断/封装仍由实体设备执行；初版无需计算板自举",
+      "destination": "R4_UNIFIED_WORKBENCH.md"
+    },
+    "chip_packaging_station": {
+      "meaning": "工程台统一入口，诊断/封装仍由实体设备执行；初版无需计算板自举",
+      "destination": "R4_UNIFIED_WORKBENCH.md"
+    },
+    "electronic_control_chip": {
+      "meaning": "实际模块与制造模板分开；角色名不重复产出硬件，双路线分账",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "electronic_matrix_tile": {
+      "meaning": "实际模块与制造模板分开；角色名不重复产出硬件，双路线分账",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "electronic_activation_tile": {
+      "meaning": "实际模块与制造模板分开；角色名不重复产出硬件，双路线分账",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "eda_module_plate": {
+      "meaning": "实际模块与制造模板分开；角色名不重复产出硬件，双路线分账",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "packaged_logic_chip": {
+      "meaning": "实际模块与制造模板分开；角色名不重复产出硬件，双路线分账",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "memory_page": {
+      "meaning": "工作2 KiB与持久16 KiB使用不同已测模板；逻辑页仅分配地址",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "motherboard_blueprint": {
+      "meaning": "B01/B02与R04两托盘柜；实际背板、包接口和世界线缆",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "configurable_motherboard": {
+      "meaning": "B01/B02与R04两托盘柜；实际背板、包接口和世界线缆",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "network_interface_chip": {
+      "meaning": "B01/B02与R04两托盘柜；实际背板、包接口和世界线缆",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "server_rack": {
+      "meaning": "B01/B02与R04两托盘柜；实际背板、包接口和世界线缆",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "fiber_switch": {
+      "meaning": "B01/B02与R04两托盘柜；实际背板、包接口和世界线缆",
+      "destination": "R4_HARDWARE_AND_CLUSTER.md"
+    },
+    "sensor_hub": {
+      "meaning": "通用采样服务配对应物理量探头，天线仅服务其波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "noise_spectrometer": {
+      "meaning": "通用采样服务配对应物理量探头，天线仅服务其波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "thermodynamic_antenna": {
+      "meaning": "通用采样服务配对应物理量探头，天线仅服务其波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "model_component_gateway": {
+      "meaning": "统一工作台中的语义图/部署页，世界底座和参数空间仍为同一图的表现",
+      "destination": "R4_UNIFIED_WORKBENCH.md"
+    },
+    "model_compiler": {
+      "meaning": "统一工作台中的语义图/部署页，世界底座和参数空间仍为同一图的表现",
+      "destination": "R4_UNIFIED_WORKBENCH.md"
+    },
+    "storage_center_controller": {
+      "meaning": "记录节点先行，再部署索引/参数库/底噪应用；应用不提供额外存储",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "macro_info_index_core": {
+      "meaning": "记录节点先行，再部署索引/参数库/底噪应用；应用不提供额外存储",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "info_center_controller": {
+      "meaning": "记录节点先行，再部署索引/参数库/底噪应用；应用不提供额外存储",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "noise_database": {
+      "meaning": "记录节点先行，再部署索引/参数库/底噪应用；应用不提供额外存储",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "world_noise_sample": {
+      "meaning": "有来源原始记录和解释视图；辐射谱仅限当前探头实测波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "thermal_noise_plate": {
+      "meaning": "有来源原始记录和解释视图；辐射谱仅限当前探头实测波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "radiation_noise_plate": {
+      "meaning": "有来源原始记录和解释视图；辐射谱仅限当前探头实测波段",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "quantum_fluctuation_plate": {
+      "meaning": "交界保留至P18对应仪器；当前只留未解释残差，禁止提前标成量子实证",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "chunk_entropy_record": {
+      "meaning": "当前登记输入/输出及估计模型的账本，不宣称测出任意区块热力学总熵",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "entropy_flow_meter": {
+      "meaning": "当前登记输入/输出及估计模型的账本，不宣称测出任意区块热力学总熵",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "silicon_photonic_waveguide_blank": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "silicon_photonic_waveguide": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "mzi_modulator": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "phase_tuner": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "silicon_photodetector": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "single_freq_laser_source": {
+      "meaning": "粗光件与精密变体共用器件/制程模型，光电并行",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "calibration_token": {
+      "meaning": "改为对象、映射、条件与报告的绑定记录，无魔法正确性消耗品",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "coherent_energy": {
+      "meaning": "激励能量、缓存、调节与集中供给分别记账，参考/相干状态另算",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "coherent_energy_buffer": {
+      "meaning": "激励能量、缓存、调节与集中供给分别记账，参考/相干状态另算",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "coherent_energy_regulator": {
+      "meaning": "激励能量、缓存、调节与集中供给分别记账，参考/相干状态另算",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "laser_pump_tower": {
+      "meaning": "激励能量、缓存、调节与集中供给分别记账，参考/相干状态另算",
+      "destination": "R4_MODELS_AND_FACTORS.md"
+    },
+    "kamaen_nonlinear_medium": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_logic_gate": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "kamaen_bistable_cell": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_control_core": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_coprocessor": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_gpu_unit": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_pulse_processor": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_ram_unit": {
+      "meaning": "先有限2×2强度映射，再按经过验证的阵列/编码/非线性/保持模板扩展光五件套",
+      "destination": "R4_RUNTIME_AND_RESEARCH.md"
+    },
+    "photonic_waveguide_etching_station": {
+      "meaning": "对应刻蚀、模块拼装、校准工装；专用外壳可保留，不重复基础流水线",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "mzi_weaving_station": {
+      "meaning": "对应刻蚀、模块拼装、校准工装；专用外壳可保留，不重复基础流水线",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    },
+    "photonic_calibration_station": {
+      "meaning": "对应刻蚀、模块拼装、校准工装；专用外壳可保留，不重复基础流水线",
+      "destination": "R4_MATERIALS_MACHINES.md"
+    }
+  },
+  "families": {
+    "C01": "R4_MATERIALS_MACHINES.md",
+    "C02": "R4_MATERIALS_MACHINES.md",
+    "C03": "R4_MATERIALS_MACHINES.md",
+    "C04": "R4_MATERIALS_MACHINES.md",
+    "C05": "R4_MATERIALS_MACHINES.md",
+    "C06": "R4_MATERIALS_MACHINES.md",
+    "C08": "R4_MATERIALS_MACHINES.md",
+    "C11": "R4_MATERIALS_MACHINES.md",
+    "C12": "R4_MATERIALS_MACHINES.md",
+    "C14": "R4_MATERIALS_MACHINES.md",
+    "C15": "R4_MATERIALS_MACHINES.md",
+    "C16": "R4_MATERIALS_MACHINES.md",
+    "C17": "R4_MATERIALS_MACHINES.md",
+    "C18": "R4_MATERIALS_MACHINES.md",
+    "C07": "R4_UNIFIED_WORKBENCH.md",
+    "C09": "R4_UNIFIED_WORKBENCH.md",
+    "C13": "R4_UNIFIED_WORKBENCH.md",
+    "C20": "R4_UNIFIED_WORKBENCH.md",
+    "C21": "R4_UNIFIED_WORKBENCH.md",
+    "C22": "R4_UNIFIED_WORKBENCH.md",
+    "C23": "R4_UNIFIED_WORKBENCH.md",
+    "C24": "R4_UNIFIED_WORKBENCH.md",
+    "C25": "R4_UNIFIED_WORKBENCH.md",
+    "C34": "R4_UNIFIED_WORKBENCH.md",
+    "C10": "R4_RUNTIME_AND_RESEARCH.md",
+    "C19": "R4_RUNTIME_AND_RESEARCH.md",
+    "C26": "R4_RUNTIME_AND_RESEARCH.md",
+    "C27": "R4_RUNTIME_AND_RESEARCH.md",
+    "C28": "R4_RUNTIME_AND_RESEARCH.md",
+    "C29": "R4_RUNTIME_AND_RESEARCH.md",
+    "C30": "R4_RUNTIME_AND_RESEARCH.md",
+    "C31": "R4_RUNTIME_AND_RESEARCH.md",
+    "C32": "R4_RUNTIME_AND_RESEARCH.md",
+    "C33": "R4_RUNTIME_AND_RESEARCH.md"
+  },
+  "stage_aliases": {
+    "doped_waveguide_wafer": "kamaen_wafer的导波用途成品变体",
+    "kamaen_threshold_filter": "阈值滤波器件；按模板映射到electronic_logic_gate或光学器件，不能无条件互换",
+    "kamaen_detector_junction": "探测结器件族；与silicon_photodetector按材料/量程分型",
+    "phase_tuning_chip": "phase_tuner的前置相位晶片，需加驱动封装",
+    "crystal_waveguide_line": "模块导波材料/世界光纤按尺度分开；不直接等同crystal_interconnect全部类型",
+    "info_diagnostic_station": "hardware_diagnostic_station的信息/信号测试模式",
+    "resonant_signal_cache": "实体缓存模块；接入真实页容量与寿命",
+    "signal_cache_plate": "memory_page/保持器件的缓存用途变体，易失性明示",
+    "frequency_route_plate": "路由配置内容载片+实际接口模块，不能只放数据卡就增加物理口",
+    "kamaen_nonlinear_medium_station": "II型工艺线的共掺杂/阈值试验工装",
+    "photonic_gate_assembly_station": "精密装配台的光门模式",
+    "bistable_cell_assembly_station": "精密装配台的双稳态模式",
+    "photonic_control_core_assembly": "芯片封装台的光控制模块路线",
+    "photonic_pulse_processor_assembly": "芯片封装台的光脉冲模块路线",
+    "photonic_ram_assembly": "芯片封装台的光保持/刷新模块路线"
+  },
+  "checks": {
+    "recipe_ids_unique": true,
+    "all_references_declared": true,
+    "positive_counts_and_bounded_energy": true,
+    "all_evidence_references_valid": true,
+    "all_authored_products_reachable": true,
+    "all_evidence_reachable": true,
+    "manual_bootstrap_remains_without_tower": true,
+    "separation_dry_budget_8": true,
+    "auto_separation_same_material_budget": true,
+    "array_templates_declared": true,
+    "ram_array_capacity": true,
+    "storage_array_capacity": true,
+    "control_state_capacity": true,
+    "RAM_requires_manufactured_array": true,
+    "storage_requires_manufactured_array": true,
+    "controller_requires_real_program_region": true,
+    "RAM_child_template_matches_capacity": true,
+    "storage_child_template_matches_capacity": true,
+    "all_67_legacy_items_mapped": true,
+    "all_34_families_mapped": true,
+    "all_15_stage_ids_retained": true,
+    "source_README.md": true,
+    "source_docs/DESIGN_HISTORY.md": true,
+    "source_docs/Development_Log.md": true,
+    "source_docs/INDEX.md": true,
+    "source_docs/Kamaen_Info_Complex_Manufacturing_Process_Reference.md": true,
+    "source_docs/Kamaen_Info_Computing_EDA_Design.md": true,
+    "source_docs/Kamaen_Info_Core_Gameplay_Development_Plan.md": true,
+    "source_docs/Kamaen_Info_GDD.md": true,
+    "source_docs/Kamaen_Info_Hardware_TechTree_Design.md": true,
+    "source_docs/Kamaen_Info_Information_System_Design.md": true,
+    "source_docs/Kamaen_Info_Item_Block_Dictionary.md": true,
+    "source_docs/Kamaen_Info_Optical_Computing_Design.md": true,
+    "source_docs/Kamaen_Info_Resonance_Crystal_And_Early_Game_Design.md": true,
+    "source_docs/Kamaen_Info_Stage_Content_Line.md": true,
+    "source_docs/Kamaen_Info_TechTree_Plan.md": true,
+    "source_docs/Kamaen_Runtime_Infrastructure/Complete_Path.md": true,
+    "source_docs/Kamaen_Runtime_Infrastructure/MVP_Path.md": true,
+    "source_docs/Kamaen_Runtime_Infrastructure/README.md": true,
+    "source_count_18": true,
+    "bill_first_endpoint": true,
+    "bill_first_board": true,
+    "bill_two_racks": true,
+    "B01_inference_32_fits": true,
+    "B01_training_16_fits": true
+  },
+  "limits": "候选配方的名义成功路径与依赖/数量检查，非物理求解、真实化学、Java或试玩验证"
+}

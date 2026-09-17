@@ -1,0 +1,347 @@
+{
+  "status": "illustrative-offline-demo",
+  "inputs": [
+    [
+      0.8,
+      0.2,
+      0.5,
+      0.1
+    ],
+    [
+      0.8,
+      0.2,
+      0.5,
+      0.9
+    ],
+    [
+      0.2,
+      0.8,
+      0.4,
+      0.2
+    ],
+    [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  ],
+  "hidden": [
+    [
+      0.8,
+      0.2,
+      0.5,
+      0.1,
+      0.6000000000000001,
+      0,
+      0.4,
+      0
+    ],
+    [
+      0.8,
+      0.2,
+      0.5,
+      0.9,
+      0.6000000000000001,
+      0,
+      0,
+      0.4
+    ],
+    [
+      0.2,
+      0.8,
+      0.4,
+      0.2,
+      0,
+      0.6000000000000001,
+      0.2,
+      0
+    ],
+    [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "outputs": [
+    [
+      0.6990000000000001,
+      0.195
+    ],
+    [
+      0.635,
+      0.35900000000000004
+    ],
+    [
+      0.264,
+      0.152
+    ],
+    [
+      0.45,
+      0.19
+    ]
+  ],
+  "cases": [
+    {
+      "name": "64件：本地电节点",
+      "config": {},
+      "result": {
+        "status": "ok",
+        "ticks": 121,
+        "stages": {
+          "dispatch": 2,
+          "logic": 8,
+          "matrix": 96,
+          "internal_memory": 15
+        },
+        "upload_bytes": 0,
+        "download_bytes": 0,
+        "reserved_per_node": 4328,
+        "batches": [
+          64
+        ]
+      }
+    },
+    {
+      "name": "64件：单混合节点，冷启动",
+      "config": {
+        "remote": true
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 116,
+        "stages": {
+          "dispatch": 2,
+          "logic": 8,
+          "upload": 20,
+          "network_fixed": 12,
+          "calibration": 16,
+          "matrix": 24,
+          "internal_memory": 15,
+          "eo_conversion": 11,
+          "download": 8
+        },
+        "upload_bytes": 1256,
+        "download_bytes": 512,
+        "reserved_per_node": 4328,
+        "batches": [
+          64
+        ]
+      }
+    },
+    {
+      "name": "64件：双混合节点，共享64 B/tick",
+      "config": {
+        "remote": true,
+        "workers": 2,
+        "memory": 4096
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 98,
+        "stages": {
+          "dispatch": 4,
+          "logic": 8,
+          "upload": 24,
+          "network_fixed": 12,
+          "calibration": 16,
+          "matrix": 12,
+          "internal_memory": 8,
+          "eo_conversion": 6,
+          "download": 8
+        },
+        "upload_bytes": 1488,
+        "download_bytes": 512,
+        "reserved_per_node": 2536,
+        "batches": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "name": "64件：双混合节点，共享16 B/tick",
+      "config": {
+        "remote": true,
+        "workers": 2,
+        "uplink": 16,
+        "memory": 4096
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 191,
+        "stages": {
+          "dispatch": 4,
+          "logic": 8,
+          "upload": 93,
+          "network_fixed": 12,
+          "calibration": 16,
+          "matrix": 12,
+          "internal_memory": 8,
+          "eo_conversion": 6,
+          "download": 32
+        },
+        "upload_bytes": 1488,
+        "download_bytes": 512,
+        "reserved_per_node": 2536,
+        "batches": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "name": "64件：双混合节点，共享256 B/tick",
+      "config": {
+        "remote": true,
+        "workers": 2,
+        "uplink": 256,
+        "memory": 4096
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 74,
+        "stages": {
+          "dispatch": 4,
+          "logic": 8,
+          "upload": 6,
+          "network_fixed": 12,
+          "calibration": 16,
+          "matrix": 12,
+          "internal_memory": 8,
+          "eo_conversion": 6,
+          "download": 2
+        },
+        "upload_bytes": 1488,
+        "download_bytes": 512,
+        "reserved_per_node": 2536,
+        "batches": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "name": "64件：本地仅4KiB",
+      "config": {
+        "memory": 4096
+      },
+      "result": {
+        "status": "blocked",
+        "reason": "local_memory_shortage",
+        "required_bytes": 4328,
+        "available_per_node": 4096
+      }
+    },
+    {
+      "name": "1件：本地电节点",
+      "config": {
+        "batch": 1
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 7,
+        "stages": {
+          "dispatch": 2,
+          "logic": 1,
+          "matrix": 2,
+          "internal_memory": 2
+        },
+        "upload_bytes": 0,
+        "download_bytes": 0,
+        "reserved_per_node": 800,
+        "batches": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "1件：单混合节点，冷启动",
+      "config": {
+        "batch": 1,
+        "remote": true
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 40,
+        "stages": {
+          "dispatch": 2,
+          "logic": 1,
+          "upload": 4,
+          "network_fixed": 12,
+          "calibration": 16,
+          "matrix": 1,
+          "internal_memory": 2,
+          "eo_conversion": 1,
+          "download": 1
+        },
+        "upload_bytes": 248,
+        "download_bytes": 8,
+        "reserved_per_node": 800,
+        "batches": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "1件：单混合节点，参数驻留且校准有效",
+      "config": {
+        "batch": 1,
+        "remote": true,
+        "cached": true,
+        "calibrated": true
+      },
+      "result": {
+        "status": "ok",
+        "ticks": 21,
+        "stages": {
+          "dispatch": 2,
+          "logic": 1,
+          "upload": 1,
+          "network_fixed": 12,
+          "calibration": 0,
+          "matrix": 1,
+          "internal_memory": 2,
+          "eo_conversion": 1,
+          "download": 1
+        },
+        "upload_bytes": 16,
+        "download_bytes": 8,
+        "reserved_per_node": 800,
+        "batches": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "64件：混合节点缺桥接器",
+      "config": {
+        "remote": true,
+        "bridge": false
+      },
+      "result": {
+        "status": "blocked",
+        "reason": "missing_electro_optic_bridge"
+      }
+    }
+  ],
+  "checks": {
+    "known_forward_value": true,
+    "stress_input_changes_actual_result": true,
+    "shape_error_detected": true,
+    "declared_parameter_storage": true,
+    "64_batch_reservation": true,
+    "64_batch_does_not_fit_4KiB": true,
+    "32_microbatch_fits_4KiB": true,
+    "shared_link_can_remove_parallel_gain": true,
+    "short_local_task_faster_than_cached_remote": true,
+    "bridge_is_required": true,
+    "data_parallel_same_math": true
+  },
+  "microbatch_32_twice_ticks": 124
+}

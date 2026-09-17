@@ -1,0 +1,69 @@
+{
+  "version": "F01-art-a",
+  "resolution": [
+    32,
+    32
+  ],
+  "status": "draft-for-review",
+  "authoring": "draw.py / hand-placed pixel clusters, no input image",
+  "referencePolicy": "old textures excluded",
+  "runtimeExport": null,
+  "assets": [
+    {
+      "id": "crude_spectrum_scrap",
+      "label": "粗频谱碎屑",
+      "role": "item",
+      "file": "crude_spectrum_scrap.png",
+      "wiki": "assets/early-foundation/crude_spectrum_scrap.png"
+    },
+    {
+      "id": "spectrum_powder",
+      "label": "石质粉料",
+      "role": "item",
+      "file": "spectrum_powder.png",
+      "wiki": "assets/early-foundation/spectrum_powder.png"
+    },
+    {
+      "id": "spectrum_slag",
+      "label": "频谱滤渣",
+      "role": "item",
+      "file": "spectrum_slag.png",
+      "wiki": "assets/early-foundation/spectrum_slag.png"
+    },
+    {
+      "id": "spectrum_membrane",
+      "label": "粗纤维滤框",
+      "role": "item",
+      "file": "spectrum_membrane.png",
+      "wiki": "assets/early-foundation/spectrum_membrane.png"
+    },
+    {
+      "id": "crude_spectrum_slurry",
+      "label": "泥浆批次·容器示意",
+      "role": "process-icon",
+      "file": "crude_spectrum_slurry.png",
+      "wiki": "assets/early-foundation/crude_spectrum_slurry.png"
+    },
+    {
+      "id": "processing_trough_front",
+      "label": "处理槽·收料面",
+      "role": "block-face",
+      "file": "processing_trough_front.png",
+      "wiki": "assets/early-foundation/processing_trough_front.png"
+    },
+    {
+      "id": "processing_trough_side",
+      "label": "处理槽·手摇侧",
+      "role": "block-face",
+      "file": "processing_trough_side.png",
+      "wiki": "assets/early-foundation/processing_trough_side.png"
+    },
+    {
+      "id": "processing_trough_top",
+      "label": "处理槽·投料面",
+      "role": "block-face",
+      "file": "processing_trough_top.png",
+      "wiki": "assets/early-foundation/processing_trough_top.png"
+    }
+  ]
+}

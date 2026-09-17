@@ -41,3 +41,16 @@ repo/
 
 # Ignore Gradle build output directory
 build
+
+# Local development tools and machine-specific paths
+.tools/
+tooling/local.json
+tooling/logs/
+
+# Rebuildable local indexes and interpreter caches
+.codegraph/
+**/__pycache__/
+*.py[cod]
+
+# Accidental machine-local inventory dumps
+/*project_files.txt

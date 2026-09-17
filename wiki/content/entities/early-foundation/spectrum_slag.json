@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:spectrum_slag",
+  "kind": "item",
+  "title": "频谱滤渣",
+  "summary": "保留剩余组分与工序痕迹，连接回收和均值化研究。",
+  "status": "F01 首批试作 · 待审核",
+  "tags": [
+    "前期基础",
+    "F01",
+    "32×32 新绘"
+  ],
+  "description": "descriptions/early-foundation/slag.md",
+  "runtimeRef": null,
+  "lifecycle": {
+    "design": "逐项制作卡草案",
+    "runtime": "尚未实现",
+    "art": "32px 新绘 A 稿",
+    "verification": "内容与静态校验；无游戏实测"
+  },
+  "designRefs": [
+    {
+      "document": "EARLY_F01_FIRST_SLICE.md",
+      "label": "本批操作、数据边界与验收"
+    },
+    {
+      "document": "EARLY_E11_PROCESS_MANUFACTURING.md",
+      "label": "E1.1 从工艺推导装置"
+    },
+    {
+      "document": "EARLY_E1_CONTENT.md",
+      "label": "E1 原对象索引",
+      "legacyId": "spectrum_slag"
+    }
+  ],
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/early-foundation/spectrum_slag.png"
+  },
+  "relations": [
+    {
+      "target": "kamaen:spectrum_powder",
+      "label": "细料出口与施工用途"
+    }
+  ]
+}

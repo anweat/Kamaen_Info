@@ -1,0 +1,166 @@
+{
+  "scope": "独立、作者指定的有限模型示例；非真实参数拟合、非联合机柜仿真、非游戏验证",
+  "thermal": {
+    "isolated_pair_after": [
+      59.2,
+      20.4
+    ],
+    "lump_at_60": 29.02376727811947,
+    "lump_at_300": 39.004258632642724,
+    "after_60_off": 30.42975827293468,
+    "before_route_change_air": [
+      23.333333333333332,
+      33.33333333333333
+    ],
+    "after_route_change_air": [
+      20.350877192982455,
+      27.017543859649123
+    ]
+  },
+  "vibration": {
+    "at_resonance": 5.0990195135927845,
+    "at_ratio_3": 0.14536553013831302,
+    "same_source_power": 1.0,
+    "independent_source_power": 0.52
+  },
+  "cable": {
+    "points": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0
+      ]
+    ],
+    "radius": 0.5,
+    "minimum_radius": 0.4,
+    "length": 7.785398163397448
+  },
+  "checks": [
+    {
+      "name": "封闭两节点内部导热不产生或消灭热量",
+      "passed": true
+    },
+    {
+      "name": "热接触同时使热端降温、冷端升温",
+      "passed": true
+    },
+    {
+      "name": "储热变化等于输入热量减外部净输出",
+      "passed": true
+    },
+    {
+      "name": "无冷却时热量留在局部储热中",
+      "passed": true
+    },
+    {
+      "name": "步长过大被拒绝，不能伪装成物理失稳",
+      "passed": true
+    },
+    {
+      "name": "负导热不作为被动接触",
+      "passed": true
+    },
+    {
+      "name": "同一负载下短时温度与持续温度不同",
+      "passed": true
+    },
+    {
+      "name": "停机60模型秒后仍有余热",
+      "passed": true
+    },
+    {
+      "name": "增大热容延缓升温但不改变此模型的稳态",
+      "passed": true
+    },
+    {
+      "name": "回流入口满足新风与回流混合条件",
+      "passed": true
+    },
+    {
+      "name": "流体温升携带指定热量",
+      "passed": true
+    },
+    {
+      "name": "指定改善边界下入口出口温度均降低",
+      "passed": true
+    },
+    {
+      "name": "零流量不能调用有流稳态式",
+      "passed": true
+    },
+    {
+      "name": "完全回流不能伪装成有新风稳态",
+      "passed": true
+    },
+    {
+      "name": "低频极限为跟随基座",
+      "passed": true
+    },
+    {
+      "name": "指定隔振系统在共振处放大",
+      "passed": true
+    },
+    {
+      "name": "同一系统在频率比3处隔离",
+      "passed": true
+    },
+    {
+      "name": "增加阻尼降低该系统的共振峰",
+      "passed": true
+    },
+    {
+      "name": "同源同相路径先合成再求功率",
+      "passed": true
+    },
+    {
+      "name": "明确独立源按功率相加",
+      "passed": true
+    },
+    {
+      "name": "同源等幅反相路径可相消",
+      "passed": true
+    },
+    {
+      "name": "共架同位移两点的相对运动为零",
+      "passed": true
+    },
+    {
+      "name": "圆弧线路长度包含裁去直段和实际弧长",
+      "passed": true
+    },
+    {
+      "name": "端口出入方向一致",
+      "passed": true
+    },
+    {
+      "name": "目标法线反向错误会被发现",
+      "passed": true
+    },
+    {
+      "name": "整体刚体旋转不改变内部线长",
+      "passed": true
+    },
+    {
+      "name": "低于线材最小半径的拐弯被拒绝",
+      "passed": true
+    },
+    {
+      "name": "两相邻弯曲挤占同一短段被拒绝",
+      "passed": true
+    },
+    {
+      "name": "端口直出空间不足被拒绝",
+      "passed": true
+    }
+  ]
+}

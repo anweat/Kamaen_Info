@@ -1,0 +1,326 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": 1,
+  "id": "early-foundation",
+  "title": "01 · 分离、余料与第一份线索",
+  "revision": 1,
+  "nodes": [
+    {
+      "id": "heading",
+      "type": "text",
+      "x": 40,
+      "y": 28,
+      "width": 1650,
+      "height": 145,
+      "title": "01 / 从一次分离开始",
+      "body": "信息与频率 · F00—F02 首批试作\n先把材料用起来，再沿着剩余的回应寻找晶种。点击物品读制作卡；下方可操作一次分流。",
+      "fontSize": 25
+    },
+    {
+      "id": "start",
+      "type": "text",
+      "x": 40,
+      "y": 255,
+      "width": 230,
+      "height": 265,
+      "title": "先搭一个工作区",
+      "body": "普通木石、水与线\n粗处理工具＋容器即可起步。\n\n已有铁铜和普通电力时可直接使用，不必等晶体。",
+      "fontSize": 19
+    },
+    {
+      "id": "scrap",
+      "type": "entity",
+      "ref": "kamaen:crude_spectrum_scrap",
+      "x": 330,
+      "y": 270,
+      "width": 170,
+      "height": 190
+    },
+    {
+      "id": "slurry",
+      "type": "entity",
+      "ref": "kamaen:crude_spectrum_slurry",
+      "x": 580,
+      "y": 270,
+      "width": 170,
+      "height": 190
+    },
+    {
+      "id": "trough",
+      "type": "entity",
+      "ref": "kamaen:processing_trough",
+      "x": 855,
+      "y": 270,
+      "width": 190,
+      "height": 200
+    },
+    {
+      "id": "powder",
+      "type": "entity",
+      "ref": "kamaen:spectrum_powder",
+      "x": 1180,
+      "y": 185,
+      "width": 170,
+      "height": 190
+    },
+    {
+      "id": "slag",
+      "type": "entity",
+      "ref": "kamaen:spectrum_slag",
+      "x": 1180,
+      "y": 570,
+      "width": 170,
+      "height": 190
+    },
+    {
+      "id": "filter",
+      "type": "entity",
+      "ref": "kamaen:spectrum_membrane",
+      "x": 860,
+      "y": 660,
+      "width": 170,
+      "height": 190
+    },
+    {
+      "id": "use",
+      "type": "text",
+      "x": 1430,
+      "y": 190,
+      "width": 325,
+      "height": 275,
+      "title": "先服务普通生产",
+      "body": "石质粉料 → 混合／压实 → 可更换底衬\n\n施工填料是首个用途候选；下一批再确定底衬的原料、模具与制造规格。",
+      "fontSize": 19
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "x": 1430,
+      "y": 575,
+      "width": 335,
+      "height": 295,
+      "title": "下一步 / F03—F05",
+      "body": "来源明确的合法滤渣 → 均值化热程 → 白噪晶种 → 留样与粗测量\n\n晶种是平均背景的初始物质表示。此处先留出口，具体物品和模型随后逐件深化。",
+      "fontSize": 19
+    },
+    {
+      "id": "energy",
+      "type": "text",
+      "x": 400,
+      "y": 680,
+      "width": 345,
+      "height": 275,
+      "title": "并行 / 普通电驱",
+      "body": "可把手摇换为持续驱动。\n\n电力让动作连续，实际滤框和流路决定分离能力。晶体工作腔随后改进选择性，测头再把工况带入控制与模型。",
+      "fontSize": 19
+    },
+    {
+      "id": "observation",
+      "type": "text",
+      "x": 40,
+      "y": 650,
+      "width": 270,
+      "height": 270,
+      "title": "先记录发生了什么",
+      "body": "来源 → 操作 → 余量 → 出口\n\n滤渣的重复回应值得留样。开局观察粗粒、沉积与产出；精细频谱需要后续仪器。",
+      "fontSize": 19
+    },
+    {
+      "id": "e-start",
+      "type": "arrow",
+      "from": "start",
+      "to": "scrap",
+      "title": "粗碎",
+      "color": "#75816b",
+      "x": 155,
+      "y": 365,
+      "width": 260,
+      "height": 22.5,
+      "points": [
+        {
+          "x": 0,
+          "y": 22.5
+        },
+        {
+          "x": 260,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "e-water",
+      "type": "arrow",
+      "from": "scrap",
+      "to": "slurry",
+      "title": "加水混匀",
+      "color": "#75816b",
+      "x": 415,
+      "y": 365,
+      "width": 250,
+      "height": 1,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 250,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "e-feed",
+      "type": "arrow",
+      "from": "slurry",
+      "to": "trough",
+      "title": "进入流路",
+      "color": "#75816b",
+      "x": 665,
+      "y": 365,
+      "width": 285,
+      "height": 5,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 285,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "id": "e-powder",
+      "type": "arrow",
+      "from": "trough",
+      "to": "powder",
+      "title": "细料分流",
+      "color": "#75816b",
+      "x": 950,
+      "y": 280,
+      "width": 315,
+      "height": 90,
+      "points": [
+        {
+          "x": 0,
+          "y": 90
+        },
+        {
+          "x": 315,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "e-slag",
+      "type": "arrow",
+      "from": "trough",
+      "to": "slag",
+      "title": "保留另一份固体",
+      "color": "#75816b",
+      "x": 950,
+      "y": 370,
+      "width": 315,
+      "height": 295,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 315,
+          "y": 295
+        }
+      ]
+    },
+    {
+      "id": "e-use",
+      "type": "arrow",
+      "from": "powder",
+      "to": "use",
+      "title": "回到生产",
+      "color": "#75816b",
+      "x": 1265,
+      "y": 280,
+      "width": 327.5,
+      "height": 47.5,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 327.5,
+          "y": 47.5
+        }
+      ]
+    },
+    {
+      "id": "e-next",
+      "type": "arrow",
+      "from": "slag",
+      "to": "next",
+      "title": "合法料进入热程",
+      "color": "#75816b",
+      "x": 1265,
+      "y": 665,
+      "width": 332.5,
+      "height": 57.5,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 332.5,
+          "y": 57.5
+        }
+      ]
+    },
+    {
+      "id": "e-filter",
+      "type": "arrow",
+      "from": "filter",
+      "to": "trough",
+      "title": "可拆工装",
+      "color": "#75816b",
+      "x": 945,
+      "y": 370,
+      "width": 5,
+      "height": 385,
+      "points": [
+        {
+          "x": 0,
+          "y": 385
+        },
+        {
+          "x": 5,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "custom",
+      "ref": "f01-separation",
+      "x": 40,
+      "y": 1030,
+      "width": 820,
+      "height": 580,
+      "title": "操作试验 / 固定母批的分流"
+    },
+    {
+      "id": "model-boundary",
+      "type": "text",
+      "x": 945,
+      "y": 1050,
+      "width": 745,
+      "height": 420,
+      "title": "最小模型先回答三个问题",
+      "body": "① 同一批原料，处理条件怎样改变两路分配？\n② 暂停或出口满时，剩下的料在哪里？\n③ 结果怎样进入普通用途和下一次研究？\n\n下方演示采用人为设定的 100 份石质测试料。它只检查操作和记账，不代表自然原料成分、游戏配方或卡玛恩晶体完整模型。\n\n本轮：6 张制作卡、8 张新绘贴图、1 个分流演示。Java 游戏行为尚未接入。",
+      "fontSize": 20
+    }
+  ]
+}

@@ -1,0 +1,1535 @@
+{
+  "version": "rebuild-0.3",
+  "status": "proposal",
+  "chapters": 26,
+  "semantics": "requires_all AND; each requires_any group OR; first access only; not executable recipes",
+  "nodes": [
+    {
+      "id": "start",
+      "name": "开局资源契约",
+      "chapter": 1,
+      "requires_all": [],
+      "requires_any": [],
+      "outcome": "可再生木材、圆石来源、水、基本种植条件",
+      "track": "main"
+    },
+    {
+      "id": "manual",
+      "name": "无铁筛与木盆",
+      "chapter": 1,
+      "requires_all": [
+        "start"
+      ],
+      "requires_any": [],
+      "outcome": "木质工具，不用铁或工业滤膜",
+      "track": "main"
+    },
+    {
+      "id": "powder",
+      "name": "手工分离",
+      "chapter": 1,
+      "requires_all": [
+        "manual"
+      ],
+      "requires_any": [],
+      "outcome": "碎屑、水和工作量→基础粉末与滤渣",
+      "track": "main"
+    },
+    {
+      "id": "metal",
+      "name": "金属、玻璃与基础红石",
+      "chapter": 1,
+      "requires_all": [
+        "powder"
+      ],
+      "requires_any": [],
+      "outcome": "确定性粉末积分与燃料熔炼",
+      "track": "main"
+    },
+    {
+      "id": "crucible",
+      "name": "粗坩埚与均值化",
+      "chapter": 2,
+      "requires_all": [
+        "powder",
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "石质热处理，不需要晶体",
+      "track": "main"
+    },
+    {
+      "id": "seed",
+      "name": "白噪晶种",
+      "chapter": 2,
+      "requires_all": [
+        "crucible"
+      ],
+      "requires_any": [],
+      "outcome": "基底、滤渣、水、手动压制",
+      "track": "main"
+    },
+    {
+      "id": "fractionation",
+      "name": "分馏塔与排污",
+      "chapter": 2,
+      "requires_all": [
+        "metal",
+        "manual"
+      ],
+      "requires_any": [],
+      "outcome": "自动化既有手工分离流程",
+      "track": "main"
+    },
+    {
+      "id": "blast",
+      "name": "模拟爆炸室",
+      "chapter": 3,
+      "requires_all": [
+        "metal",
+        "seed"
+      ],
+      "requires_any": [],
+      "outcome": "普通结构、缓冲和工艺爆震粉，不要求TNT",
+      "track": "main"
+    },
+    {
+      "id": "raw",
+      "name": "粗卡玛恩晶体",
+      "chapter": 3,
+      "requires_all": [
+        "blast"
+      ],
+      "requires_any": [],
+      "outcome": "基材、晶种与合格冲击",
+      "track": "main"
+    },
+    {
+      "id": "special",
+      "name": "三类专化晶体",
+      "chapter": 4,
+      "requires_all": [
+        "raw"
+      ],
+      "requires_any": [],
+      "outcome": "导波、承压、稳谱，各有用途",
+      "track": "main"
+    },
+    {
+      "id": "frame1",
+      "name": "基本I型框架",
+      "chapter": 4,
+      "requires_all": [
+        "raw",
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "粗压头与结构，不要求偏振传感器",
+      "track": "main"
+    },
+    {
+      "id": "polar",
+      "name": "偏振与应力观察",
+      "chapter": 4,
+      "requires_all": [
+        "frame1"
+      ],
+      "requires_any": [],
+      "outcome": "先压合出偏振，再做传感器升级",
+      "track": "main"
+    },
+    {
+      "id": "repair",
+      "name": "退火与回收",
+      "chapter": 4,
+      "requires_all": [
+        "raw",
+        "crucible"
+      ],
+      "requires_any": [],
+      "outcome": "缺陷可降级使用或有损回收",
+      "track": "main"
+    },
+    {
+      "id": "fe",
+      "name": "自带燃料发电",
+      "chapter": 4,
+      "requires_all": [
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "本模组提供FE，外部FE可替换",
+      "track": "main"
+    },
+    {
+      "id": "tuning",
+      "name": "切片、调谐与记录",
+      "chapter": 5,
+      "requires_all": [
+        "special",
+        "polar"
+      ],
+      "requires_any": [],
+      "outcome": "锁相样本，区分知识与物质",
+      "track": "main"
+    },
+    {
+      "id": "bio",
+      "name": "生物分离",
+      "chapter": 5,
+      "requires_all": [
+        "tuning",
+        "fractionation"
+      ],
+      "requires_any": [],
+      "outcome": "有机基底与样本→纤维/树脂/培养前体",
+      "track": "main"
+    },
+    {
+      "id": "probe",
+      "name": "探针与类型化信号",
+      "chapter": 6,
+      "requires_all": [
+        "tuning",
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "类型、单位、来源、时效与置信度",
+      "track": "main"
+    },
+    {
+      "id": "bus",
+      "name": "总线与阈值控制",
+      "chapter": 6,
+      "requires_all": [
+        "probe",
+        "special"
+      ],
+      "requires_any": [],
+      "outcome": "条件、滞回、缓存与安全执行",
+      "track": "main"
+    },
+    {
+      "id": "logistics",
+      "name": "物料接口与简易泵",
+      "chapter": 6,
+      "requires_all": [
+        "metal",
+        "fe",
+        "bus"
+      ],
+      "requires_any": [],
+      "outcome": "前期手工/漏斗，此时补自动搬运",
+      "track": "main"
+    },
+    {
+      "id": "loop",
+      "name": "实际工艺闭环",
+      "chapter": 6,
+      "requires_all": [
+        "bus",
+        "fractionation",
+        "logistics"
+      ],
+      "requires_any": [],
+      "outcome": "污染→停料→清洗→恢复",
+      "track": "main"
+    },
+    {
+      "id": "ce",
+      "name": "初级相干稳压",
+      "chapter": 6,
+      "requires_all": [
+        "special",
+        "tuning",
+        "fe"
+      ],
+      "requires_any": [],
+      "outcome": "FE→初级CE，不用单频光源或泵浦塔",
+      "track": "main"
+    },
+    {
+      "id": "chem",
+      "name": "制造与化学前体",
+      "chapter": 7,
+      "requires_all": [
+        "metal",
+        "bio"
+      ],
+      "requires_any": [],
+      "outcome": "硅基材、掺杂剂、蚀刻剂和封装材料",
+      "track": "main"
+    },
+    {
+      "id": "wafer",
+      "name": "掺杂退火晶片",
+      "chapter": 7,
+      "requires_all": [
+        "chem",
+        "special",
+        "ce"
+      ],
+      "requires_any": [],
+      "outcome": "公开窗口制造首批标准晶片",
+      "track": "main"
+    },
+    {
+      "id": "mask",
+      "name": "机械预设掩膜",
+      "chapter": 7,
+      "requires_all": [
+        "metal",
+        "tuning"
+      ],
+      "requires_any": [],
+      "outcome": "第一掩膜不用EDA或成品芯片",
+      "track": "main"
+    },
+    {
+      "id": "optics",
+      "name": "基础光路器件",
+      "chapter": 7,
+      "requires_all": [
+        "wafer",
+        "mask"
+      ],
+      "requires_any": [],
+      "outcome": "曝光、刻蚀、清洗、测试",
+      "track": "main"
+    },
+    {
+      "id": "logic",
+      "name": "电逻辑与诊断",
+      "chapter": 8,
+      "requires_all": [
+        "wafer",
+        "mask",
+        "probe"
+      ],
+      "requires_any": [],
+      "outcome": "常温有限门；诊断由探针自举",
+      "track": "main"
+    },
+    {
+      "id": "local_light",
+      "name": "局域相干光源与干涉",
+      "chapter": 8,
+      "requires_all": [
+        "optics",
+        "ce"
+      ],
+      "requires_any": [],
+      "outcome": "经典干涉、相位扫描；不要求F4或模型",
+      "track": "main"
+    },
+    {
+      "id": "eda",
+      "name": "EDA原理图",
+      "chapter": 8,
+      "requires_all": [
+        "logic",
+        "optics"
+      ],
+      "requires_any": [],
+      "outcome": "编辑功能图，明确输入输出",
+      "track": "main"
+    },
+    {
+      "id": "young_record",
+      "name": "杨氏条纹片",
+      "chapter": 8,
+      "requires_all": [
+        "local_light",
+        "probe"
+      ],
+      "requires_any": [],
+      "outcome": "干涉对照记录，用于光路标定；不冒充量子关联",
+      "track": "main"
+    },
+    {
+      "id": "layout",
+      "name": "版图与时序",
+      "chapter": 9,
+      "requires_all": [
+        "eda"
+      ],
+      "requires_any": [],
+      "outcome": "布局、连线、域隔离、采样与缓存",
+      "track": "main"
+    },
+    {
+      "id": "tapeout",
+      "name": "分层掩膜与流片",
+      "chapter": 9,
+      "requires_all": [
+        "layout",
+        "optics",
+        "loop"
+      ],
+      "requires_any": [],
+      "outcome": "真实材料制造裸片并分档",
+      "track": "main"
+    },
+    {
+      "id": "frame2",
+      "name": "II型稳定制造",
+      "chapter": 9,
+      "requires_all": [
+        "optics",
+        "loop"
+      ],
+      "requires_any": [],
+      "outcome": "固定公开曲线先造；学习仅优化已有工艺",
+      "track": "main"
+    },
+    {
+      "id": "f4",
+      "name": "F4与单频光源",
+      "chapter": 9,
+      "requires_all": [
+        "frame2",
+        "local_light",
+        "ce"
+      ],
+      "requires_any": [],
+      "outcome": "精密参考扩展同步，不是基础光矩阵门槛",
+      "track": "main"
+    },
+    {
+      "id": "package",
+      "name": "封装与端口",
+      "chapter": 10,
+      "requires_all": [
+        "tapeout"
+      ],
+      "requires_any": [],
+      "outcome": "DIP/QFP/BGA等按接口/环境选择",
+      "track": "main"
+    },
+    {
+      "id": "board",
+      "name": "主板与存储槽",
+      "chapter": 10,
+      "requires_all": [
+        "package",
+        "logic",
+        "fe"
+      ],
+      "requires_any": [],
+      "outcome": "安装实体芯片、供能、散热和端口",
+      "track": "main"
+    },
+    {
+      "id": "record",
+      "name": "独立持久记录柜",
+      "chapter": 10,
+      "requires_all": [
+        "tuning",
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "空白记录页先造，不依赖信息中心",
+      "track": "main"
+    },
+    {
+      "id": "electric_matrix",
+      "name": "电矩阵与激活瓦片",
+      "chapter": 10,
+      "requires_all": [
+        "board",
+        "logic"
+      ],
+      "requires_any": [],
+      "outcome": "独立电域算术、非线性与基准计算",
+      "track": "main"
+    },
+    {
+      "id": "eo_bridge",
+      "name": "光电转换与校准",
+      "chapter": 10,
+      "requires_all": [
+        "package",
+        "logic",
+        "optics",
+        "local_light"
+      ],
+      "requires_any": [],
+      "outcome": "调制、光电读出、ADC/DAC抽象和转换预算",
+      "track": "main"
+    },
+    {
+      "id": "hybrid_board",
+      "name": "光电混合计算板",
+      "chapter": 10,
+      "requires_all": [
+        "board",
+        "electric_matrix",
+        "photonic_matrix",
+        "eo_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "共同运行小矩阵任务；电存储和激活可用",
+      "track": "main"
+    },
+    {
+      "id": "nonlinear",
+      "name": "非线性介质与晶胞",
+      "chapter": 10,
+      "requires_all": [
+        "special",
+        "optics",
+        "frame2"
+      ],
+      "requires_any": [],
+      "outcome": "材质范围和写入参数分开",
+      "track": "main"
+    },
+    {
+      "id": "photonic_matrix",
+      "name": "光GPU与MZI",
+      "chapter": 10,
+      "requires_all": [
+        "optics",
+        "local_light"
+      ],
+      "requires_any": [],
+      "outcome": "基础线性矩阵，不依赖非线性介质/光RAM/模型",
+      "track": "main"
+    },
+    {
+      "id": "photoelectric",
+      "name": "光电效应对照实验",
+      "chapter": 10,
+      "requires_all": [
+        "eo_bridge",
+        "local_light"
+      ],
+      "requires_any": [],
+      "outcome": "比较频率/光强与读出，有限光电模板",
+      "track": "challenge"
+    },
+    {
+      "id": "center",
+      "name": "信息中心",
+      "chapter": 11,
+      "requires_all": [
+        "record",
+        "board",
+        "bus"
+      ],
+      "requires_any": [],
+      "outcome": "先核心、后中心；数据库为应用模块",
+      "track": "main"
+    },
+    {
+      "id": "survey",
+      "name": "环境档案",
+      "chapter": 11,
+      "requires_all": [
+        "center",
+        "probe"
+      ],
+      "requires_any": [],
+      "outcome": "跨地点/工况采样，重复副本不算新证据",
+      "track": "main"
+    },
+    {
+      "id": "radiometry",
+      "name": "普朗克标定片",
+      "chapter": 11,
+      "requires_all": [
+        "center",
+        "eo_bridge",
+        "young_record"
+      ],
+      "requires_any": [],
+      "outcome": "热辐射对照与响应标定；实体基片承载校准",
+      "track": "main"
+    },
+    {
+      "id": "sky_watch",
+      "name": "巡天接收台与初始星录",
+      "chapter": 11,
+      "requires_all": [
+        "radiometry",
+        "optics",
+        "survey"
+      ],
+      "requires_any": [],
+      "outcome": "有限天区数据，分前景/背景，不要求量子",
+      "track": "main"
+    },
+    {
+      "id": "network",
+      "name": "交换路由与DNS",
+      "chapter": 12,
+      "requires_all": [
+        "center",
+        "board"
+      ],
+      "requires_any": [],
+      "outcome": "预设root/zone/cache/local服务链",
+      "track": "main"
+    },
+    {
+      "id": "runtime",
+      "name": "Schema与Runtime",
+      "chapter": 12,
+      "requires_all": [
+        "network",
+        "record"
+      ],
+      "requires_any": [],
+      "outcome": "格式转换、任务、预算、时限和权限",
+      "track": "main"
+    },
+    {
+      "id": "dataset",
+      "name": "数据集与实验出处",
+      "chapter": 12,
+      "requires_all": [
+        "survey",
+        "runtime"
+      ],
+      "requires_any": [],
+      "outcome": "时间/地点/批次分组，训练验证分离",
+      "track": "main"
+    },
+    {
+      "id": "pump",
+      "name": "激光泵浦塔",
+      "chapter": 12,
+      "requires_all": [
+        "f4",
+        "fe"
+      ],
+      "requires_any": [],
+      "outcome": "扩大CE通量，不是第一份CE来源",
+      "track": "main"
+    },
+    {
+      "id": "photonic_io",
+      "name": "光协处理器互连",
+      "chapter": 12,
+      "requires_all": [
+        "hybrid_board",
+        "f4",
+        "network"
+      ],
+      "requires_any": [],
+      "outcome": "电管理面与光数据面，不要求光RAM或光控核",
+      "track": "main"
+    },
+    {
+      "id": "cluster",
+      "name": "光电机柜与集群",
+      "chapter": 12,
+      "requires_all": [
+        "photonic_io",
+        "network",
+        "runtime",
+        "pump"
+      ],
+      "requires_any": [],
+      "outcome": "任务落到个体板/芯片/端口，早于学习",
+      "track": "main"
+    },
+    {
+      "id": "parameter_space",
+      "name": "参数实验空间",
+      "chapter": 13,
+      "requires_all": [
+        "runtime",
+        "record"
+      ],
+      "requires_any": [],
+      "outcome": "有限可返回编辑场，不产资源",
+      "track": "main"
+    },
+    {
+      "id": "model",
+      "name": "有限模型实际求值",
+      "chapter": 13,
+      "requires_all": [
+        "hybrid_board",
+        "parameter_space",
+        "dataset",
+        "cluster"
+      ],
+      "requires_any": [],
+      "outcome": "光电共同后端，小shape实际算子",
+      "track": "main"
+    },
+    {
+      "id": "optical_model",
+      "name": "模型光电分区部署",
+      "chapter": 13,
+      "requires_all": [
+        "model",
+        "photonic_matrix",
+        "eo_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "算子分配与端到端成本，不是首次获得光计算",
+      "track": "main"
+    },
+    {
+      "id": "feedback",
+      "name": "监督学习与版本",
+      "chapter": 14,
+      "requires_all": [
+        "model",
+        "dataset"
+      ],
+      "requires_any": [],
+      "outcome": "标签/损失/有限优化、留出工况和回滚",
+      "track": "main"
+    },
+    {
+      "id": "simulator",
+      "name": "可复位环境与轨迹",
+      "chapter": 14,
+      "requires_all": [
+        "survey",
+        "runtime",
+        "model"
+      ],
+      "requires_any": [],
+      "outcome": "有限热/场动态、传感延迟、动作边界与回放",
+      "track": "main"
+    },
+    {
+      "id": "rl",
+      "name": "强化学习策略",
+      "chapter": 15,
+      "requires_all": [
+        "feedback",
+        "simulator",
+        "cluster",
+        "bus"
+      ],
+      "requires_any": [],
+      "outcome": "状态-动作-奖励-下一状态；有限回合训练和独立验收",
+      "track": "main"
+    },
+    {
+      "id": "agent",
+      "name": "实体控制与协作",
+      "chapter": 15,
+      "requires_all": [
+        "rl",
+        "bus"
+      ],
+      "requires_any": [],
+      "outcome": "指定代理搬运、路径与合作",
+      "track": "challenge"
+    },
+    {
+      "id": "dialogue",
+      "name": "对话交易与对抗",
+      "chapter": 15,
+      "requires_all": [
+        "agent",
+        "feedback"
+      ],
+      "requires_any": [],
+      "outcome": "离线有限状态NPC、可复现评价",
+      "track": "challenge"
+    },
+    {
+      "id": "active_lab",
+      "name": "主动采样与实验调度",
+      "chapter": 16,
+      "requires_all": [
+        "rl",
+        "survey",
+        "cluster"
+      ],
+      "requires_any": [],
+      "outcome": "比较不确定度与试验成本，提出实验再实测",
+      "track": "main"
+    },
+    {
+      "id": "photonic_control",
+      "name": "光控制核",
+      "chapter": 16,
+      "requires_all": [
+        "nonlinear",
+        "f4",
+        "package"
+      ],
+      "requires_any": [],
+      "outcome": "相干区有限状态机，替代部分电控路径",
+      "track": "main"
+    },
+    {
+      "id": "photonic_pulse",
+      "name": "光脉冲处理器",
+      "chapter": 16,
+      "requires_all": [
+        "nonlinear",
+        "f4"
+      ],
+      "requires_any": [],
+      "outcome": "光域非线性与脉冲任务专化",
+      "track": "main"
+    },
+    {
+      "id": "photonic_ram",
+      "name": "光RAM与刷新",
+      "chapter": 16,
+      "requires_all": [
+        "nonlinear",
+        "f4",
+        "photonic_control"
+      ],
+      "requires_any": [],
+      "outcome": "短期光状态，电存储可先支撑模型",
+      "track": "main"
+    },
+    {
+      "id": "optical_specialization",
+      "name": "全光五件套协作实验",
+      "chapter": 16,
+      "requires_all": [
+        "optical_model",
+        "photonic_control",
+        "photonic_pulse",
+        "photonic_ram",
+        "photonic_io"
+      ],
+      "requires_any": [],
+      "outcome": "专化光路径保留，不锁首次模型/集群/物理实验",
+      "track": "main"
+    },
+    {
+      "id": "model_families",
+      "name": "CNN/Attention/MoE",
+      "chapter": 16,
+      "requires_all": [
+        "cluster",
+        "feedback"
+      ],
+      "requires_any": [],
+      "outcome": "有限网格、序列、专家数和实际算子",
+      "track": "challenge"
+    },
+    {
+      "id": "api",
+      "name": "外部后端网关",
+      "chapter": 16,
+      "requires_all": [
+        "runtime",
+        "feedback",
+        "cluster"
+      ],
+      "requires_any": [],
+      "outcome": "同任务离线替代，限流/超时/权限",
+      "track": "external"
+    },
+    {
+      "id": "cryo",
+      "name": "普通低温与场线圈",
+      "chapter": 17,
+      "requires_all": [
+        "frame2",
+        "survey",
+        "ce"
+      ],
+      "requires_any": [],
+      "outcome": "普通铜线圈与换热自举，不用超导",
+      "track": "main"
+    },
+    {
+      "id": "response",
+      "name": "微观响应与相图",
+      "chapter": 17,
+      "requires_all": [
+        "cryo",
+        "active_lab",
+        "optical_model"
+      ],
+      "requires_any": [],
+      "outcome": "温度/外场/组分扫描，记录重复性和有效域",
+      "track": "main"
+    },
+    {
+      "id": "condensed",
+      "name": "初级凝聚态材料",
+      "chapter": 17,
+      "requires_all": [
+        "response"
+      ],
+      "requires_any": [],
+      "outcome": "基础公开模板制超导/拓扑/相变",
+      "track": "main"
+    },
+    {
+      "id": "frame3",
+      "name": "III型精密场框架",
+      "chapter": 17,
+      "requires_all": [
+        "condensed",
+        "cryo"
+      ],
+      "requires_any": [],
+      "outcome": "前级材料制造升级，不要求视界",
+      "track": "main"
+    },
+    {
+      "id": "single_photon",
+      "name": "关联光子与预告单光子源",
+      "chapter": 17,
+      "requires_all": [
+        "nonlinear",
+        "f4",
+        "optics"
+      ],
+      "requires_any": [],
+      "outcome": "泵浦与非线性对源，预告/多光子污染可测",
+      "track": "main"
+    },
+    {
+      "id": "spad",
+      "name": "SPAD与符合计数",
+      "chapter": 17,
+      "requires_all": [
+        "wafer",
+        "eo_bridge",
+        "f4"
+      ],
+      "requires_any": [],
+      "outcome": "半导体读出、暗计数、死时间和时间标签",
+      "track": "main"
+    },
+    {
+      "id": "quantum_lab",
+      "name": "量子光学基础实验",
+      "chapter": 17,
+      "requires_all": [
+        "single_photon",
+        "spad",
+        "survey",
+        "optical_model"
+      ],
+      "requires_any": [],
+      "outcome": "g2统计与双光子干涉；无需SNSPD或量子计算机",
+      "track": "main"
+    },
+    {
+      "id": "atomic_spectra",
+      "name": "巴耳末谱尺",
+      "chapter": 17,
+      "requires_all": [
+        "radiometry",
+        "response"
+      ],
+      "requires_any": [],
+      "outcome": "样本谱线与仪器响应对照，实验室标尺服务巡天",
+      "track": "main"
+    },
+    {
+      "id": "feynman",
+      "name": "费曼过程设计",
+      "chapter": 18,
+      "requires_all": [
+        "response",
+        "frame3"
+      ],
+      "requires_any": [],
+      "outcome": "输入、顶点、传播、守恒和环境校验",
+      "track": "main"
+    },
+    {
+      "id": "remote",
+      "name": "远程站与无线G1–G4",
+      "chapter": 18,
+      "requires_all": [
+        "network",
+        "survey",
+        "condensed"
+      ],
+      "requires_any": [],
+      "outcome": "早期代际S5可起步，此时扩多地采样",
+      "track": "main"
+    },
+    {
+      "id": "tunnel",
+      "name": "隧穿配对",
+      "chapter": 18,
+      "requires_all": [
+        "feynman",
+        "condensed"
+      ],
+      "requires_any": [],
+      "outcome": "持久配对与在线状态分开",
+      "track": "challenge"
+    },
+    {
+      "id": "latent",
+      "name": "VAE/Diffusion候选",
+      "chapter": 18,
+      "requires_all": [
+        "model_families",
+        "feynman"
+      ],
+      "requires_any": [],
+      "outcome": "有限latent和迭代，候选仍需实测",
+      "track": "challenge"
+    },
+    {
+      "id": "hamiltonian",
+      "name": "有限哈密顿量任务",
+      "chapter": 18,
+      "requires_all": [
+        "feynman",
+        "quantum_lab",
+        "cluster"
+      ],
+      "requires_any": [],
+      "outcome": "登记态空间、耦合与可测量；小规模经典精确基准",
+      "track": "main"
+    },
+    {
+      "id": "bloch_core",
+      "name": "布洛赫晶核",
+      "chapter": 18,
+      "requires_all": [
+        "condensed",
+        "frame3"
+      ],
+      "requires_any": [],
+      "outcome": "合格晶格基材加工的功能核心，名称为理论致意",
+      "track": "main"
+    },
+    {
+      "id": "cosmic_baseline",
+      "name": "哈勃谱册与余辉星图",
+      "chapter": 18,
+      "requires_all": [
+        "sky_watch",
+        "atomic_spectra",
+        "remote",
+        "dataset"
+      ],
+      "requires_any": [],
+      "outcome": "红移多谱线匹配、背景前景分离；观测不是物质",
+      "track": "main"
+    },
+    {
+      "id": "classical_curve",
+      "name": "经典保守曲线",
+      "chapter": 19,
+      "requires_all": [
+        "feynman",
+        "optical_model",
+        "survey"
+      ],
+      "requires_any": [],
+      "outcome": "量子自举与故障维修备用",
+      "track": "main"
+    },
+    {
+      "id": "snspd",
+      "name": "SNSPD低温读出",
+      "chapter": 19,
+      "requires_all": [
+        "condensed",
+        "cryo",
+        "optics"
+      ],
+      "requires_any": [],
+      "outcome": "已有超导制造探测器，首个超导不用它",
+      "track": "main"
+    },
+    {
+      "id": "quantum",
+      "name": "量子光学协处理器",
+      "chapter": 19,
+      "requires_all": [
+        "quantum_lab",
+        "snspd",
+        "frame3",
+        "classical_curve",
+        "hamiltonian"
+      ],
+      "requires_any": [],
+      "outcome": "可控态制备/测量与任务支持范围，非通用量子机",
+      "track": "main"
+    },
+    {
+      "id": "quantum_calibration",
+      "name": "量子读出与误差校准",
+      "chapter": 19,
+      "requires_all": [
+        "quantum",
+        "dataset"
+      ],
+      "requires_any": [],
+      "outcome": "效率/损耗/可见度/重复制备，误差缓解不等于纠错",
+      "track": "main"
+    },
+    {
+      "id": "bell_record",
+      "name": "贝尔关联签",
+      "chapter": 19,
+      "requires_all": [
+        "quantum_lab",
+        "quantum_calibration"
+      ],
+      "requires_any": [],
+      "outcome": "登记纠缠态/测量设置的关联报告，不可超光速通信",
+      "track": "challenge"
+    },
+    {
+      "id": "quantum_curve",
+      "name": "混合量子求解与候选窗口",
+      "chapter": 20,
+      "requires_all": [
+        "quantum_calibration",
+        "hamiltonian",
+        "feedback"
+      ],
+      "requires_any": [],
+      "outcome": "经典更新参数、量子估计观测量，有限VQE式任务",
+      "track": "main"
+    },
+    {
+      "id": "protocol",
+      "name": "可靠合成协议",
+      "chapter": 20,
+      "requires_all": [
+        "frame3",
+        "survey"
+      ],
+      "requires_any": [
+        [
+          "classical_curve",
+          "quantum_curve"
+        ]
+      ],
+      "outcome": "候选来自经典或量子路线，框架实测验证",
+      "track": "main"
+    },
+    {
+      "id": "crosscheck",
+      "name": "量子交叉验证报告",
+      "chapter": 20,
+      "requires_all": [
+        "protocol",
+        "quantum_curve"
+      ],
+      "requires_any": [],
+      "outcome": "长流程毕业成果；知识保留供维修",
+      "track": "main"
+    },
+    {
+      "id": "advanced_network",
+      "name": "无线G5–G6与高级脚本",
+      "chapter": 20,
+      "requires_all": [
+        "remote",
+        "cluster"
+      ],
+      "requires_any": [],
+      "outcome": "高密度、低延迟、预算化循环",
+      "track": "challenge"
+    },
+    {
+      "id": "casimir",
+      "name": "卡西米尔间隙腔",
+      "chapter": 20,
+      "requires_all": [
+        "frame3",
+        "active_lab",
+        "eo_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "制实体精密腔并测间距/力响应，不提供无限真空能",
+      "track": "main"
+    },
+    {
+      "id": "metric_atlas",
+      "name": "爱因斯坦测地卷",
+      "chapter": 20,
+      "requires_all": [
+        "cosmic_baseline",
+        "cluster",
+        "active_lab"
+      ],
+      "requires_any": [],
+      "outcome": "有限引力透镜模型与观测校验，不是造引力的物品",
+      "track": "main"
+    },
+    {
+      "id": "chirp_archive",
+      "name": "啁啾回声匣",
+      "chapter": 20,
+      "requires_all": [
+        "cosmic_baseline",
+        "photonic_io",
+        "remote"
+      ],
+      "requires_any": [],
+      "outcome": "双站相关瞬变与噪声排查，LIGO启发挑战",
+      "track": "challenge"
+    },
+    {
+      "id": "dimension_samples",
+      "name": "下界末地实际样本",
+      "chapter": 21,
+      "requires_all": [
+        "metal"
+      ],
+      "requires_any": [],
+      "outcome": "正常探索或明确定义的可再获得来源",
+      "track": "main"
+    },
+    {
+      "id": "boundary",
+      "name": "边界档案",
+      "chapter": 21,
+      "requires_all": [
+        "remote",
+        "feynman",
+        "dimension_samples",
+        "metric_atlas"
+      ],
+      "requires_any": [],
+      "outcome": "微观响应与宇观几何对照，保留采样出处",
+      "track": "main"
+    },
+    {
+      "id": "string",
+      "name": "稳定戈古尔斯弦",
+      "chapter": 21,
+      "requires_all": [
+        "boundary",
+        "frame3",
+        "condensed",
+        "scale_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "接界棱镜校准后由基材凝聚；普通末地材制锚",
+      "track": "main"
+    },
+    {
+      "id": "constraint",
+      "name": "高阶约束材料",
+      "chapter": 21,
+      "requires_all": [
+        "protocol",
+        "condensed"
+      ],
+      "requires_any": [],
+      "outcome": "曲线与实际基材，数据不替代物质",
+      "track": "main"
+    },
+    {
+      "id": "membrane_blank",
+      "name": "空白膜基材",
+      "chapter": 21,
+      "requires_all": [
+        "constraint",
+        "frame3",
+        "condensed"
+      ],
+      "requires_any": [],
+      "outcome": "普通框架制造，不用膜刻写器",
+      "track": "main"
+    },
+    {
+      "id": "membrane_writer",
+      "name": "全息膜刻写器",
+      "chapter": 21,
+      "requires_all": [
+        "optics",
+        "center",
+        "constraint"
+      ],
+      "requires_any": [],
+      "outcome": "普通写入头与存储接口，不用全息膜",
+      "track": "main"
+    },
+    {
+      "id": "membrane",
+      "name": "功能全息膜·界面铭膜",
+      "chapter": 21,
+      "requires_all": [
+        "membrane_blank",
+        "membrane_writer",
+        "record",
+        "scale_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "微观基材写入宇观边界档案，数据不替代物质",
+      "track": "main"
+    },
+    {
+      "id": "scale_bridge",
+      "name": "接界棱镜",
+      "chapter": 21,
+      "requires_all": [
+        "boundary",
+        "casimir",
+        "crosscheck",
+        "bloch_core",
+        "constraint"
+      ],
+      "requires_any": [],
+      "outcome": "微观核心+宇观标定+物理基材，首次跨尺度耦合件",
+      "track": "main"
+    },
+    {
+      "id": "entropy",
+      "name": "熵流泵与排热",
+      "chapter": 22,
+      "requires_all": [
+        "constraint",
+        "cryo",
+        "fe"
+      ],
+      "requires_any": [],
+      "outcome": "普通泵升级，明确热/流体/CE预算",
+      "track": "main"
+    },
+    {
+      "id": "quench",
+      "name": "独立安全熄灭",
+      "chapter": 22,
+      "requires_all": [
+        "entropy",
+        "fe",
+        "bus"
+      ],
+      "requires_any": [],
+      "outcome": "机械联锁与预充储备，主控失稳仍可用",
+      "track": "main"
+    },
+    {
+      "id": "horizon",
+      "name": "首次人造视界",
+      "chapter": 22,
+      "requires_all": [
+        "string",
+        "constraint",
+        "membrane",
+        "entropy",
+        "quench",
+        "pump",
+        "crosscheck"
+      ],
+      "requires_any": [],
+      "outcome": "外部FE/CE启动、受控停机与恢复",
+      "track": "main"
+    },
+    {
+      "id": "generation",
+      "name": "视界发电",
+      "chapter": 23,
+      "requires_all": [
+        "horizon"
+      ],
+      "requires_any": [],
+      "outcome": "质量进料与维持成本，产有限FE/残渣",
+      "track": "main"
+    },
+    {
+      "id": "horizon_buffer",
+      "name": "视界能源缓存",
+      "chapter": 23,
+      "requires_all": [
+        "generation",
+        "special"
+      ],
+      "requires_any": [],
+      "outcome": "先有正常副产，再制缓存",
+      "track": "main"
+    },
+    {
+      "id": "holo_data",
+      "name": "全息存储读写",
+      "chapter": 23,
+      "requires_all": [
+        "horizon",
+        "membrane",
+        "center"
+      ],
+      "requires_any": [],
+      "outcome": "真实档案与校验，切模式仍持久化",
+      "track": "main"
+    },
+    {
+      "id": "rule_solver",
+      "name": "黑洞规则求解",
+      "chapter": 24,
+      "requires_all": [
+        "horizon",
+        "holo_data",
+        "boundary"
+      ],
+      "requires_any": [],
+      "outcome": "登记候选集，绑定档案版本",
+      "track": "main"
+    },
+    {
+      "id": "late_optics",
+      "name": "WDM/长期光存储/全光交换",
+      "chapter": 24,
+      "requires_all": [
+        "holo_data",
+        "constraint",
+        "photonic_io"
+      ],
+      "requires_any": [],
+      "outcome": "通道、容量和并发升级",
+      "track": "challenge"
+    },
+    {
+      "id": "closure_archive",
+      "name": "双尺度闭合图谱",
+      "chapter": 24,
+      "requires_all": [
+        "rule_solver",
+        "metric_atlas",
+        "scale_bridge"
+      ],
+      "requires_any": [],
+      "outcome": "比对受控视界响应与外部档案，约束可行世界模板",
+      "track": "main"
+    },
+    {
+      "id": "heart",
+      "name": "世界之心采样",
+      "chapter": 25,
+      "requires_all": [
+        "rule_solver",
+        "frame3",
+        "boundary"
+      ],
+      "requires_any": [],
+      "outcome": "受控采样，不毁原维度",
+      "track": "main"
+    },
+    {
+      "id": "genesis",
+      "name": "创世编译与点火",
+      "chapter": 25,
+      "requires_all": [
+        "world_seed"
+      ],
+      "requires_any": [],
+      "outcome": "晨曦世界种绑定唯一实例，固定槽和返回入口",
+      "track": "main"
+    },
+    {
+      "id": "world_seed",
+      "name": "晨曦世界种",
+      "chapter": 25,
+      "requires_all": [
+        "heart",
+        "closure_archive",
+        "holo_data",
+        "horizon_buffer",
+        "string"
+      ],
+      "requires_any": [],
+      "outcome": "实体核心装配并写入已验证模板，不复制世界",
+      "track": "main"
+    },
+    {
+      "id": "maintenance",
+      "name": "维护与专化工厂",
+      "chapter": 26,
+      "requires_all": [
+        "genesis",
+        "logistics"
+      ],
+      "requires_any": [],
+      "outcome": "覆盖维护预算，休眠可恢复",
+      "track": "main"
+    },
+    {
+      "id": "crossdim",
+      "name": "F5跨维度网络",
+      "chapter": 26,
+      "requires_all": [
+        "genesis",
+        "network",
+        "photonic_io"
+      ],
+      "requires_any": [],
+      "outcome": "版本/时间边界与恢复，不无限强加载",
+      "track": "main"
+    },
+    {
+      "id": "finish",
+      "name": "完整长流程终点",
+      "chapter": 26,
+      "requires_all": [
+        "maintenance",
+        "crossdim"
+      ],
+      "requires_any": [],
+      "outcome": "新维度专化产线运行并安全休眠恢复",
+      "track": "main"
+    }
+  ],
+  "optimization_feedback": [
+    [
+      "feedback",
+      "special",
+      "优化晶体工艺，不是首次前置"
+    ],
+    [
+      "optical_model",
+      "tapeout",
+      "提高复杂版图良率"
+    ],
+    [
+      "condensed",
+      "photonic_ram",
+      "改善缓存/温控"
+    ],
+    [
+      "generation",
+      "fe",
+      "升级能源，不是第一次启动来源"
+    ],
+    [
+      "maintenance",
+      "fractionation",
+      "专化产区扩大产能，付维护成本"
+    ],
+    [
+      "rl",
+      "loop",
+      "验收策略改善动态工况，阈值控制先能工作"
+    ],
+    [
+      "active_lab",
+      "survey",
+      "选择下一组实验，数据仍来自实测"
+    ],
+    [
+      "quantum_curve",
+      "active_lab",
+      "估计观测量辅助排序，不直接授予工艺成功"
+    ],
+    [
+      "condensed",
+      "sky_watch",
+      "微观材料提升接收灵敏度，不锁初始巡天"
+    ],
+    [
+      "cosmic_baseline",
+      "active_lab",
+      "宇观残差提出新的实验目标"
+    ],
+    [
+      "horizon",
+      "metric_atlas",
+      "内部实验与外部观测对照，不替代原始宇观证据"
+    ]
+  ]
+}

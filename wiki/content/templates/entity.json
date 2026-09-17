@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:replace_me",
+  "kind": "item",
+  "title": "替换为实体名称",
+  "summary": "一句话说明它在模组中的作用。",
+  "status": "想法",
+  "tags": ["待分类"],
+  "description": "descriptions/replace_me.md",
+  "visual": { "type": "sprite", "asset": "assets/seed.svg" },
+  "relations": []
+}

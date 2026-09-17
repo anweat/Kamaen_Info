@@ -1,0 +1,2660 @@
+{
+  "version": "R1-review",
+  "stage_revision": "R4",
+  "stage_design": "R4_STAGE_DESIGN.md",
+  "progression_review": "EARLY_MID_REVIEW_AND_LATE_ENTRY.md",
+  "application_design": "MIDGAME_APPLICATIONS.md",
+  "late_revision": "L1",
+  "late_direction": "LATE_L1_DIRECTION_AND_RESEARCH.md",
+  "late_experiments": "LATE_L1_EXPERIMENTS_AND_INSTRUMENTS.md",
+  "edge_semantics": "requires_all is AND; feedback is documented separately and is not a first-unlock edge",
+  "nodes": [
+    {
+      "id": "start",
+      "title": "开局条件",
+      "milestone": "P01",
+      "requires_all": [],
+      "track": "core",
+      "outcome": "木材、圆石、水、普通燃料与基本种植可达"
+    },
+    {
+      "id": "manual",
+      "title": "无铁手筛与木盆",
+      "milestone": "P01",
+      "requires_all": [
+        "start"
+      ],
+      "track": "core",
+      "outcome": "手工分离产出粉末与滤渣"
+    },
+    {
+      "id": "metal",
+      "title": "基础金属与玻璃",
+      "milestone": "P01",
+      "requires_all": [
+        "manual"
+      ],
+      "track": "core",
+      "outcome": "累计产出与普通熔炼，不靠稀有抽奖"
+    },
+    {
+      "id": "mean",
+      "title": "均值化基底",
+      "milestone": "P02",
+      "requires_all": [
+        "manual",
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "同批处理后偏差减弱"
+    },
+    {
+      "id": "seed",
+      "title": "白噪晶种",
+      "milestone": "P02",
+      "requires_all": [
+        "mean"
+      ],
+      "track": "core",
+      "outcome": "结晶与放置复测，保留参考"
+    },
+    {
+      "id": "raw",
+      "title": "带物料来源的粗晶",
+      "milestone": "P03",
+      "requires_all": [
+        "seed",
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "晶种、生长基材与工艺冲击"
+    },
+    {
+      "id": "stress",
+      "title": "力学框架与特化",
+      "milestone": "P03",
+      "requires_all": [
+        "raw",
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "基本压头先可用，导波抗压稳谱按用途测"
+    },
+    {
+      "id": "power",
+      "title": "普通供能",
+      "milestone": "P01",
+      "requires_all": [
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "普通燃料/机械与电能尽早进入；首套产线留供给余量，外部FE可替代"
+    },
+    {
+      "id": "resonance",
+      "title": "选择性共振",
+      "milestone": "P04",
+      "requires_all": [
+        "stress",
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "真实样本与晶体调谐改善合法产物份额"
+    },
+    {
+      "id": "bio",
+      "title": "有机分离",
+      "milestone": "P04",
+      "requires_all": [
+        "resonance",
+        "manual"
+      ],
+      "track": "core",
+      "outcome": "真实有机基底供纤维树脂与培养前体"
+    },
+    {
+      "id": "feedback",
+      "title": "信息反馈闭环",
+      "milestone": "P05",
+      "requires_all": [
+        "resonance",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "探针、类型化信号、滞回、时效与停料恢复"
+    },
+    {
+      "id": "doping",
+      "title": "组成特化",
+      "milestone": "P06",
+      "requires_all": [
+        "stress",
+        "bio",
+        "feedback"
+      ],
+      "track": "core",
+      "outcome": "母批交叉掺杂与应力试片"
+    },
+    {
+      "id": "precision",
+      "title": "模板与工艺控制",
+      "milestone": "P07",
+      "requires_all": [
+        "doping",
+        "metal"
+      ],
+      "track": "core",
+      "outcome": "粗接触模板先行、退火历史和分档；控制芯片之后反向改进精密工位"
+    },
+    {
+      "id": "electric",
+      "title": "电气门控",
+      "milestone": "P08",
+      "requires_all": [
+        "precision",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "结区、控制端、阈值与低速保持实验"
+    },
+    {
+      "id": "optical",
+      "title": "光学相位模块",
+      "milestone": "P08",
+      "requires_all": [
+        "precision",
+        "resonance",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "粗源与手动校准，两路组合实验"
+    },
+    {
+      "id": "bridge",
+      "title": "光电桥接",
+      "milestone": "P08",
+      "requires_all": [
+        "electric",
+        "optical"
+      ],
+      "track": "core",
+      "outcome": "调制与探测，转换预算与读出校准"
+    },
+    {
+      "id": "scan",
+      "title": "局部扫测与记录",
+      "milestone": "P05",
+      "requires_all": [
+        "stress",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "固定步进与单域读出先行，记录母批/顺序/量程；完整光电扫测随后整合"
+    },
+    {
+      "id": "eda",
+      "title": "实验结构与工程设计",
+      "milestone": "P09",
+      "requires_all": [
+        "scan",
+        "precision",
+        "electric"
+      ],
+      "track": "core",
+      "outcome": "已测器件拼接与调谐、有限规则检查；同项目联到制造/实物/模型视图"
+    },
+    {
+      "id": "package",
+      "title": "模块封装与制造复制",
+      "milestone": "P09",
+      "requires_all": [
+        "eda",
+        "precision"
+      ],
+      "track": "core",
+      "outcome": "先封装实际模块，再精密裸片复制；两条材料账与封装后复测"
+    },
+    {
+      "id": "board",
+      "title": "集成板",
+      "milestone": "P09",
+      "requires_all": [
+        "package",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "安装实体芯片与热/供能接口"
+    },
+    {
+      "id": "store",
+      "title": "持久记录与内存",
+      "milestone": "P10",
+      "requires_all": [
+        "electric",
+        "precision"
+      ],
+      "track": "core",
+      "outcome": "空白记录柜先造，四类数据生命周期"
+    },
+    {
+      "id": "runtime",
+      "title": "单机运行时",
+      "milestone": "P10",
+      "requires_all": [
+        "board",
+        "store"
+      ],
+      "track": "core",
+      "outcome": "单节点可承担本地信息中心；有限算子图、记录、预算与回滚"
+    },
+    {
+      "id": "sensors",
+      "title": "多点采集与对齐",
+      "milestone": "P11",
+      "requires_all": [
+        "scan",
+        "store"
+      ],
+      "track": "core",
+      "outcome": "多探头、校准、位置与时间来源；不是首次局部记录的前置"
+    },
+    {
+      "id": "network",
+      "title": "联网采集与服务网络",
+      "milestone": "P11",
+      "requires_all": [
+        "runtime",
+        "sensors"
+      ],
+      "track": "core",
+      "outcome": "实际节点直连与预设服务域，扩展本地信息中心；先单板后按需装柜"
+    },
+    {
+      "id": "sky",
+      "title": "初始星录",
+      "milestone": "P11",
+      "requires_all": [
+        "optical",
+        "sensors"
+      ],
+      "track": "core",
+      "outcome": "基础天区强度与粗谱，不需量子设备"
+    },
+    {
+      "id": "e_matrix",
+      "title": "电矩阵",
+      "milestone": "P12",
+      "requires_all": [
+        "electric",
+        "precision",
+        "store"
+      ],
+      "track": "core",
+      "outcome": "有限算术阵列与电域基准"
+    },
+    {
+      "id": "o_matrix",
+      "title": "光矩阵",
+      "milestone": "P12",
+      "requires_all": [
+        "optical",
+        "precision",
+        "store"
+      ],
+      "track": "core",
+      "outcome": "小阵列、编码读出与手动标定"
+    },
+    {
+      "id": "hybrid",
+      "title": "混合计算节点",
+      "milestone": "P12",
+      "requires_all": [
+        "e_matrix",
+        "o_matrix",
+        "board",
+        "bridge"
+      ],
+      "track": "core",
+      "outcome": "同任务端到端成本与误差对照"
+    },
+    {
+      "id": "cluster",
+      "title": "实际节点集群",
+      "milestone": "P12",
+      "requires_all": [
+        "e_matrix",
+        "network",
+        "board"
+      ],
+      "track": "core",
+      "outcome": "电节点可先直连；本地工作集、实际路径、分块与失败恢复"
+    },
+    {
+      "id": "model",
+      "title": "小模型与参数",
+      "milestone": "P13",
+      "requires_all": [
+        "runtime",
+        "scan"
+      ],
+      "track": "core",
+      "outcome": "公式查表与有限预测，首次不等集群"
+    },
+    {
+      "id": "train",
+      "title": "监督验证",
+      "milestone": "P13",
+      "requires_all": [
+        "model",
+        "scan"
+      ],
+      "track": "core",
+      "outcome": "本地有效记录即可开展小批训练/验证；新母批留出、损失、版本和回退"
+    },
+    {
+      "id": "rl",
+      "title": "控制基线与策略实验",
+      "milestone": "P14",
+      "requires_all": [
+        "train",
+        "feedback"
+      ],
+      "track": "core",
+      "outcome": "规则/PID可满足基础闭环；有限Q-learning为深化，保留真实动作与未见扰动验收"
+    },
+    {
+      "id": "active",
+      "title": "主动实验",
+      "milestone": "P15",
+      "requires_all": [
+        "train",
+        "rl",
+        "scan"
+      ],
+      "track": "core",
+      "outcome": "单工位先按模型分歧/成本选可执行工况并实际测量，多点扩展另接网络"
+    },
+    {
+      "id": "noise",
+      "title": "底噪分层与归因",
+      "milestone": "P15",
+      "requires_all": [
+        "active",
+        "network"
+      ],
+      "track": "core",
+      "outcome": "近远开关对照、相关波动与残差档案"
+    },
+    {
+      "id": "cryo",
+      "title": "独立低温工程",
+      "milestone": "P16",
+      "requires_all": [
+        "precision",
+        "feedback",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "普通制冷与散热，不依赖超导或视界"
+    },
+    {
+      "id": "phase",
+      "title": "凝聚态工作窗",
+      "milestone": "P16",
+      "requires_all": [
+        "cryo",
+        "model"
+      ],
+      "track": "core",
+      "outcome": "温场相图、各材料用途的独立证据；可用公式/查表基线，不强制监督训练"
+    },
+    {
+      "id": "spectrum",
+      "title": "实验室谱尺",
+      "milestone": "P17",
+      "requires_all": [
+        "optical",
+        "scan",
+        "model"
+      ],
+      "track": "core",
+      "outcome": "独立参考、多谱线与仪器偏置分离；有限模型校准先行"
+    },
+    {
+      "id": "cosmic",
+      "title": "宇观谱图与背景",
+      "milestone": "P17",
+      "requires_all": [
+        "sky",
+        "spectrum",
+        "noise"
+      ],
+      "track": "core",
+      "outcome": "红移谱册、对应波段接收头、余辉星图"
+    },
+    {
+      "id": "q_lab",
+      "title": "基础量子光学实验",
+      "milestone": "P18",
+      "requires_all": [
+        "optical",
+        "electric",
+        "store",
+        "precision"
+      ],
+      "track": "core",
+      "outcome": "制备源、初级计数头、时间标签与符合扫描"
+    },
+    {
+      "id": "q_cal",
+      "title": "量子读出校准",
+      "milestone": "P18",
+      "requires_all": [
+        "q_lab",
+        "train"
+      ],
+      "track": "core",
+      "outcome": "暗计数、效率、窗口、HOM曲线与统计范围"
+    },
+    {
+      "id": "effective",
+      "title": "有效模型与费曼图",
+      "milestone": "P19",
+      "requires_all": [
+        "phase",
+        "noise",
+        "model"
+      ],
+      "track": "core",
+      "outcome": "登记自由度、允许顶点、经典小任务基准"
+    },
+    {
+      "id": "q_prepare",
+      "title": "任务态制备与测量能力",
+      "milestone": "P20",
+      "requires_all": [
+        "q_cal",
+        "effective"
+      ],
+      "track": "core",
+      "outcome": "明确所需态与可测算符，拒绝不支持任务"
+    },
+    {
+      "id": "q_hybrid",
+      "title": "混合量子交叉验证",
+      "milestone": "P20",
+      "requires_all": [
+        "q_prepare",
+        "runtime"
+      ],
+      "track": "core",
+      "outcome": "有限期望估计、经典优化、实际试制与曲线"
+    },
+    {
+      "id": "micro_boundary",
+      "title": "微观边界对照",
+      "milestone": "P21",
+      "requires_all": [
+        "phase",
+        "q_hybrid",
+        "precision"
+      ],
+      "track": "core",
+      "outcome": "有限间隙与表面对照，材料及仪器偏置分离"
+    },
+    {
+      "id": "cosmic_geometry",
+      "title": "宇观几何",
+      "milestone": "P22",
+      "requires_all": [
+        "cosmic",
+        "train"
+      ],
+      "track": "core",
+      "outcome": "多源透镜模板、测地卷与候选区间"
+    },
+    {
+      "id": "cross",
+      "title": "独立证据联合标定",
+      "milestone": "P23",
+      "requires_all": [
+        "micro_boundary",
+        "cosmic_geometry",
+        "noise"
+      ],
+      "track": "core",
+      "outcome": "互证谱册与实体接界棱镜"
+    },
+    {
+      "id": "string",
+      "title": "戈古尔斯弦",
+      "milestone": "P23",
+      "requires_all": [
+        "cross",
+        "phase",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "实体载体、受限边界耦合与锚定"
+    },
+    {
+      "id": "horizon_parts",
+      "title": "首套约束膜与熄灭器",
+      "milestone": "P24",
+      "requires_all": [
+        "phase",
+        "precision",
+        "feedback"
+      ],
+      "track": "core",
+      "outcome": "普通基膜及写入头，独立停机与启动储备"
+    },
+    {
+      "id": "horizon",
+      "title": "受控视界",
+      "milestone": "P24",
+      "requires_all": [
+        "string",
+        "horizon_parts",
+        "power"
+      ],
+      "track": "core",
+      "outcome": "普通能源启动、降载停机、回收与重启"
+    },
+    {
+      "id": "mode_power",
+      "title": "视界发电模式",
+      "milestone": "P25",
+      "requires_all": [
+        "horizon"
+      ],
+      "track": "core",
+      "outcome": "登记质量与净能量账，不重复记账"
+    },
+    {
+      "id": "mode_store",
+      "title": "视界存储模式",
+      "milestone": "P25",
+      "requires_all": [
+        "horizon",
+        "store"
+      ],
+      "track": "core",
+      "outcome": "全息页、校验、持久保留与读回"
+    },
+    {
+      "id": "mode_compute",
+      "title": "视界求解模式",
+      "milestone": "P25",
+      "requires_all": [
+        "horizon",
+        "effective",
+        "runtime"
+      ],
+      "track": "core",
+      "outcome": "有限候选搜索、可验证输出"
+    },
+    {
+      "id": "closure",
+      "title": "双尺度闭合图谱",
+      "milestone": "P26",
+      "requires_all": [
+        "mode_power",
+        "mode_store",
+        "mode_compute",
+        "cosmic_geometry",
+        "cross",
+        "cluster",
+        "hybrid"
+      ],
+      "track": "core",
+      "outcome": "集群与光电互证能力共同组织视界、宇观和底噪记录"
+    },
+    {
+      "id": "heart",
+      "title": "世界之心辨识",
+      "milestone": "P26",
+      "requires_all": [
+        "closure",
+        "sensors"
+      ],
+      "track": "core",
+      "outcome": "可复测世界特征与不确定度，不破坏源世界"
+    },
+    {
+      "id": "rules",
+      "title": "维度规则候选",
+      "milestone": "P27",
+      "requires_all": [
+        "heart",
+        "mode_compute"
+      ],
+      "track": "core",
+      "outcome": "固定种类、七组参数、硬约束与预算"
+    },
+    {
+      "id": "genesis",
+      "title": "蓝图与实体核心",
+      "milestone": "P27",
+      "requires_all": [
+        "rules",
+        "string",
+        "mode_store"
+      ],
+      "track": "core",
+      "outcome": "有限模板编译、实体资源与唯一实例绑定"
+    },
+    {
+      "id": "return_anchor",
+      "title": "母世界返回与救援锚",
+      "milestone": "P27",
+      "requires_all": [
+        "horizon_parts",
+        "power",
+        "heart"
+      ],
+      "track": "core",
+      "outcome": "不依赖待创建维度的供能和出口"
+    },
+    {
+      "id": "world",
+      "title": "点火与新维度",
+      "milestone": "P27",
+      "requires_all": [
+        "genesis",
+        "return_anchor"
+      ],
+      "track": "core",
+      "outcome": "使用空闲槽，不覆盖旧世界"
+    },
+    {
+      "id": "maintain",
+      "title": "维护休眠与返回",
+      "milestone": "P28",
+      "requires_all": [
+        "world",
+        "closure"
+      ],
+      "track": "core",
+      "outcome": "实际作业、离开、休眠、恢复、返回与复测"
+    },
+    {
+      "id": "photonic_logic",
+      "title": "光逻辑与非线性专化",
+      "milestone": "P12",
+      "requires_all": [
+        "optical",
+        "precision"
+      ],
+      "track": "extension",
+      "outcome": "非线性介质、逻辑门、双稳态及有限工作域"
+    },
+    {
+      "id": "photonic_control",
+      "title": "光控制核",
+      "milestone": "P12",
+      "requires_all": [
+        "photonic_logic",
+        "runtime"
+      ],
+      "track": "extension",
+      "outcome": "全光FSM与有限控制任务"
+    },
+    {
+      "id": "photonic_ram",
+      "title": "短时光RAM",
+      "milestone": "P12",
+      "requires_all": [
+        "photonic_logic",
+        "store"
+      ],
+      "track": "extension",
+      "outcome": "刷新、寿命与读取扰动"
+    },
+    {
+      "id": "photonic_pulse",
+      "title": "光脉冲处理器",
+      "milestone": "P12",
+      "requires_all": [
+        "photonic_logic",
+        "o_matrix"
+      ],
+      "track": "extension",
+      "outcome": "登记非线性与稀疏任务"
+    },
+    {
+      "id": "photonic_move",
+      "title": "光协处理器",
+      "milestone": "P12",
+      "requires_all": [
+        "o_matrix",
+        "network"
+      ],
+      "track": "extension",
+      "outcome": "光域搬运与路由预算"
+    },
+    {
+      "id": "advanced_network",
+      "title": "多DNS与无线分代",
+      "milestone": "P15",
+      "requires_all": [
+        "cluster"
+      ],
+      "track": "extension",
+      "outcome": "G1–G6服务能力与多域解析挑战"
+    },
+    {
+      "id": "bio_policy",
+      "title": "培养与物流策略",
+      "milestone": "P14",
+      "requires_all": [
+        "bio",
+        "rl",
+        "network"
+      ],
+      "track": "extension",
+      "outcome": "营养/库存/历史与实际任务收益"
+    },
+    {
+      "id": "entity_policy",
+      "title": "实体交易与对抗",
+      "milestone": "P14",
+      "requires_all": [
+        "rl",
+        "runtime"
+      ],
+      "track": "extension",
+      "outcome": "支持代理、离线意图与可重置回放"
+    },
+    {
+      "id": "model_families",
+      "title": "模型与架构探索",
+      "milestone": "P13",
+      "requires_all": [
+        "model"
+      ],
+      "track": "extension",
+      "outcome": "先用可运行小图研究结构/状态/算子；训练与规模按任务需要增加，不先要求集群"
+    },
+    {
+      "id": "production_cell",
+      "title": "可重组生产单元",
+      "milestone": "P11",
+      "requires_all": [
+        "runtime",
+        "feedback",
+        "precision"
+      ],
+      "track": "extension",
+      "outcome": "复用工位/输送/检测，按实际订单排程与分流；模型优化和多线联网按需增加"
+    },
+    {
+      "id": "drone",
+      "title": "无人机与移动作业",
+      "milestone": "P12",
+      "requires_all": [
+        "package",
+        "runtime",
+        "feedback",
+        "scan"
+      ],
+      "track": "extension",
+      "outcome": "实际机体、驱动、测头与本地控制，先单机固定航路再学习/协作；不强加载区块"
+    },
+    {
+      "id": "adaptive_gear",
+      "title": "计算辅助装备",
+      "milestone": "P12",
+      "requires_all": [
+        "model",
+        "package",
+        "feedback",
+        "precision"
+      ],
+      "track": "extension",
+      "outcome": "工艺/结构优化成果可离线使用；随身主动组件另付硬件、供给与热预算"
+    },
+    {
+      "id": "api",
+      "title": "外部后端",
+      "milestone": "P15",
+      "requires_all": [
+        "active",
+        "runtime"
+      ],
+      "track": "extension",
+      "outcome": "同Schema、成本、时限、验收与离线替代"
+    },
+    {
+      "id": "snspd",
+      "title": "低温探测升级",
+      "milestone": "P18",
+      "requires_all": [
+        "phase",
+        "q_cal"
+      ],
+      "track": "extension",
+      "outcome": "超导探测器用于需要的读出任务"
+    },
+    {
+      "id": "bell",
+      "title": "贝尔教学挑战",
+      "milestone": "P18",
+      "requires_all": [
+        "q_cal"
+      ],
+      "track": "extension",
+      "outcome": "明确态制备、多设置与采样假设"
+    },
+    {
+      "id": "boson",
+      "title": "玻色采样挑战",
+      "milestone": "P20",
+      "requires_all": [
+        "q_cal",
+        "optical"
+      ],
+      "track": "extension",
+      "outcome": "固定采样任务，不替代VQE后端"
+    },
+    {
+      "id": "qec",
+      "title": "逻辑纠错深化",
+      "milestone": "P20",
+      "requires_all": [
+        "q_prepare",
+        "phase"
+      ],
+      "track": "extension",
+      "outcome": "显式编码、综合征与译码资源"
+    },
+    {
+      "id": "advanced_optics",
+      "title": "长期光存储与WDM",
+      "milestone": "P25",
+      "requires_all": [
+        "mode_store",
+        "photonic_ram",
+        "photonic_move"
+      ],
+      "track": "extension",
+      "outcome": "容量、寿命、串扰与全光交换"
+    },
+    {
+      "id": "dim_gateway",
+      "title": "跨维度网关",
+      "milestone": "P28",
+      "requires_all": [
+        "world",
+        "network",
+        "string"
+      ],
+      "track": "extension",
+      "outcome": "成对锚、服务授权和离线处理"
+    }
+  ],
+  "dictionary_entities": [
+    {
+      "id": "crude_spectrum_scrap",
+      "name": "粗频谱碎屑",
+      "source_line": 50,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "手动起步中间产物",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "crude_spectrum_slurry",
+      "name": "粗频谱泥浆",
+      "source_line": 51,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "分馏输入，承接污染",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "spectrum_slag",
+      "name": "频谱滤渣",
+      "source_line": 52,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "白噪链核心副产物",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "whitened_cobblestone",
+      "name": "均值化圆石",
+      "source_line": 53,
+      "capability": "mean",
+      "milestone": "P02",
+      "old_section": 3,
+      "role": "白噪晶种基底",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "white_noise_seed",
+      "name": "白噪晶种",
+      "source_line": 54,
+      "capability": "seed",
+      "milestone": "P02",
+      "old_section": 3,
+      "role": "卡玛恩晶体起点",
+      "disposition": "平均背景初始结晶；结构质量与中性分开"
+    },
+    {
+      "id": "spectrum_powder",
+      "name": "频谱粉末",
+      "source_line": 55,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "合并铁粉/煤粉/铜粉/矿粉",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "spectrum_membrane",
+      "name": "频谱滤膜",
+      "source_line": 56,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "控制分馏偏向",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "hand_spectrum_sieve",
+      "name": "手摇频谱筛",
+      "source_line": 57,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "空岛/早期手动产物",
+      "disposition": "重做首版：木筛不需铁；金属筛再升级"
+    },
+    {
+      "id": "fractionating_tower",
+      "name": "搅拌分馏塔",
+      "source_line": 58,
+      "capability": "manual",
+      "milestone": "P01",
+      "old_section": 3,
+      "role": "第一台自动机器",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "thermal_noise_crucible",
+      "name": "热噪坩埚",
+      "source_line": 59,
+      "capability": "mean",
+      "milestone": "P02",
+      "old_section": 3,
+      "role": "热处理滤渣和均值化圆石",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "basic_spectroscope",
+      "name": "初级分光镜",
+      "source_line": 60,
+      "capability": "mean",
+      "milestone": "P02",
+      "old_section": 3,
+      "role": "早期分析工具",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "blast_powder",
+      "name": "爆震粉",
+      "source_line": 66,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "模拟爆破能源",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "ideal_rigid_plate",
+      "name": "理想刚体板",
+      "source_line": 67,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "爆炸室反射模块",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "buffer_sand_layer",
+      "name": "缓冲砂层",
+      "source_line": 68,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "降低爆破强度，提高容错",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "target_pedestal",
+      "name": "靶座",
+      "source_line": 69,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "固定晶种/晶体",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "raw_kamaen_crystal",
+      "name": "粗卡玛恩晶体",
+      "source_line": 70,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "第一代晶体母体",
+      "disposition": "旧设计别名，注册对齐kamaen_crystal_raw；必须加生长基材"
+    },
+    {
+      "id": "kamaen_crystal_debris",
+      "name": "卡玛恩晶体碎片",
+      "source_line": 71,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "失败回收和低级配方",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "waveguide_kamaen_crystal",
+      "name": "导波型卡玛恩晶体",
+      "source_line": 72,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "总线、导线、信号结构材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "compression_kamaen_crystal",
+      "name": "抗压型卡玛恩晶体",
+      "source_line": 73,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "高压、结构、视界材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "stable_spectrum_kamaen_crystal",
+      "name": "稳谱型卡玛恩晶体",
+      "source_line": 74,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "能量、相干、底噪相关基底",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "polarized_kamaen_crystal",
+      "name": "偏振卡玛恩晶体",
+      "source_line": 75,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "高级传感器/偏振模块",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "stress_recording_plate",
+      "name": "应力记录片",
+      "source_line": 76,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "保存一次应力快照",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "explosion_chamber_controller",
+      "name": "爆炸室控制器",
+      "source_line": 77,
+      "capability": "raw",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "扫描结构并计算爆破评分",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "stress_sensor",
+      "name": "应力传感器",
+      "source_line": 78,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "读取晶体应力",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "axial_press_head",
+      "name": "轴向压头",
+      "source_line": 79,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "提供可控压力",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "tier1_mechanical_framework",
+      "name": "I 型力学合成框架",
+      "source_line": 80,
+      "capability": "stress",
+      "milestone": "P03",
+      "old_section": 4,
+      "role": "力学合成研究站",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "tuning_wafer",
+      "name": "调谐晶片",
+      "source_line": 86,
+      "capability": "resonance",
+      "milestone": "P04",
+      "old_section": 5,
+      "role": "频谱锁相和总线基础材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "intrinsic_spectrum_sample",
+      "name": "固有频谱样本",
+      "source_line": 87,
+      "capability": "resonance",
+      "milestone": "P04",
+      "old_section": 5,
+      "role": "目标频谱模板",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "information_unit",
+      "name": "信息单元",
+      "source_line": 88,
+      "capability": "feedback",
+      "milestone": "P05",
+      "old_section": 5,
+      "role": "`InfoSignal` 基础载体",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "resonance_catalyst_crystal",
+      "name": "共振催化晶体",
+      "source_line": 89,
+      "capability": "resonance",
+      "milestone": "P04",
+      "old_section": 5,
+      "role": "加速/优化对应机器或材料流程",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "frequency_bus",
+      "name": "频率总线",
+      "source_line": 90,
+      "capability": "feedback",
+      "milestone": "P05",
+      "old_section": 5,
+      "role": "传递 InfoSignal",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "frequency_to_redstone_module",
+      "name": "频率转红石模块",
+      "source_line": 91,
+      "capability": "feedback",
+      "milestone": "P05",
+      "old_section": 5,
+      "role": "将 InfoSignal 映射到 0-15",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "crystal_interferometer",
+      "name": "晶体干涉仪",
+      "source_line": 92,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 5,
+      "role": "晶体属性分析台",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "spectrum_phaselocker",
+      "name": "频谱锁相器",
+      "source_line": 93,
+      "capability": "resonance",
+      "milestone": "P04",
+      "old_section": 5,
+      "role": "读取样本并写入晶体",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_probe_station",
+      "name": "卡玛恩探针台",
+      "source_line": 94,
+      "capability": "feedback",
+      "milestone": "P05",
+      "old_section": 5,
+      "role": "把可读世界状态转 InfoSignal",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "tuning_array",
+      "name": "调谐阵列",
+      "source_line": 95,
+      "capability": "resonance",
+      "milestone": "P04",
+      "old_section": 5,
+      "role": "提高锁相和共振效率",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_crystal_t2",
+      "name": "二代卡玛恩晶体",
+      "source_line": 101,
+      "capability": "doping",
+      "milestone": "P06",
+      "old_section": 6,
+      "role": "允许掺杂、导波、阈值和相位控制的晶体",
+      "disposition": "用途检验/工艺资格，不是全属性统一升级"
+    },
+    {
+      "id": "kamaen_dopant",
+      "name": "卡玛恩掺杂剂",
+      "source_line": 102,
+      "capability": "doping",
+      "milestone": "P06",
+      "old_section": 6,
+      "role": "合并施主/受主掺杂剂",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_wafer",
+      "name": "卡玛恩晶片",
+      "source_line": 103,
+      "capability": "doping",
+      "milestone": "P06",
+      "old_section": 6,
+      "role": "合并 blank/N/P/defect 晶片",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_pn_junction",
+      "name": "卡玛恩 PN 结",
+      "source_line": 104,
+      "capability": "electric",
+      "milestone": "P08",
+      "old_section": 6,
+      "role": "二极管/晶体管前置",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "electronic_logic_gate",
+      "name": "电逻辑门片",
+      "source_line": 105,
+      "capability": "electric",
+      "milestone": "P08",
+      "old_section": 6,
+      "role": "EDA 电逻辑基础元件，用于早期接口、桥接、低速控制和电存储",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "lithography_mask",
+      "name": "光刻掩膜",
+      "source_line": 106,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "定义曝光图案",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "lithography_mask_set",
+      "name": "分层光刻掩膜组",
+      "source_line": 107,
+      "capability": "eda",
+      "milestone": "P09",
+      "old_section": 6,
+      "role": "保存 active/metal/optical/via/cooling/shield 等多层掩膜",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "process_protection_kit",
+      "name": "工艺防护套件",
+      "source_line": 108,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "抽象表示 ESD、防尘、防火/绝缘、封装应力释放等工艺防护",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "timing_structure_cell",
+      "name": "时序结构单元",
+      "source_line": 109,
+      "capability": "eda",
+      "milestone": "P09",
+      "old_section": 6,
+      "role": "在 EDA 版图中提供 T0-T5 时序能力",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "crystal_interconnect",
+      "name": "晶体互连线",
+      "source_line": 110,
+      "capability": "bridge",
+      "milestone": "P08",
+      "old_section": 6,
+      "role": "封装芯片、板级互连和桥接同步材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_oscillator",
+      "name": "卡玛恩晶振",
+      "source_line": 111,
+      "capability": "power",
+      "milestone": "P01",
+      "old_section": 6,
+      "role": "统一 F1/F2/F3/F4/F5，同步 EDA 芯片和板级域",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "coherent_energy_buffer",
+      "name": "相干能缓存",
+      "source_line": 112,
+      "capability": "power",
+      "milestone": "P01",
+      "old_section": 6,
+      "role": "低噪工艺能源存储",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "coherent_energy_regulator",
+      "name": "相干能稳压器",
+      "source_line": 113,
+      "capability": "power",
+      "milestone": "P01",
+      "old_section": 6,
+      "role": "FE -> 相干能",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "ion_implanter",
+      "name": "离子注入器",
+      "source_line": 114,
+      "capability": "doping",
+      "milestone": "P06",
+      "old_section": 6,
+      "role": "给晶片写掺杂参数",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "lattice_annealing_furnace",
+      "name": "晶格退火炉",
+      "source_line": 115,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "降低缺陷、形成 PN 结",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "lithography_projector",
+      "name": "光刻投影器",
+      "source_line": 116,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "曝光图案到 PN 结/晶片",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "etching_tank",
+      "name": "刻蚀槽",
+      "source_line": 117,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "按图案移除材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "tier2_optical_process_framework",
+      "name": "II 型光路工艺框架",
+      "source_line": 118,
+      "capability": "precision",
+      "milestone": "P07",
+      "old_section": 6,
+      "role": "掺杂、光刻、导波、阈值、相位和探测结工艺集中控制",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "hardware_diagnostic_station",
+      "name": "硬件诊断台",
+      "source_line": 119,
+      "capability": "board",
+      "milestone": "P09",
+      "old_section": 6,
+      "role": "输出 EDA 芯片、封装、主板/背板和环境域性能画像",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "electronic_control_chip",
+      "name": "电控接口芯片",
+      "source_line": 125,
+      "capability": "board",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "早期接口、传感器汇聚、桥接控制和低速路由预算",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "electronic_matrix_tile",
+      "name": "电矩阵瓦片",
+      "source_line": 126,
+      "capability": "e_matrix",
+      "milestone": "P12",
+      "old_section": 7,
+      "role": "可选早期/兼容密集矩阵元件，不作为中游主线",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "electronic_activation_tile",
+      "name": "电激活瓦片",
+      "source_line": 127,
+      "capability": "e_matrix",
+      "milestone": "P12",
+      "old_section": 7,
+      "role": "可选早期/兼容稀疏、量化、激活算子元件",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "memory_page",
+      "name": "内存页",
+      "source_line": 128,
+      "capability": "store",
+      "milestone": "P10",
+      "old_section": 7,
+      "role": "统一参数/状态/索引页，属于电/经典存储域",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "eda_module_plate",
+      "name": "EDA 模块片",
+      "source_line": 129,
+      "capability": "eda",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "ALU、寄存器、MZI、双稳态腔、I/O、桥接等芯片模块的制造单元",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "chip_blueprint_writer",
+      "name": "芯片蓝图台",
+      "source_line": 130,
+      "capability": "eda",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "编辑 EDA 原理图、微结构版图、分级时序、端口、冷却、相干和桥接要求",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "chip_packaging_station",
+      "name": "芯片封装台",
+      "source_line": 131,
+      "capability": "package",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "将芯片蓝图和 EDA 模块封装成可上主板/光背板/低温载板芯片",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "packaged_logic_chip",
+      "name": "封装逻辑芯片",
+      "source_line": 132,
+      "capability": "package",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "电/光/量子/存储/桥接芯片实体",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "motherboard_blueprint",
+      "name": "集成板蓝图",
+      "source_line": 133,
+      "capability": "board",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "保存电主板、光背板、低温载板或混合集成节点布局",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "configurable_motherboard",
+      "name": "可配置集成板",
+      "source_line": 134,
+      "capability": "board",
+      "milestone": "P09",
+      "old_section": 7,
+      "role": "承载电控、光逻辑、存储、桥接或低温芯片并输出硬件画像",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "network_interface_chip",
+      "name": "网络接口芯片",
+      "source_line": 135,
+      "capability": "network",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "给主板提供光纤、无线、传感器或交换端口",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "fiber_switch",
+      "name": "光纤交换机",
+      "source_line": 136,
+      "capability": "network",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "多端口高速光纤转发、参数同步和集群组网",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "sensor_hub",
+      "name": "传感器汇聚器",
+      "source_line": 137,
+      "capability": "sensors",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "汇聚多传感器、时间戳对齐、缓存并批量上传",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "model_component_gateway",
+      "name": "模型组件网关",
+      "source_line": 138,
+      "capability": "runtime",
+      "milestone": "P10",
+      "old_section": 7,
+      "role": "模型组件方块网络的输入/输出端口",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "model_compiler",
+      "name": "模型编译器",
+      "source_line": 139,
+      "capability": "runtime",
+      "milestone": "P10",
+      "old_section": 7,
+      "role": "扫描模型组件方块网络并生成 ExecutableGraph",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "server_rack",
+      "name": "服务器机柜",
+      "source_line": 140,
+      "capability": "cluster",
+      "milestone": "P12",
+      "old_section": 7,
+      "role": "将多块主板封装为稳定算力/存储/交换节点",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "storage_center_controller",
+      "name": "存储中心控制器",
+      "source_line": 141,
+      "capability": "store",
+      "milestone": "P10",
+      "old_section": 7,
+      "role": "存储传感器数据集、模型快照和参数页",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "world_noise_sample",
+      "name": "世界底噪样本",
+      "source_line": 142,
+      "capability": "sensors",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "底噪采样载体",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "thermal_noise_plate",
+      "name": "热噪声谱片",
+      "source_line": 143,
+      "capability": "noise",
+      "milestone": "P15",
+      "old_section": 7,
+      "role": "热噪层专用材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "radiation_noise_plate",
+      "name": "背景辐射谱片",
+      "source_line": 144,
+      "capability": "noise",
+      "milestone": "P15",
+      "old_section": 7,
+      "role": "辐射层材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "quantum_fluctuation_plate",
+      "name": "量子涨落片",
+      "source_line": 145,
+      "capability": "noise",
+      "milestone": "P15",
+      "old_section": 7,
+      "role": "量子噪声材料",
+      "disposition": "量子解释未成立时只标候选残差，不能直接测得任意真值"
+    },
+    {
+      "id": "chunk_entropy_record",
+      "name": "区块熵流记录",
+      "source_line": 146,
+      "capability": "noise",
+      "milestone": "P15",
+      "old_section": 7,
+      "role": "记录区块熵流",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "noise_database",
+      "name": "底噪数据库",
+      "source_line": 147,
+      "capability": "network",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "存储样本、标签、版本",
+      "disposition": "空白载体先造，数据库为应用；记录x16不作为研究点门槛"
+    },
+    {
+      "id": "macro_info_index_core",
+      "name": "宏观信息索引核心",
+      "source_line": 148,
+      "capability": "network",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "信息中心核心组件",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "noise_spectrometer",
+      "name": "底噪谱仪",
+      "source_line": 149,
+      "capability": "sensors",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "采样维度底噪",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "thermodynamic_antenna",
+      "name": "热力学背景天线",
+      "source_line": 150,
+      "capability": "sensors",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "扩大谱仪范围",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "entropy_flow_meter",
+      "name": "熵流计",
+      "source_line": 151,
+      "capability": "noise",
+      "milestone": "P15",
+      "old_section": 7,
+      "role": "读取区块熵流",
+      "disposition": "区块活动代理指标与热力学熵区分"
+    },
+    {
+      "id": "info_center_controller",
+      "name": "信息中心控制器",
+      "source_line": 152,
+      "capability": "network",
+      "milestone": "P11",
+      "old_section": 7,
+      "role": "宏观采样、路由、归档",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "silicon_photonic_waveguide_blank",
+      "name": "硅光波导毛坯",
+      "source_line": 160,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "第 6 阶段所有光路元件的基础",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "silicon_photonic_waveguide",
+      "name": "硅光波导",
+      "source_line": 161,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "MZI / 光协处理器底层导光介质",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "mzi_modulator",
+      "name": "马赫-曾德尔调制器",
+      "source_line": 162,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "光GPU 权重单元",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "phase_tuner",
+      "name": "相位调谐器",
+      "source_line": 163,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "校准 MZI / 写入光GPU 权重",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "silicon_photodetector",
+      "name": "硅光探测器",
+      "source_line": 164,
+      "capability": "bridge",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "光GPU 输出端 / 光协处理器光电边界",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "single_freq_laser_source",
+      "name": "单频激光源",
+      "source_line": 165,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "光路相干基准 + 相干能消耗中心",
+      "disposition": "精密版保留；粗源/手动校准先于F4规模系统"
+    },
+    {
+      "id": "calibration_token",
+      "name": "光路校准令牌",
+      "source_line": 166,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "光路校准消耗品",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_nonlinear_medium",
+      "name": "卡玛恩非线性介质",
+      "source_line": 167,
+      "capability": "photonic_logic",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "光逻辑门、光脉冲处理器和光RAM 的 χ² 基材",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_logic_gate",
+      "name": "光逻辑门",
+      "source_line": 168,
+      "capability": "photonic_logic",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "全光 AND/OR/NOT/NAND/XOR 基元",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "kamaen_bistable_cell",
+      "name": "卡玛恩双稳态晶胞",
+      "source_line": 169,
+      "capability": "photonic_logic",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "光控制核状态寄存器和光RAM 反射基元",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_control_core",
+      "name": "光控制核",
+      "source_line": 170,
+      "capability": "photonic_control",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "全光 FSM，承担第 6 阶段控制/路由/脚本/调度/IO",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_coprocessor",
+      "name": "光协处理器",
+      "source_line": 171,
+      "capability": "photonic_move",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "光控制核调度下的数据搬运/缓存互连加速",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_gpu_unit",
+      "name": "光GPU 单元",
+      "source_line": 172,
+      "capability": "o_matrix",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "密集 GEMM / FFT / 卷积加速",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_pulse_processor",
+      "name": "光脉冲处理器",
+      "source_line": 173,
+      "capability": "photonic_pulse",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "稀疏激活、非线性算子、低精度时分信号处理",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "photonic_ram_unit",
+      "name": "光RAM 单元",
+      "source_line": 174,
+      "capability": "photonic_ram",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "短时状态存储、激活缓存和状态寄存器",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "coherent_energy",
+      "name": "相干能（资源）",
+      "source_line": 175,
+      "capability": "power",
+      "milestone": "P01",
+      "old_section": 8,
+      "role": "维持光路相干的能量预算（独立资源条，非 FE 子类）",
+      "disposition": "保留资源表现；能量、参考稳定度、相干条件分开"
+    },
+    {
+      "id": "photonic_waveguide_etching_station",
+      "name": "波导刻蚀台",
+      "source_line": 176,
+      "capability": "optical",
+      "milestone": "P08",
+      "old_section": 8,
+      "role": "制造硅光波导",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "mzi_weaving_station",
+      "name": "MZI 编织台",
+      "source_line": 177,
+      "capability": "o_matrix",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "把波导和调制器组装为 N×N 网格",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "laser_pump_tower",
+      "name": "激光泵浦塔",
+      "source_line": 178,
+      "capability": "power",
+      "milestone": "P01",
+      "old_section": 8,
+      "role": "集中产生相干能 + 单频激光源",
+      "disposition": "集中规模升级；初版光源不依赖这座塔"
+    },
+    {
+      "id": "photonic_calibration_station",
+      "name": "光路校准台",
+      "source_line": 179,
+      "capability": "o_matrix",
+      "milestone": "P12",
+      "old_section": 8,
+      "role": "重新写入光GPU 权重",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "quasiparticle_lattice",
+      "name": "准粒子晶格",
+      "source_line": 185,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "凝聚态基础材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "propagator_plate",
+      "name": "传播子片",
+      "source_line": 186,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 9,
+      "role": "合并声子/电子/激子/自旋波",
+      "disposition": "响应/模型数据，不是可装袋物理传播子"
+    },
+    {
+      "id": "cooper_pair_seed",
+      "name": "库珀对种子",
+      "source_line": 187,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "超导环前置",
+      "disposition": "实体态预制件，需基材和环境；不能用两张记录变物质"
+    },
+    {
+      "id": "feynman_vertex_plate",
+      "name": "费曼顶点片",
+      "source_line": 188,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 9,
+      "role": "描述相互作用顶点",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "feynman_process_blueprint",
+      "name": "费曼过程蓝图",
+      "source_line": 189,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 9,
+      "role": "凝聚态配方核心",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "superconducting_kamaen_ring",
+      "name": "超导卡玛恩环",
+      "source_line": 190,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "量子/视界/线圈核心材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "topological_insulator_crystal",
+      "name": "拓扑绝缘晶体",
+      "source_line": 191,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "拓扑材料和边界态",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "phase_change_memory_crystal",
+      "name": "相变记忆晶体",
+      "source_line": 192,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "高级存储/状态材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "quasiparticle_filter",
+      "name": "准粒子滤波器",
+      "source_line": 193,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "过滤传播子/底噪",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "tunnel_linker",
+      "name": "隧穿链路器",
+      "source_line": 194,
+      "capability": "string",
+      "milestone": "P23",
+      "old_section": 9,
+      "role": "合并隧穿串联器/4D 电路桥",
+      "disposition": "局部耦合用途可早于视界；远程/跨维度作用移入边界公设与成对锚"
+    },
+    {
+      "id": "cryo_condensation_chamber",
+      "name": "低温凝聚腔",
+      "source_line": 195,
+      "capability": "cryo",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "低温和相干保持",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "quasiparticle_detector",
+      "name": "准粒子捕获器",
+      "source_line": 196,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 9,
+      "role": "捕获传播子片",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "feynman_compiler",
+      "name": "费曼过程编译台",
+      "source_line": 197,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 9,
+      "role": "外线/顶点/约束 -> 蓝图",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "topology_furnace",
+      "name": "拓扑相变炉",
+      "source_line": 198,
+      "capability": "phase",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "制造拓扑材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "horizon_framework_mk1",
+      "name": "III 型视界框架雏形",
+      "source_line": 199,
+      "capability": "cryo",
+      "milestone": "P16",
+      "old_section": 9,
+      "role": "凝聚态用 III 型框架，不产生视界",
+      "disposition": "低温材料框架雏形，不产生视界"
+    },
+    {
+      "id": "quantum_optical_coprocessor_core",
+      "name": "量子光学协处理核心（原 `quantum_coprocessor_core`）",
+      "source_line": 205,
+      "capability": "q_prepare",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "协处理器核心；物理路线为单光子玻色采样",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "cryo_control_plate",
+      "name": "低温控制片",
+      "source_line": 206,
+      "capability": "cryo",
+      "milestone": "P16",
+      "old_section": 10,
+      "role": "低温控制模块",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "coherent_control_line",
+      "name": "相干控制线",
+      "source_line": 207,
+      "capability": "q_prepare",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "相位控制和低损耗连接",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "entanglement_coupler_plate",
+      "name": "纠缠耦合片",
+      "source_line": 208,
+      "capability": "q_prepare",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "协处理器高级模块",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "wavefunction_cache_page",
+      "name": "波函数缓存页",
+      "source_line": 209,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "缓存抽象波函数状态",
+      "disposition": "制备/任务/测量摘要；不是未知量子态复制页"
+    },
+    {
+      "id": "quantum_error_correction_plate",
+      "name": "量子误差校验片",
+      "source_line": 210,
+      "capability": "qec",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "降低协处理任务错误",
+      "disposition": "先诊断校验；逻辑纠错要求编码、综合征和译码"
+    },
+    {
+      "id": "quasiparticle_path_sample",
+      "name": "准粒子路径样本",
+      "source_line": 211,
+      "capability": "effective",
+      "milestone": "P19",
+      "old_section": 10,
+      "role": "高级模型训练/隐藏过程发现",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "synthesis_parameter_curve",
+      "name": "合成参数曲线",
+      "source_line": 212,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "III 型框架参数曲线",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "meso_synthesis_protocol",
+      "name": "中观合成协议",
+      "source_line": 213,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "参数曲线和传感回读端口打包",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "quantum_optical_coprocessor",
+      "name": "量子光学协处理器（原 `quantum_coprocessor`）",
+      "source_line": 214,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "蓝图和材料状态 -> 曲线；物理路线：单光子 + 线性光路 + 后选择测量（玻色采样）",
+      "disposition": "按任务能力区分玻色采样与变分制备/测量，不互相冒充"
+    },
+    {
+      "id": "cryo_control_cabinet",
+      "name": "低温控制柜",
+      "source_line": 215,
+      "capability": "cryo",
+      "milestone": "P16",
+      "old_section": 10,
+      "role": "给协处理器供低温",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "wavefunction_sampler",
+      "name": "波函数采样仪",
+      "source_line": 216,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "读取坍缩风险",
+      "disposition": "可测统计与校准风险，不能暴露任意波函数"
+    },
+    {
+      "id": "error_correction_array",
+      "name": "误差校验阵列",
+      "source_line": 217,
+      "capability": "qec",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "提高逻辑稳定性",
+      "disposition": "方块数量不足以单独证明码距与逻辑纠错能力"
+    },
+    {
+      "id": "meso_synthesis_scheduler",
+      "name": "中观合成调度器",
+      "source_line": 218,
+      "capability": "q_hybrid",
+      "milestone": "P20",
+      "old_section": 10,
+      "role": "曲线分发到框架控制端口",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "gorguth_string_residue",
+      "name": "戈古尔斯弦残迹",
+      "source_line": 224,
+      "capability": "string",
+      "milestone": "P23",
+      "old_section": 11,
+      "role": "人造视界前置奇异材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "gorguth_string",
+      "name": "戈古尔斯弦",
+      "source_line": 225,
+      "capability": "string",
+      "milestone": "P23",
+      "old_section": 11,
+      "role": "视界边界锚点",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "horizon_constraint_plate",
+      "name": "视界约束片",
+      "source_line": 226,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "视界约束环材料",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "entropy_pump",
+      "name": "熵流泵",
+      "source_line": 227,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "定向抽取/排放熵流",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "holographic_membrane",
+      "name": "全息信息膜",
+      "source_line": 228,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "视界存储介质",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "hawking_sampler",
+      "name": "霍金采样器",
+      "source_line": 229,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 11,
+      "role": "合并霍金采样/回收",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "penrose_accretion_coil",
+      "name": "彭罗斯吸积线圈",
+      "source_line": 230,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 11,
+      "role": "合并彭罗斯线圈/吸积盘环",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "artificial_horizon_core",
+      "name": "人造视界核心",
+      "source_line": 231,
+      "capability": "horizon",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "可控视界核心",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "emergency_quencher",
+      "name": "紧急熄灭器",
+      "source_line": 232,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "安全停机，防止全损",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "string_anchor",
+      "name": "戈古尔斯弦锚定器",
+      "source_line": 233,
+      "capability": "string",
+      "milestone": "P23",
+      "old_section": 11,
+      "role": "残迹稳定为弦",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "holographic_membrane_writer",
+      "name": "全息膜刻写器",
+      "source_line": 234,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "写入/读取全息膜",
+      "disposition": "普通头/空白膜自举，视界高容量版后升级"
+    },
+    {
+      "id": "horizon_framework",
+      "name": "III 型人造视界框架",
+      "source_line": 235,
+      "capability": "horizon_parts",
+      "milestone": "P24",
+      "old_section": 11,
+      "role": "完整人造视界成型",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "black_hole_residue",
+      "name": "黑洞解析残渣",
+      "source_line": 241,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "失败回收和高阶材料",
+      "disposition": "只回收未转换预算，不重复返还已输出能量对应质量"
+    },
+    {
+      "id": "horizon_energy_buffer",
+      "name": "视界能量缓存",
+      "source_line": 242,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "高容量 FE/相干能存储",
+      "disposition": "后期储备升级，不作为首次视界启动前置"
+    },
+    {
+      "id": "holographic_data_slice",
+      "name": "全息数据片",
+      "source_line": 243,
+      "capability": "mode_store",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "黑洞存储产物",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "entropy_gradient_result",
+      "name": "熵梯度结果",
+      "source_line": 244,
+      "capability": "mode_compute",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "运算结果和维度优化",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "microstate_table",
+      "name": "微观态枚举表",
+      "source_line": 245,
+      "capability": "mode_compute",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "黑洞运算中间数据",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "dimension_rule_candidate",
+      "name": "维度规则候选",
+      "source_line": 246,
+      "capability": "rules",
+      "milestone": "P27",
+      "old_section": 12,
+      "role": "创世规则输入",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "black_hole_compute_core",
+      "name": "黑洞运算核心",
+      "source_line": 247,
+      "capability": "mode_compute",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "视界加速运算",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "entropy_rectifier",
+      "name": "熵差整流器",
+      "source_line": 248,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "熵流差发电/整流",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "horizon_cooling_tower",
+      "name": "视界冷却塔",
+      "source_line": 249,
+      "capability": "mode_power",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "控制黑洞热预算",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "horizon_address_indexer",
+      "name": "视界地址索引器",
+      "source_line": 250,
+      "capability": "mode_store",
+      "milestone": "P25",
+      "old_section": 12,
+      "role": "全息数据分页寻址",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "world_heart_frequency",
+      "name": "世界之心频率",
+      "source_line": 256,
+      "capability": "heart",
+      "milestone": "P26",
+      "old_section": 13,
+      "role": "当前维度核心频率",
+      "disposition": "受控可复测的世界特征记录，不毁掉母世界"
+    },
+    {
+      "id": "dimension_parameter_matrix",
+      "name": "维度参数矩阵",
+      "source_line": 257,
+      "capability": "rules",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "创世参数集合",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "genesis_blueprint",
+      "name": "创世蓝图",
+      "source_line": 258,
+      "capability": "genesis",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "待编译维度设计",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "spatial_anchor",
+      "name": "空间锚",
+      "source_line": 259,
+      "capability": "return_anchor",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "固定维度入口和坐标",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "rule_interferometer",
+      "name": "规则干涉器",
+      "source_line": 260,
+      "capability": "rules",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "校验/压制规则冲突",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "compiled_dimension_core",
+      "name": "已编译维度核心",
+      "source_line": 261,
+      "capability": "genesis",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "维度入口和维护核心",
+      "disposition": "晨曦世界种候选显示名，复制引用不复制世界实例"
+    },
+    {
+      "id": "giant_node_framework",
+      "name": "巨型节点框架",
+      "source_line": 262,
+      "capability": "heart",
+      "milestone": "P26",
+      "old_section": 13,
+      "role": "世界之心萃取/维度维护模式",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "genesis_compiler",
+      "name": "创世编译台",
+      "source_line": 263,
+      "capability": "genesis",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "蓝图/矩阵/核心编译",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "dimension_ignition_ring",
+      "name": "维度点火环",
+      "source_line": 264,
+      "capability": "world",
+      "milestone": "P27",
+      "old_section": 13,
+      "role": "打开新维度入口",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    },
+    {
+      "id": "dimension_maintenance_tower",
+      "name": "维度维护塔",
+      "source_line": 265,
+      "capability": "maintain",
+      "milestone": "P28",
+      "old_section": 13,
+      "role": "压制规则漂移和熵增",
+      "disposition": "保留原有用途；首次能力与量产升级分开，按对应发展线修订配方。"
+    }
+  ],
+  "stage_only_entities": [
+    {
+      "id": "doped_waveguide_wafer",
+      "name": "掺杂导波晶片",
+      "source_line": 294,
+      "capability": "precision"
+    },
+    {
+      "id": "kamaen_threshold_filter",
+      "name": "阈值滤波片",
+      "source_line": 295,
+      "capability": "precision"
+    },
+    {
+      "id": "kamaen_detector_junction",
+      "name": "卡玛恩探测结",
+      "source_line": 296,
+      "capability": "bridge"
+    },
+    {
+      "id": "phase_tuning_chip",
+      "name": "相位调谐片",
+      "source_line": 297,
+      "capability": "precision"
+    },
+    {
+      "id": "crystal_waveguide_line",
+      "name": "晶体导波线",
+      "source_line": 299,
+      "capability": "bridge"
+    },
+    {
+      "id": "info_diagnostic_station",
+      "name": "信息诊断台",
+      "source_line": 308,
+      "capability": "scan"
+    },
+    {
+      "id": "resonant_signal_cache",
+      "name": "共振信号缓存器",
+      "source_line": 338,
+      "capability": "store"
+    },
+    {
+      "id": "signal_cache_plate",
+      "name": "信号缓存片",
+      "source_line": 339,
+      "capability": "store"
+    },
+    {
+      "id": "frequency_route_plate",
+      "name": "频率路由片",
+      "source_line": 340,
+      "capability": "network"
+    },
+    {
+      "id": "kamaen_nonlinear_medium_station",
+      "name": "卡玛恩非线性介质制备台",
+      "source_line": 428,
+      "capability": "photonic_logic"
+    },
+    {
+      "id": "photonic_gate_assembly_station",
+      "name": "光逻辑门封装台",
+      "source_line": 429,
+      "capability": "photonic_logic"
+    },
+    {
+      "id": "bistable_cell_assembly_station",
+      "name": "双稳态晶胞组装台",
+      "source_line": 430,
+      "capability": "photonic_logic"
+    },
+    {
+      "id": "photonic_control_core_assembly",
+      "name": "光控制核封装台",
+      "source_line": 431,
+      "capability": "photonic_control"
+    },
+    {
+      "id": "photonic_pulse_processor_assembly",
+      "name": "光脉冲处理器封装台",
+      "source_line": 432,
+      "capability": "photonic_pulse"
+    },
+    {
+      "id": "photonic_ram_assembly",
+      "name": "光RAM 封装台",
+      "source_line": 433,
+      "capability": "photonic_ram"
+    },
+    {
+      "id": "single_photon_source",
+      "name": "单光子源",
+      "source_line": 507,
+      "capability": "q_lab"
+    },
+    {
+      "id": "snspd_detector",
+      "name": "SNSPD 探测器",
+      "source_line": 508,
+      "capability": "snspd"
+    },
+    {
+      "id": "long_term_photonic_memory",
+      "name": "长期光存储单元",
+      "source_line": 628,
+      "capability": "advanced_optics"
+    },
+    {
+      "id": "wdm_multiplexer",
+      "name": "WDM 复用器",
+      "source_line": 629,
+      "capability": "advanced_optics"
+    },
+    {
+      "id": "all_optical_switch_core",
+      "name": "全光交换核",
+      "source_line": 630,
+      "capability": "advanced_optics"
+    }
+  ]
+}

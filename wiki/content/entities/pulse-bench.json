@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:pulse_bench",
+  "kind": "block",
+  "title": "脉冲工作台",
+  "summary": "充入有限能量，改变晶坯的响应。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/pulse_bench.md",
+  "visual": {
+    "type": "block",
+    "asset": "assets/machine-face.svg",
+    "color": "#859b90"
+  },
+  "scene": "impact",
+  "relations": [
+    {
+      "target": "kamaen:impact_structure",
+      "label": "组合成加工结构"
+    },
+    {
+      "target": "kamaen:raw_crystal",
+      "label": "处理晶坯"
+    }
+  ]
+}
+

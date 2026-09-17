@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:crude_spectrum_scrap",
+  "kind": "item",
+  "title": "粗频谱碎屑",
+  "summary": "有来源的混合颗粒；粗碎改变粒度，为分流作准备。",
+  "status": "F01 首批试作 · 待审核",
+  "tags": [
+    "前期基础",
+    "F01",
+    "32×32 新绘"
+  ],
+  "description": "descriptions/early-foundation/scrap.md",
+  "runtimeRef": null,
+  "lifecycle": {
+    "design": "逐项制作卡草案",
+    "runtime": "尚未实现",
+    "art": "32px 新绘 A 稿",
+    "verification": "内容与静态校验；无游戏实测"
+  },
+  "designRefs": [
+    {
+      "document": "EARLY_F01_FIRST_SLICE.md",
+      "label": "本批操作、数据边界与验收"
+    },
+    {
+      "document": "EARLY_E11_PROCESS_MANUFACTURING.md",
+      "label": "E1.1 从工艺推导装置"
+    },
+    {
+      "document": "EARLY_E1_CONTENT.md",
+      "label": "E1 原对象索引",
+      "legacyId": "crude_spectrum_scrap"
+    }
+  ],
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/early-foundation/crude_spectrum_scrap.png"
+  },
+  "relations": [
+    {
+      "target": "kamaen:crude_spectrum_slurry",
+      "label": "加水制浆，保留实物账"
+    },
+    {
+      "target": "kamaen:processing_trough",
+      "label": "在处理槽中继续"
+    }
+  ]
+}

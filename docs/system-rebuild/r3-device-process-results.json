@@ -1,0 +1,189 @@
+{
+  "version": "R3.1-candidate-probe",
+  "warning": "R3.1 candidate game rules: bounded deterministic design probes, not device physics.\n\nChecks causal process order, tuning limits, packaging, and explicit gate/state roles.\nNo game runtime, real manufacturing, random batches, or learned model is exercised.",
+  "process_cases": [
+    {
+      "name": "先写应力，再退火",
+      "state": {
+        "dopant_fraction": 0.1,
+        "residual_stress": 0.15,
+        "scatter_defect": 0.115
+      },
+      "package_stress": 0.0,
+      "best_trim": 0.15,
+      "center": 0.47,
+      "center_error": 0.030000000000000027,
+      "wanted_transmission": 0.4367216438853192,
+      "unwanted_transmission": 0.047164856838383326,
+      "passes": false
+    },
+    {
+      "name": "先退火，再写应力",
+      "state": {
+        "dopant_fraction": 0.1,
+        "residual_stress": 0.6,
+        "scatter_defect": 0.16
+      },
+      "package_stress": 0.0,
+      "best_trim": 0.0,
+      "center": 0.5,
+      "center_error": 0.0,
+      "wanted_transmission": 0.7669294100695903,
+      "unwanted_transmission": 0.06229173506694094,
+      "passes": true
+    },
+    {
+      "name": "路线B＋高应力封装",
+      "state": {
+        "dopant_fraction": 0.1,
+        "residual_stress": 0.6,
+        "scatter_defect": 0.16
+      },
+      "package_stress": -0.3,
+      "best_trim": 0.15,
+      "center": 0.485,
+      "center_error": 0.015000000000000013,
+      "wanted_transmission": 0.6495170814527974,
+      "unwanted_transmission": 0.05605897695878534,
+      "passes": false
+    },
+    {
+      "name": "路线B＋缓冲封装",
+      "state": {
+        "dopant_fraction": 0.1,
+        "residual_stress": 0.6,
+        "scatter_defect": 0.16
+      },
+      "package_stress": -0.05,
+      "best_trim": 0.050000000000000044,
+      "center": 0.5,
+      "center_error": 0.0,
+      "wanted_transmission": 0.7669294100695903,
+      "unwanted_transmission": 0.06229173506694094,
+      "passes": true
+    }
+  ],
+  "gate_truth_table": [
+    {
+      "a": 0,
+      "b": 0,
+      "OR": 0,
+      "AND": 0
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "OR": 1,
+      "AND": 0
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "OR": 1,
+      "AND": 0
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "OR": 1,
+      "AND": 1
+    }
+  ],
+  "hold_trace": [
+    {
+      "step": 1,
+      "drive": 0.5,
+      "powered": true,
+      "state": null
+    },
+    {
+      "step": 2,
+      "drive": 0.15,
+      "powered": true,
+      "state": 0
+    },
+    {
+      "step": 3,
+      "drive": 0.85,
+      "powered": true,
+      "state": 1
+    },
+    {
+      "step": 4,
+      "drive": 0.5,
+      "powered": true,
+      "state": 1
+    },
+    {
+      "step": 5,
+      "drive": 0.5,
+      "powered": true,
+      "state": 1
+    },
+    {
+      "step": 6,
+      "drive": 0.5,
+      "powered": false,
+      "state": null
+    },
+    {
+      "step": 7,
+      "drive": 0.5,
+      "powered": true,
+      "state": null
+    },
+    {
+      "step": 8,
+      "drive": 0.15,
+      "powered": true,
+      "state": 0
+    }
+  ],
+  "phase_outputs": [
+    {
+      "phase_pi": 0,
+      "out_a": 0.76,
+      "out_b": 0.039999999999999994
+    },
+    {
+      "phase_pi": 0.5,
+      "out_a": 0.4,
+      "out_b": 0.4
+    },
+    {
+      "phase_pi": 1,
+      "out_a": 0.039999999999999994,
+      "out_b": 0.76
+    }
+  ],
+  "nonlinear_feedback": [
+    {
+      "coupling": 0.2,
+      "from_low": 0.0417589450704148,
+      "from_high": 0.0417589450704148
+    },
+    {
+      "coupling": 0.8,
+      "from_low": 0.054678260719449735,
+      "from_high": 0.9453217392805502
+    }
+  ],
+  "feedback_write_result": {
+    "write_high": 0.9453217392805502,
+    "reset_low": 0.054678260719449735
+  },
+  "checks": {
+    "工序顺序同时改变残余应力与散射缺陷": true,
+    "最佳可逆调谐仍不能挽救路线A": true,
+    "路线B在此任务工作窗内合格": true,
+    "封装变化能使原合格结构失效": true,
+    "缓冲封装配合范围内调谐恢复合格": true,
+    "有限采样频带内被动传输不产生增益": true,
+    "同一实际混合与门控结构实现OR及AND": true,
+    "主动门缺供给时标无效": true,
+    "保持需显式写入与维持条件": true,
+    "两端干涉输出总和守住给定透过预算": true,
+    "相同非线性件弱反馈不能维持两种可分状态": true,
+    "强反馈在本窗口可保持并显式改写两种状态": true
+  }
+}

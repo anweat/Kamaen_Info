@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:impact_structure",
+  "kind": "multiblock",
+  "title": "冲击加工结构",
+  "summary": "用空间位置描述源、晶坯和缓冲件之间的关系。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/impact_structure.md",
+  "visual": {
+    "type": "block",
+    "asset": "assets/machine-face.svg",
+    "color": "#7b938d"
+  },
+  "scene": "impact",
+  "relations": [
+    {
+      "target": "kamaen:pulse_bench",
+      "label": "核心部件"
+    }
+  ]
+}
+

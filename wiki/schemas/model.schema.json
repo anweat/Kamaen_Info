@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kamaen model v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "formula",
+    "output",
+    "x",
+    "parameters",
+    "expression"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "formula": {
+      "type": "string"
+    },
+    "output": {
+      "type": "string"
+    },
+    "x": {
+      "type": "object",
+      "required": ["id", "label", "min", "max"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "label": {
+          "type": "string"
+        },
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        }
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "min", "max", "step", "value"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "label": {
+            "type": "string"
+          },
+          "min": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "step": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "expression": {
+      "$ref": "#/$defs/expression"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "expression": {
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "required": ["op", "args"],
+          "properties": {
+            "op": {
+              "enum": ["add", "sub", "mul", "div", "pow", "sin", "exp"]
+            },
+            "args": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "$ref": "#/$defs/expression"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

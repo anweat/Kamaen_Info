@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:raw_crystal",
+  "kind": "item",
+  "title": "粗卡玛恩晶体",
+  "summary": "从材料中留下可测量的差异。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/raw_crystal.md",
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/crystal.svg"
+  },
+  "gallery": [
+    {
+      "asset": "assets/crystal.svg",
+      "caption": "占位贴图 · 形状和颜色待确定"
+    }
+  ],
+  "relations": [
+    {
+      "target": "kamaen:pulse_bench",
+      "label": "进入加工空间"
+    },
+    {
+      "target": "kamaen:response",
+      "label": "比较响应曲线"
+    }
+  ]
+}
+

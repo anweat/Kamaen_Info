@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:sample_data",
+  "kind": "nbt",
+  "title": "晶体样本数据",
+  "summary": "实体状态以结构化字段描述；此处只定义研究档案中的 NBT 草案。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/sample_data.md",
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/data.svg"
+  },
+  "fields": [
+    {
+      "name": "batch",
+      "type": "String",
+      "default": "example-001",
+      "description": "同批样本的追踪标识"
+    },
+    {
+      "name": "orientation",
+      "type": "List<Float>",
+      "default": [
+        0,
+        1,
+        0
+      ],
+      "description": "加工前的晶体朝向"
+    },
+    {
+      "name": "residual_stress",
+      "type": "Float",
+      "default": 0,
+      "description": "残余应力示例字段；单位与含义待讨论"
+    }
+  ],
+  "relations": [
+    {
+      "target": "kamaen:raw_crystal",
+      "label": "附着于样本"
+    }
+  ]
+}
+

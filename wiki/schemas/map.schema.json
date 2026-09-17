@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kamaen map v1",
+  "type": "object",
+  "required": ["schemaVersion", "id", "title", "revision", "nodes"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "nodes": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "x", "y", "width", "height"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "type": {
+            "enum": [
+              "entity",
+              "text",
+              "arrow",
+              "line",
+              "rect",
+              "pen",
+              "space3d",
+              "space2d",
+              "custom"
+            ]
+          },
+          "x": {
+            "type": "number",
+            "minimum": -100000,
+            "maximum": 100000
+          },
+          "y": {
+            "type": "number",
+            "minimum": -100000,
+            "maximum": 100000
+          },
+          "width": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "height": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "fontSize": {
+            "type": "number",
+            "minimum": 10,
+            "maximum": 120
+          },
+          "from": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "to": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "points": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 10000,
+            "items": {
+              "type": "object",
+              "required": ["x", "y"],
+              "properties": {
+                "x": {
+                  "type": "number",
+                  "minimum": -100000,
+                  "maximum": 100000
+                },
+                "y": {
+                  "type": "number",
+                  "minimum": -100000,
+                  "maximum": 100000
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": ["entity", "space3d", "space2d", "custom"]
+                }
+              }
+            },
+            "then": {
+              "required": ["ref"]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": ["arrow", "line", "pen"]
+                }
+              }
+            },
+            "then": {
+              "required": ["points"]
+            }
+          }
+        ],
+        "additionalProperties": false
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  }
+}

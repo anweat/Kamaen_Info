@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width"
+  /><style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #11222e;
+      color: #c8dfe1;
+      font: 13px system-ui;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+    svg {
+      width: 100%;
+      height: 125px;
+    }
+    label {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    input {
+      min-width: 0;
+      flex: 1;
+      accent-color: #8bbfaf;
+    }
+    small {
+      color: #8aa9b7;
+    }
+    path {
+      fill: none;
+      stroke: #9dcdbb;
+      stroke-width: 2;
+    }
+  </style>
+  <h3>信号观察窗</h3>
+  <small>独立渲染示例 / 频率与空间采样</small
+  ><svg viewBox="0 0 360 125"><path id="wave" /></svg
+  ><label
+    >频率<input
+      aria-label="信号频率"
+      id="frequency"
+      type="range"
+      min="1"
+      max="8"
+      step=".1"
+      value="3"
+    /><output id="out">3</output></label
+  >
+  <script>
+    const input = document.getElementById("frequency");
+    function draw() {
+      document.getElementById("out").value = input.value;
+      document
+        .getElementById("wave")
+        .setAttribute(
+          "d",
+          Array.from(
+            { length: 181 },
+            (_, i) =>
+              (i ? "L" : "M") +
+              i * 2 +
+              "," +
+              (62 +
+                35 * Math.sin((i / 180) * Math.PI * 2 * Number(input.value))),
+          ).join(" "),
+        );
+    }
+    input.oninput = draw;
+    draw();
+  </script>
+</html>

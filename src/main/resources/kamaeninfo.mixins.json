@@ -2,7 +2,9 @@
   "required": true,
   "package": "com.anw.kamaen.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "RegistryMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

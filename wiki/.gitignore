@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src/generated/
+public/textures/
+*.tsbuildinfo
+output/
+.playwright-cli/
+content/*.tmp
+content/renderers/f01-separation.html

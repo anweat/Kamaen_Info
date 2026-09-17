@@ -1,0 +1,6503 @@
+{
+  "scope": "E1.1人为给定边界与温程的有限功能例子；未求解源可达性、局部应力、热平衡或裂纹",
+  "time_and_load_units": "dimensionless game example",
+  "cases": [
+    {
+      "name": "同时到达",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "sample": 0.8646647167633872
+      },
+      "longest_valid_hold": {
+        "sample": 4.0
+      },
+      "damage_proxy": {
+        "sample": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 86.46647167633871,
+        "unchanged_phase": 13.533528323661281
+      },
+      "meets_this_spec": true,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.11750309741540454,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.221199216928595,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.31271072120902765,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.39346934028736646,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.4647385714810096,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.5276334472589852,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.5831379803214916,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.6753475326416503,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.7134952031398099,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.7471604041952535,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.7768698398515702,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.8030883247958059,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.8262260565495548,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.8466450331550714,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "先后到达",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "sample": 0.0
+      },
+      "longest_valid_hold": {
+        "sample": 0.0
+      },
+      "damage_proxy": {
+        "sample": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 0.0,
+        "unchanged_phase": 100.0
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "仅重叠一半",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "sample": 0.6321205588285577
+      },
+      "longest_valid_hold": {
+        "sample": 2.0
+      },
+      "damage_proxy": {
+        "sample": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 63.212055882855765,
+        "unchanged_phase": 36.787944117144235
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -0.0
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.11750309741540454,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.221199216928595,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.31271072120902765,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.39346934028736646,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.4647385714810096,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.5276334472589852,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.5831379803214916,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": true,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -2
+          ],
+          "power": 1.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "先冲击后加热",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "sample": 0.0
+      },
+      "longest_valid_hold": {
+        "sample": 0.0
+      },
+      "damage_proxy": {
+        "sample": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 0.0,
+        "unchanged_phase": 100.0
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 0.5,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "峰值过高",
+      "mechanical_work_input": 16.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 32.0,
+      "phase_fraction": {
+        "sample": 0.0
+      },
+      "longest_valid_hold": {
+        "sample": 0.0
+      },
+      "damage_proxy": {
+        "sample": 4.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 0.0,
+        "unchanged_phase": 100.0
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.25
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.5
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.75
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 1.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 1.25
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 1.5
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 1.75
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 2.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 2.25
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 2.5
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 2.75
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 3.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 3.25
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 3.5
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 3.75
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            4,
+            -4
+          ],
+          "power": 4.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 4.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 4.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "缺少晶种接触",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "sample": 0.0
+      },
+      "longest_valid_hold": {
+        "sample": 0.0
+      },
+      "damage_proxy": {
+        "sample": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 0.0,
+        "unchanged_phase": 100.0
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 2.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "sample": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "表层可达但内部不足",
+      "mechanical_work_input": 8.0,
+      "net_impulse": 0.0,
+      "unsigned_impulse": 16.0,
+      "phase_fraction": {
+        "left_surface": 0.8646647167633872,
+        "core": 0.0,
+        "right_surface": 0.8646647167633872
+      },
+      "longest_valid_hold": {
+        "left_surface": 4.0,
+        "core": 0.0,
+        "right_surface": 4.0
+      },
+      "damage_proxy": {
+        "left_surface": 0.0,
+        "core": 0.0,
+        "right_surface": 0.0
+      },
+      "mass": {
+        "input": 100.0,
+        "changed_phase": 57.64431445089247,
+        "unchanged_phase": 42.35568554910753
+      },
+      "meets_this_spec": false,
+      "records": [
+        {
+          "t": 0.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 0.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 1.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.11750309741540454,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.11750309741540454,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.221199216928595,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.221199216928595,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.31271072120902765,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.31271072120902765,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 2.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.39346934028736646,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.39346934028736646,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.4647385714810096,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.4647385714810096,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.5276334472589852,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.5276334472589852,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.5831379803214916,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.5831379803214916,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 3.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.6321205588285577,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.6753475326416503,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.6753475326416503,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7134952031398099,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7134952031398099,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7471604041952535,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7471604041952535,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 4.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7768698398515702,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.7768698398515702,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.125,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8030883247958059,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8030883247958059,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.375,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8262260565495548,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8262260565495548,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.625,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8466450331550714,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8466450331550714,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 5.875,
+          "forces": [
+            2,
+            -2
+          ],
+          "power": 2.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 1.2,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 1.6,
+              "active": true,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 6.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 7.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 8.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 9.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 10.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.125,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.375,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.625,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        },
+        {
+          "t": 11.875,
+          "forces": [
+            0.0,
+            -0.0
+          ],
+          "power": 0.0,
+          "temperature_proxy": 1.0,
+          "regions": {
+            "left_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            },
+            "core": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.0,
+              "damage_proxy": 0.0
+            },
+            "right_surface": {
+              "opposed_load_proxy": 0.0,
+              "active": false,
+              "phase_fraction": 0.8646647167633872,
+              "damage_proxy": 0.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "时间平移不改变本例两源总功与整段冲量",
+      "passed": true
+    },
+    {
+      "name": "相同总量能产生不同转变历程",
+      "passed": true
+    },
+    {
+      "name": "四单位保持得到指定动力学解",
+      "passed": true
+    },
+    {
+      "name": "缩短共同作用时间留下半成品",
+      "passed": true
+    },
+    {
+      "name": "热与加载的顺序影响材料变化",
+      "passed": true
+    },
+    {
+      "name": "增加输入功不能替代有效加工窗口",
+      "passed": true
+    },
+    {
+      "name": "晶种诱导要求实际接触条件",
+      "passed": true
+    },
+    {
+      "name": "表层合格不能代表内部合格",
+      "passed": true
+    },
+    {
+      "name": "同组成相态变化保留全部质量",
+      "passed": true
+    },
+    {
+      "name": "本例边界对齐矩形历程在细分时间步下结果一致",
+      "passed": true
+    }
+  ]
+}

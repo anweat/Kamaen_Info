@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "id": "f01-separation",
+  "title": "F01 · 固定母批分流试验",
+  "entry": "renderers/f01-separation.html"
+}

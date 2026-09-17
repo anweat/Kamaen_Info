@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:sensor",
+  "kind": "block",
+  "title": "信息探针",
+  "summary": "读出局部变化，留下下一次实验的线索。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/sensor.md",
+  "visual": {
+    "type": "block",
+    "asset": "assets/sensor-face.svg",
+    "color": "#ab9978"
+  },
+  "renderer": "signal-window",
+  "relations": [
+    {
+      "target": "kamaen:sample_data",
+      "label": "产生记录"
+    },
+    {
+      "target": "kamaen:response",
+      "label": "观察与模型比较"
+    }
+  ]
+}
+

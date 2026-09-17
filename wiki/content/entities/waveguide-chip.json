@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:waveguide_chip",
+  "kind": "item",
+  "title": "导波晶片",
+  "summary": "把可观察的响应带回实际器件。",
+  "status": "示例 · 待讨论",
+  "tags": ["材料", "光路"],
+  "description": "descriptions/waveguide_chip.md",
+  "visual": { "type": "sprite", "asset": "assets/crystal.svg" },
+  "relations": [
+    { "target": "kamaen:raw_crystal", "label": "加工来源" },
+    { "target": "kamaen:sensor", "label": "用于测量讨论" }
+  ]
+}

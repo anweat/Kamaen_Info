@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../schemas/entity.schema.json",
+  "schemaVersion": 1,
+  "id": "kamaen:processing_trough",
+  "kind": "block",
+  "title": "材料处理槽",
+  "summary": "在同一套容器与流路中制浆、分流、收料，再逐步加入驱动和晶体工装。",
+  "status": "F01 首批试作 · 待审核",
+  "tags": [
+    "前期基础",
+    "F01",
+    "32×32 新绘"
+  ],
+  "description": "descriptions/early-foundation/trough.md",
+  "runtimeRef": null,
+  "lifecycle": {
+    "design": "逐项制作卡草案",
+    "runtime": "尚未实现",
+    "art": "32px 新绘 A 稿",
+    "verification": "内容与静态校验；无游戏实测"
+  },
+  "designRefs": [
+    {
+      "document": "EARLY_F01_FIRST_SLICE.md",
+      "label": "本批操作、数据边界与验收"
+    },
+    {
+      "document": "EARLY_E11_PROCESS_MANUFACTURING.md",
+      "label": "E1.1 从工艺推导装置"
+    }
+  ],
+  "visual": {
+    "type": "block",
+    "asset": "assets/early-foundation/processing_trough_front.png",
+    "top": "assets/early-foundation/processing_trough_top.png",
+    "side": "assets/early-foundation/processing_trough_side.png"
+  },
+  "relations": [
+    {
+      "target": "kamaen:crude_spectrum_scrap",
+      "label": "投入前核对原料来源"
+    },
+    {
+      "target": "kamaen:crude_spectrum_slurry",
+      "label": "加水制浆，保留实物账"
+    },
+    {
+      "target": "kamaen:spectrum_membrane",
+      "label": "安装与清洗可复用滤框"
+    },
+    {
+      "target": "kamaen:spectrum_powder",
+      "label": "细料出口与施工用途"
+    },
+    {
+      "target": "kamaen:spectrum_slag",
+      "label": "保留滤渣，连接后续热程"
+    }
+  ],
+  "renderer": "f01-separation",
+  "gallery": [
+    {
+      "asset": "assets/early-foundation/processing_trough_front.png",
+      "caption": "北面 · 双收料盘（32×32 草案）"
+    },
+    {
+      "asset": "assets/early-foundation/processing_trough_side.png",
+      "caption": "东面 · 手摇与驱动耦合（32×32 草案）"
+    },
+    {
+      "asset": "assets/early-foundation/processing_trough_top.png",
+      "caption": "顶面 · 投料与可拆滤框（32×32 草案）"
+    }
+  ]
+}

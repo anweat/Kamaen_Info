@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kamaen renderer v1",
+  "type": "object",
+  "required": ["schemaVersion", "id", "title", "entry"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "entry": {
+      "type": "string",
+      "description": "content 内的自包含 HTML 文件，sandbox iframe 渲染"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  }
+}

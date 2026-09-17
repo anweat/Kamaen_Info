@@ -1,0 +1,351 @@
+{
+  "revision": 4,
+  "nodes": [
+    {
+      "id": "chapter-1",
+      "type": "cluster",
+      "title": "第一章 · 晶体的第一份差异",
+      "chapter": "01",
+      "x": 40,
+      "y": 170,
+      "width": 430,
+      "height": 847,
+      "collapsed": false,
+      "body": "从普通生产留下参考晶种。改变结构、重新测量，再让晶体回到已有产线。",
+      "source": "EARLY_E1_GAMEPLAY.md",
+      "scene": "",
+      "recipe": "",
+      "groups": [
+        {
+          "title": "01 / 从石料到共同基底",
+          "items": [
+            "e1:crude_spectrum_scrap",
+            "e1:crude_spectrum_slurry",
+            "e1:spectrum_slag",
+            "e1:whitened_cobblestone",
+            "e1:white_noise_seed"
+          ]
+        },
+        {
+          "title": "02 / 把差异写进材料",
+          "items": [
+            "e1:raw_kamaen_crystal",
+            "e1:waveguide_kamaen_crystal",
+            "e1:compression_kamaen_crystal",
+            "e1:stable_spectrum_kamaen_crystal",
+            "e1:polarized_kamaen_crystal",
+            "e1:kamaen_crystal_debris"
+          ]
+        },
+        {
+          "title": "03 / 晶体回到生产",
+          "items": [
+            "e1:hand_spectrum_sieve",
+            "e1:fractionating_tower",
+            "e1:thermal_noise_crucible",
+            "e1:explosion_chamber_controller",
+            "e1:tier1_mechanical_framework",
+            "e1:basic_spectroscope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "type": "cluster",
+      "title": "第二章 · 让响应成为功能",
+      "chapter": "02",
+      "x": 570,
+      "y": 290,
+      "width": 410,
+      "height": 565,
+      "collapsed": false,
+      "body": "同一批晶片分成光、电两条实验线；测得的工作窗口决定器件能做什么。",
+      "source": "R4_MODELS_AND_FACTORS.md",
+      "scene": "",
+      "recipe": "",
+      "groups": [
+        {
+          "title": "电学 / 门控与保持",
+          "items": [
+            "r4:treat_a",
+            "r4:treat_b",
+            "r4:region_wafer",
+            "r4:gate",
+            "r4:hold",
+            "r4:window"
+          ]
+        },
+        {
+          "title": "光学 / 编码、相位与读出",
+          "items": [
+            "r4:light_source",
+            "r4:guide",
+            "r4:coupler",
+            "r4:phase",
+            "r4:reader",
+            "r4:mzi"
+          ]
+        },
+        {
+          "title": "实验 → 验证 → 封装",
+          "items": [
+            "r4:device_bench",
+            "r4:annealer",
+            "r4:case",
+            "r4:packager"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "type": "cluster",
+      "title": "第三章 · 一座会学习的研究站",
+      "chapter": "03",
+      "x": 1080,
+      "y": 180,
+      "width": 450,
+      "height": 565,
+      "collapsed": false,
+      "body": "芯片装到计算板，计算板装进机柜。数据与模型反过来提出下一次有成本的实验。",
+      "source": "R4_STAGE_DESIGN.md",
+      "scene": "",
+      "recipe": "",
+      "groups": [
+        {
+          "title": "一次实验，变成可复用硬件",
+          "items": [
+            "r4:endpoint_chip",
+            "r4:control_chip",
+            "r4:ram",
+            "r4:storage",
+            "r4:matrix",
+            "r4:populated_board"
+          ]
+        },
+        {
+          "title": "板 → 柜 → 实际连通的集群",
+          "items": [
+            "r4:tray",
+            "r4:power_backplane",
+            "r4:fan",
+            "r4:rack_node",
+            "r4:switch",
+            "r4:cluster_core"
+          ]
+        },
+        {
+          "title": "记录、观测与新问题",
+          "items": [
+            "r4:terminal",
+            "r4:sensor_hub",
+            "r4:storage_node",
+            "r4:hybrid_board",
+            "r4:sky_head"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-4",
+      "type": "cluster",
+      "title": "第四章 · 向内与向外",
+      "chapter": "04",
+      "x": 1640,
+      "y": 280,
+      "width": 420,
+      "height": 400,
+      "collapsed": false,
+      "body": "微观材料与宇观记录从不同方向，约束同一个未知量。后期内容仅作概念预填充。",
+      "source": "PROGRESSION_04_MICRO_AND_COSMOS.md",
+      "scene": "",
+      "recipe": "",
+      "groups": [
+        {
+          "title": "微观 / 材料与量子实验",
+          "items": [
+            "r1:quasiparticle_lattice",
+            "r1:cooper_pair_seed",
+            "r1:superconducting_kamaen_ring",
+            "r1:topological_insulator_crystal",
+            "r1:cryo_condensation_chamber"
+          ]
+        },
+        {
+          "title": "从模型走向联合解释",
+          "items": [
+            "r1:feynman_vertex_plate",
+            "r1:feynman_process_blueprint",
+            "r1:quantum_optical_coprocessor",
+            "r1:meso_synthesis_protocol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-5",
+      "type": "cluster",
+      "title": "第五章 · 世界与它的边界",
+      "chapter": "05",
+      "x": 2170,
+      "y": 160,
+      "width": 430,
+      "height": 470,
+      "collapsed": false,
+      "body": "从可维持的边界结构，走向能够停止的视界，再到可以持续维护的新世界。",
+      "source": "PROGRESSION_05_BOUNDARY_AND_GENESIS.md",
+      "scene": "",
+      "recipe": "",
+      "groups": [
+        {
+          "title": "边界 / 从记录到实体",
+          "items": [
+            "r1:gorguth_string_residue",
+            "r1:gorguth_string",
+            "r1:string_anchor",
+            "r1:holographic_membrane",
+            "r1:artificial_horizon_core"
+          ]
+        },
+        {
+          "title": "观测、约束与停止",
+          "items": [
+            "r1:hawking_sampler",
+            "r1:horizon_constraint_plate",
+            "r1:entropy_pump",
+            "r1:emergency_quencher"
+          ]
+        },
+        {
+          "title": "创世与维护",
+          "items": [
+            "r1:world_heart_frequency",
+            "r1:genesis_blueprint",
+            "r1:compiled_dimension_core",
+            "r1:dimension_ignition_ring",
+            "r1:dimension_maintenance_tower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "field-note",
+      "type": "text",
+      "title": "线索 001 / 差异从哪里来？",
+      "chapter": "01",
+      "x": 40,
+      "y": -55,
+      "width": 580,
+      "height": 180,
+      "collapsed": false,
+      "body": "**观察 → 记录 → 提问 → 再次实验**\n\n一枚晶体既是物品，也是串联加工、仪器和故事的线索。这里的贴图、团簇与连线都是可调整的预填充示例。",
+      "source": "",
+      "scene": "",
+      "recipe": "",
+      "groups": []
+    },
+    {
+      "id": "impact-scene",
+      "type": "scene",
+      "title": "空间示例 / 晶坯与冲击工装",
+      "chapter": "01",
+      "x": 55,
+      "y": 1082,
+      "width": 470,
+      "height": 570,
+      "collapsed": false,
+      "body": "拖动旋转，拆开部件，看一次实验怎样发生。",
+      "source": "EARLY_E1_GAMEPLAY.md",
+      "scene": "impact",
+      "recipe": "",
+      "groups": []
+    },
+    {
+      "id": "question-note",
+      "type": "text",
+      "title": "待讨论 / 把反馈接回生产",
+      "chapter": "02",
+      "x": 630,
+      "y": -10,
+      "width": 365,
+      "height": 230,
+      "collapsed": false,
+      "body": "晶体改变的是工作窗口，还是仅仅换了一张贴图？\n\n- 保留参考\n- 只改变一个条件\n- 用下一批材料复验\n\n**虚线表示研究反馈，不是首次解锁前置。**",
+      "source": "EARLY_E1_GAMEPLAY.md",
+      "scene": "",
+      "recipe": "",
+      "groups": []
+    },
+    {
+      "id": "chip-recipe",
+      "type": "recipe",
+      "title": "工艺示例 / 退火终点芯片",
+      "chapter": "03",
+      "x": 620,
+      "y": 850,
+      "width": 460,
+      "height": 390,
+      "collapsed": false,
+      "body": "把实验中验证过的结构封装起来。数值为R4候选。",
+      "source": "R4_MATERIALS_MACHINES.md",
+      "scene": "",
+      "recipe": "endpoint_chip",
+      "groups": []
+    },
+    {
+      "id": "rack-scene",
+      "type": "scene",
+      "title": "结构示例 / 可维护的机柜",
+      "chapter": "03",
+      "x": 1180,
+      "y": 840,
+      "width": 470,
+      "height": 570,
+      "collapsed": false,
+      "body": "部件之间不只有装配关系，还有供给、散热与维护空间。",
+      "source": "R4_HARDWARE_AND_CLUSTER.md",
+      "scene": "rack",
+      "recipe": "",
+      "groups": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "chapter-1",
+      "to": "chapter-2",
+      "label": "晶片 · 响应 · 参考",
+      "kind": "story"
+    },
+    {
+      "from": "chapter-2",
+      "to": "chapter-3",
+      "label": "验证后封装",
+      "kind": "story"
+    },
+    {
+      "from": "chapter-3",
+      "to": "chapter-4",
+      "label": "尚未解释的残差",
+      "kind": "story"
+    },
+    {
+      "from": "chapter-4",
+      "to": "chapter-5",
+      "label": "双尺度交汇",
+      "kind": "story"
+    },
+    {
+      "from": "chapter-3",
+      "to": "chapter-1",
+      "label": "模型与工艺反馈",
+      "kind": "feedback"
+    }
+  ],
+  "openItems": {
+    "chapter-1": "e1:white_noise_seed"
+  },
+  "baseHeights": {
+    "chapter-1": 565
+  }
+}

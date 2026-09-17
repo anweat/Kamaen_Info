@@ -1,0 +1,477 @@
+{
+  "checks": {
+    "M01_forward_reference": true,
+    "parameter_count_58": true,
+    "all_58_gradients_match_finite_difference": true,
+    "one_SGD_step_decreases_example_loss": true,
+    "input_initial_version_remains_reproducible": true,
+    "inference32_fits_local_RAM": true,
+    "inference64_exceeds_local_RAM": true,
+    "training16_fits_local_RAM": true,
+    "training32_exceeds_local_RAM": true,
+    "two_remote_RAMs_do_not_rescue_local_batch64": true,
+    "replayed_sample_cannot_complete_three_frames": true,
+    "three_new_frames_complete_endpoint": true,
+    "invalid_sample_clears_ready": true,
+    "batch_reset_precedes_first_new_sample": true,
+    "one_furnace_request_per_batch": true,
+    "inclusive_endpoint_limits": true,
+    "late_old_batch_cannot_switch_active_batch": true,
+    "short_route_collides_with_service_envelope": true,
+    "long_route_clears_service_envelope": true,
+    "long_route_meets_radius_and_leadout": true,
+    "canonical_rounded_length": true,
+    "chosen_route_has_material_budget": true,
+    "optical_mapping_conserves_declared_loss": true,
+    "example_mapping_has_no_negative_entries": true,
+    "one_B01_rack_within_supply": true,
+    "two_full_B01_boards_exceed_supply": true,
+    "two_capped_boards_fit_supply": true,
+    "B02_full_load_needs_capping": true,
+    "split_hidden_activation_payload_bound": true,
+    "RL_terminal_does_not_bootstrap_future_value": true,
+    "RL_table_capacity": true,
+    "gradient_reduction_weights_sample_counts": true
+  },
+  "M01": {
+    "prediction": [
+      0.6990000000000001,
+      0.195
+    ],
+    "loss_before": 0.002271624999999996,
+    "loss_after": 0.0021863955088536106,
+    "gradient_max_error": 2.4515172877825897e-12,
+    "gradient": {
+      "W1": [
+        [
+          0.01742849999999999,
+          -0.0030294999999999975,
+          0.007866499999999995,
+          0.0026425,
+          0.004809499999999998,
+          0.0,
+          0.003669999999999999,
+          0.0
+        ],
+        [
+          0.0038632499999999978,
+          -0.0006677499999999995,
+          0.001744249999999999,
+          0.00060625,
+          0.0010737499999999996,
+          0.0,
+          0.0008229999999999997,
+          0.0
+        ],
+        [
+          0.010151999999999994,
+          -0.0017589999999999988,
+          0.004582999999999998,
+          0.0015700000000000002,
+          0.0028129999999999987,
+          0.0,
+          0.0021519999999999994,
+          0.0
+        ],
+        [
+          0.0014377499999999994,
+          -0.0002442499999999999,
+          0.0006497499999999998,
+          0.00024875000000000006,
+          0.0004082499999999999,
+          0.0,
+          0.000317,
+          0.0
+        ]
+      ],
+      "b1": [
+        0.024254999999999985,
+        -0.004234999999999997,
+        0.010944999999999993,
+        0.003575,
+        0.006654999999999996,
+        0.0,
+        0.0050599999999999985,
+        0.0
+      ],
+      "W2": [
+        [
+          0.037524999999999975,
+          0.018074999999999994
+        ],
+        [
+          0.008312499999999995,
+          0.004087499999999999
+        ],
+        [
+          0.021849999999999987,
+          0.01065
+        ],
+        [
+          0.0030874999999999987,
+          0.0016125000000000002
+        ],
+        [
+          0.029212499999999978,
+          0.013987499999999996
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.01876249999999999,
+          0.009037499999999999
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "b2": [
+        0.05224999999999996,
+        0.024749999999999994
+      ]
+    },
+    "candidate": {
+      "W1": [
+        [
+          0.999825715,
+          3.0294999999999977e-05,
+          -7.866499999999995e-05,
+          -2.6425e-05,
+          0.999951905,
+          -1.0,
+          -3.669999999999999e-05,
+          0.0
+        ],
+        [
+          -3.863249999999998e-05,
+          1.0000066775,
+          -1.744249999999999e-05,
+          -6.0625e-06,
+          -1.0000107375,
+          1.0,
+          -8.229999999999997e-06,
+          0.0
+        ],
+        [
+          -0.00010151999999999995,
+          1.758999999999999e-05,
+          0.99995417,
+          -1.5700000000000002e-05,
+          -2.8129999999999986e-05,
+          0.0,
+          0.99997848,
+          -1.0
+        ],
+        [
+          -1.4377499999999994e-05,
+          2.442499999999999e-06,
+          -6.497499999999998e-06,
+          0.9999975125,
+          -4.0824999999999995e-06,
+          0.0,
+          -1.00000317,
+          1.0
+        ]
+      ],
+      "b1": [
+        -0.00024254999999999985,
+        4.2349999999999966e-05,
+        -0.00010944999999999994,
+        -3.575e-05,
+        -6.654999999999996e-05,
+        0.0,
+        -5.059999999999998e-05,
+        0.0
+      ],
+      "W2": [
+        [
+          0.44962475,
+          0.02981925
+        ],
+        [
+          -0.10008312500000001,
+          0.039959125
+        ],
+        [
+          0.1997815,
+          0.0198935
+        ],
+        [
+          -0.050030875,
+          0.249983875
+        ],
+        [
+          0.079707875,
+          0.09986012500000001
+        ],
+        [
+          -0.04,
+          0.02
+        ],
+        [
+          0.039812375000000004,
+          0.11990962499999999
+        ],
+        [
+          -0.02,
+          0.03
+        ]
+      ],
+      "b2": [
+        0.1994775,
+        0.0197525
+      ]
+    }
+  },
+  "memory": {
+    "usable": 3584,
+    "inference32": 2536,
+    "inference64": 4328,
+    "training16": 3384,
+    "training32": 5560
+  },
+  "endpoint_trace": [
+    {
+      "batch": "A",
+      "seq": 1,
+      "count": 1,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 2,
+      "count": 2,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 2,
+      "count": 0,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 3,
+      "count": 1,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 4,
+      "count": 2,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 5,
+      "count": 3,
+      "ready": true
+    },
+    {
+      "batch": "A",
+      "seq": 6,
+      "count": 4,
+      "ready": true
+    },
+    {
+      "batch": "A",
+      "seq": 7,
+      "count": 0,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 8,
+      "count": 1,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 9,
+      "count": 2,
+      "ready": false
+    },
+    {
+      "batch": "A",
+      "seq": 10,
+      "count": 3,
+      "ready": true
+    },
+    {
+      "batch": "B",
+      "seq": 1,
+      "count": 1,
+      "ready": false
+    },
+    {
+      "batch": "B",
+      "seq": 2,
+      "count": 0,
+      "ready": false
+    },
+    {
+      "batch": "B",
+      "seq": 3,
+      "count": 1,
+      "ready": false
+    },
+    {
+      "batch": "B",
+      "seq": 4,
+      "count": 2,
+      "ready": false
+    },
+    {
+      "batch": "B",
+      "seq": 5,
+      "count": 3,
+      "ready": true
+    },
+    {
+      "batch": "B",
+      "seq": 99,
+      "count": 0,
+      "ready": false
+    }
+  ],
+  "furnace_actions": [
+    "A",
+    "B"
+  ],
+  "routing": {
+    "short": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0.9
+        ],
+        [
+          4,
+          0.9
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "radius": 0.3,
+      "length": 5.542477796076938,
+      "collision": true,
+      "leadout": 0.6000000000000001,
+      "minimum_radius": 0.25,
+      "kind": "packet_copper",
+      "boxes": [
+        [
+          -0.05,
+          -0.05,
+          0.05,
+          0.6500000000000001
+        ],
+        [
+          0.25,
+          0.85,
+          3.75,
+          0.9500000000000001
+        ],
+        [
+          3.95,
+          -0.05,
+          4.05,
+          0.6500000000000001
+        ],
+        [
+          -0.05,
+          0.55,
+          0.35,
+          0.9500000000000001
+        ],
+        [
+          3.6500000000000004,
+          0.55,
+          4.05,
+          0.9500000000000001
+        ]
+      ]
+    },
+    "chosen": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "radius": 0.3,
+      "length": 7.742477796076938,
+      "collision": false,
+      "leadout": 1.7,
+      "minimum_radius": 0.25,
+      "kind": "packet_copper",
+      "boxes": [
+        [
+          -0.05,
+          -0.05,
+          0.05,
+          1.75
+        ],
+        [
+          0.25,
+          1.95,
+          3.75,
+          2.05
+        ],
+        [
+          3.95,
+          -0.05,
+          4.05,
+          1.75
+        ],
+        [
+          -0.05,
+          1.65,
+          0.35,
+          2.05
+        ],
+        [
+          3.6500000000000004,
+          1.65,
+          4.05,
+          2.05
+        ]
+      ]
+    },
+    "required_units": 8,
+    "remaining_units": 0
+  },
+  "optical": {
+    "input": [
+      0.6,
+      0.2
+    ],
+    "output": [
+      0.39999999999999997,
+      0.24000000000000005
+    ],
+    "eta": 0.8,
+    "q": 0.75
+  },
+  "limits": "Python双精度参考；规定数值/固定路线与反例，非游戏、完整寻路、训练收敛或物理求解验证"
+}

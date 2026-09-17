@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "response-window",
+  "title": "响应窗口",
+  "formula": "y = A × exp(−((x − μ) / σ)²)",
+  "output": "相对响应",
+  "x": {
+    "id": "x",
+    "label": "测量位置 x",
+    "min": 0,
+    "max": 10
+  },
+  "parameters": [
+    {
+      "id": "A",
+      "label": "峰值 A",
+      "min": 0.2,
+      "max": 2,
+      "step": 0.1,
+      "value": 1
+    },
+    {
+      "id": "mu",
+      "label": "中心 μ",
+      "min": 1,
+      "max": 9,
+      "step": 0.1,
+      "value": 5
+    },
+    {
+      "id": "sigma",
+      "label": "窗口 σ",
+      "min": 0.3,
+      "max": 3,
+      "step": 0.1,
+      "value": 1.2
+    }
+  ],
+  "expression": {
+    "op": "mul",
+    "args": [
+      "A",
+      {
+        "op": "exp",
+        "args": [
+          {
+            "op": "mul",
+            "args": [
+              -1,
+              {
+                "op": "pow",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "sub",
+                        "args": [
+                          "x",
+                          "mu"
+                        ]
+                      },
+                      "sigma"
+                    ]
+                  },
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

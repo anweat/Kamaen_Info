@@ -1,0 +1,73 @@
+{
+  "project": "Kamaen Info",
+  "minecraft": "1.21.1",
+  "neoForge": "21.1.222",
+  "java": 21,
+  "reference": {
+    "repository": "https://github.com/NeoForgeMDKs/MDK-1.21.1-ModDevGradle",
+    "commit": "30cafee9cd8d7f46427ec88fa8579d49c146df9a",
+    "path": ".tools/mdk-1.21.1",
+    "neoForge": "21.1.250",
+    "role": "仅作上游参考，当前工程不自动升级"
+  },
+  "tools": [
+    {
+      "id": "idea",
+      "title": "IntelliJ IDEA",
+      "description": "打开当前 Java / Gradle 工程",
+      "executable": "idea",
+      "target": ".",
+      "kind": "app"
+    },
+    {
+      "id": "blockbench",
+      "title": "Blockbench",
+      "description": "制作 Java Block / Item 模型与像素贴图",
+      "executable": "blockbench",
+      "kind": "app"
+    },
+    {
+      "id": "nbt",
+      "title": "NBT Studio",
+      "description": "编辑开发样本；实际存档请先备份副本",
+      "executable": "nbt",
+      "target": "art/nbt/development-sample.nbt",
+      "kind": "app"
+    },
+    {
+      "id": "models",
+      "title": "模型源文件",
+      "description": "保存可继续编辑的 .bbmodel",
+      "target": "art/models",
+      "kind": "folder"
+    },
+    {
+      "id": "textures",
+      "title": "游戏贴图目录",
+      "description": "PNG 导出到 assets/kamaeninfo/textures",
+      "target": "src/main/resources/assets/kamaeninfo/textures",
+      "kind": "folder"
+    },
+    {
+      "id": "exports",
+      "title": "游戏模型目录",
+      "description": "Java 模型 JSON 导出到 block / item",
+      "target": "src/main/resources/assets/kamaeninfo/models",
+      "kind": "folder"
+    },
+    {
+      "id": "project",
+      "title": "工程目录",
+      "description": "当前工程、Gradle 与 Java 注册代码",
+      "target": ".",
+      "kind": "folder"
+    },
+    {
+      "id": "mdk",
+      "title": "官方 MDK 参考",
+      "description": "独立克隆的 1.21.1 模板",
+      "target": ".tools/mdk-1.21.1",
+      "kind": "folder"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "kamaen:white_seed",
+  "kind": "item",
+  "title": "白噪晶种",
+  "summary": "保留一份参照，让每一次变化都能被比较。",
+  "status": "示例 · 待讨论",
+  "tags": [
+    "前期探索"
+  ],
+  "description": "descriptions/white_seed.md",
+  "visual": {
+    "type": "sprite",
+    "asset": "assets/seed.svg"
+  },
+  "relations": [
+    {
+      "target": "kamaen:raw_crystal",
+      "label": "用作生长参照"
+    },
+    {
+      "target": "kamaen:sample_data",
+      "label": "记录批次和朝向"
+    }
+  ]
+}
+

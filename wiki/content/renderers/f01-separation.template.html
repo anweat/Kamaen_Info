@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F01 · 固定母批分流试验</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:20px;background:#eff0e5;color:#35473e;font:14px/1.6 system-ui,sans-serif}h1{font-size:20px;margin:0 0 5px}p{margin:8px 0}.sub{font-size:12px;color:#586554}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:16px 0}label{display:grid;gap:4px}button,select{font:inherit;padding:7px 10px;color:inherit;border:1px solid #99a38b;background:#fcfcf5;border-radius:2px}button{cursor:pointer}button:disabled,select:disabled{opacity:.55;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #926136;outline-offset:2px}button.primary{background:#3f5c49;color:#fff;border-color:#3f5c49}.ledger{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.ledger section{border-top:3px solid #8b9878;background:#e2e6d7;padding:10px}.ledger h2{font-size:13px;margin:0 0 4px}.amount{font-size:23px;font-variant-numeric:tabular-nums}#message{border-left:3px solid #a37b46;padding:8px 12px;background:#e8e0ce;min-height:42px}progress{width:100%;height:12px;accent-color:#667f54}details{margin-top:12px;font-size:12px}summary{cursor:pointer}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;padding:5px;border-bottom:1px solid #b8c0a9}#balance{font-variant-numeric:tabular-nums}#collected{font-size:12px} @media(max-width:480px){body{padding:12px}.ledger{gap:6px}.ledger section{padding:8px 6px}.amount{font-size:19px}.controls{gap:8px}button,select{min-height:42px}}
+</style></head><body>
+<h1>一次分离，留下两份材料</h1>
+<p class="sub">操作试稿 · 人为设定的 100 份石质测试料；非游戏配方或实测结果。重置／离开此窗口会清空本次演示。</p>
+<div class="controls">
+ <label>处理程序<select id="program"><option value="coarse">粗分流 · 100 份水</option><option value="wash">分级复洗 · 150 份水</option></select></label>
+ <label>每个收料盘容量<select id="capacity"><option>25</option><option selected>50</option><option>100</option></select></label>
+ <button id="reset">重置试验</button>
+</div>
+<div class="ledger">
+ <section><h2>槽内固料</h2><div class="amount" id="remaining">100</div><small id="water">可用水 150</small></section>
+ <section><h2>粉料盘</h2><div class="amount" id="powder">0</div><small>→ 施工填料</small></section>
+ <section><h2>滤渣盘</h2><div class="amount" id="slag">0</div><small>→ 留样与热程</small></section>
+</div>
+<p id="collected"></p>
+<label class="sub">处理进度（手动推进，每段 25 份固料）<progress id="progress" max="4" value="0"></progress></label>
+<div class="controls"><button id="filter" aria-pressed="false">安装滤框</button><button id="advance" class="primary">推进一段</button><button id="collect">收取盘内产物</button></div>
+<p id="message" role="status" aria-live="polite"></p>
+<details><summary>展开测试账本与模型边界</summary>
+<p>已知测试母批含目标细份 60、难分混合份 40；这是演示的设定值，开局仪器不能直接读出这张表。收料分开记录组分，逐项守恒。</p>
+<p id="balance"></p><p id="fractions"></p>
+<table><thead><tr><th>工况</th><th>粉料</th><th>滤渣</th><th>用水</th></tr></thead><tbody><tr><td>粗分流</td><td>48＋6＝54</td><td>12＋34＝46</td><td>100</td></tr><tr><td>分级复洗</td><td>54＋2＝56</td><td>6＋38＝44</td><td>150</td></tr></tbody></table>
+<p>两种程序用不同分流系数展示取舍。水量不同；程序持续时间尚未标定。暂未模拟夹带水、污染、堵塞、能耗、频谱响应或真实流体。它们将在相应玩法出现时逐项加入。</p>
+</details>
+<script>
+/*__F01_ENGINE__*/
+let state = createTrial();
+const $ = id => document.getElementById(id);
+const fmt = n => Number(n.toFixed(2)).toString();
+function render(){
+ const b=state.bins,c=state.collected;
+ $("remaining").textContent=fmt(state.remaining.fine+state.remaining.mixed);
+ $("water").textContent="可用水 "+fmt(state.remaining.water);
+ $("powder").textContent=fmt(b.powderFine+b.powderMixed)+" / "+state.capacity;
+ $("slag").textContent=fmt(b.slagFine+b.slagMixed)+" / "+state.capacity;
+ $("collected").textContent=`已收取：粉料 ${fmt(c.powderFine+c.powderMixed)} · 滤渣 ${fmt(c.slagFine+c.slagMixed)} · 回收液 ${fmt(c.water)}（盘内回收液 ${fmt(b.water)}）`;
+ $("filter").textContent=state.filter?"取下滤框":"安装滤框";
+ $("filter").setAttribute("aria-pressed",String(state.filter));
+ $("advance").disabled=state.step===4;
+ $("collect").disabled=Object.values(b).every(v=>v===0);
+ $("progress").value=state.step;
+ $("program").disabled=$("capacity").disabled=state.step>0;
+ $("message").textContent=state.message;
+ const total=balance(state);
+ $("balance").textContent=`槽内＋盘内＋已收取：目标细份 ${fmt(total.fine)} / 60；混合份 ${fmt(total.mixed)} / 40；水 ${fmt(total.water)} / 150。`;
+ const fine=b.powderFine+c.powderFine,mixed=b.powderMixed+c.powderMixed;
+ $("fractions").textContent=fine+mixed ? `本次粉料账面目标细份占比：${fmt(100*fine/(fine+mixed))}%。只描述这项组分，不是综合品质。` : "尚无粉料可比较。";
+}
+function reset(){state=createTrial($("program").value,Number($("capacity").value));render()}
+$("reset").onclick=reset;
+$("program").onchange=reset;
+$("capacity").onchange=reset;
+$("filter").onclick=()=>{state=toggleFilter(state);render()};
+$("advance").onclick=()=>{state=advance(state);render()};
+$("collect").onclick=()=>{state=collect(state);render()};
+render();
+</script></body></html>

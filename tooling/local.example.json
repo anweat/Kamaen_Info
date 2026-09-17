@@ -1,0 +1,9 @@
+{
+  "javaHome": "C:/Program Files/Java/jdk-21.0.10",
+  "nbtRollForward": "LatestMajor",
+  "executables": {
+    "blockbench": "F:/ProgramFile/BlockBench/Blockbench.exe",
+    "idea": "F:/ProgramFile/IntelliJIDEA/IntelliJ IDEA 2025.3.3/bin/idea64.exe",
+    "nbt": ".tools/nbt-studio/1.15.3/NbtStudio.exe"
+  }
+}

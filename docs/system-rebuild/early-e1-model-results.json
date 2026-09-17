@@ -1,0 +1,351 @@
+{
+  "scope": "E1有限作者算例，非完整材料、能量动力学、随机实验或游戏验证",
+  "structure": {
+    "initial": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "written": [
+      0.5333333333333333,
+      0.2333333333333333,
+      0.2333333333333333
+    ],
+    "dose": [
+      48.0,
+      0.0,
+      0.0
+    ],
+    "net_impulse": 0.0,
+    "relaxed_stress": [
+      24.0,
+      0.0,
+      0.0
+    ]
+  },
+  "energy": {
+    "incoming": 80.0,
+    "absorbed": 48.0,
+    "other_output": 16.0,
+    "loss": 16.0
+  },
+  "production": {
+    "before_writing": {
+      "axis": 0,
+      "path": 1.0,
+      "source_frequency": 1.1,
+      "peak": 1.0,
+      "working_fraction": 0.0,
+      "feed": {
+        "copper": 10.0,
+        "iron": 10.0,
+        "other": 80.0
+      },
+      "target": {
+        "copper": 4.0,
+        "iron": 1.0,
+        "other": 4.0
+      },
+      "mixed_residue": {
+        "copper": 6.0,
+        "iron": 9.0,
+        "other": 76.0
+      },
+      "copper_recovery": 0.4,
+      "copper_purity": 0.4444444444444444
+    },
+    "written_aligned": {
+      "axis": 0,
+      "path": 1.0,
+      "source_frequency": 1.1,
+      "peak": 1.1,
+      "working_fraction": 1.0,
+      "feed": {
+        "copper": 10.0,
+        "iron": 10.0,
+        "other": 80.0
+      },
+      "target": {
+        "copper": 7.0,
+        "iron": 0.6000000000000001,
+        "other": 1.6000000000000003
+      },
+      "mixed_residue": {
+        "copper": 3.0,
+        "iron": 9.4,
+        "other": 78.4
+      },
+      "copper_recovery": 0.7,
+      "copper_purity": 0.7608695652173912
+    },
+    "same_crystal_rotated": {
+      "axis": 1,
+      "path": 1.0,
+      "source_frequency": 1.1,
+      "peak": 0.95,
+      "working_fraction": 0.0,
+      "feed": {
+        "copper": 10.0,
+        "iron": 10.0,
+        "other": 80.0
+      },
+      "target": {
+        "copper": 4.0,
+        "iron": 1.0,
+        "other": 4.0
+      },
+      "mixed_residue": {
+        "copper": 6.0,
+        "iron": 9.0,
+        "other": 76.0
+      },
+      "copper_recovery": 0.4,
+      "copper_purity": 0.4444444444444444
+    },
+    "disconnected_excitation": {
+      "axis": 0,
+      "path": 0.0,
+      "source_frequency": 1.1,
+      "peak": 1.1,
+      "working_fraction": 0.0,
+      "feed": {
+        "copper": 10.0,
+        "iron": 10.0,
+        "other": 80.0
+      },
+      "target": {
+        "copper": 4.0,
+        "iron": 1.0,
+        "other": 4.0
+      },
+      "mixed_residue": {
+        "copper": 6.0,
+        "iron": 9.0,
+        "other": 76.0
+      },
+      "copper_recovery": 0.4,
+      "copper_purity": 0.4444444444444444
+    },
+    "retuned_before_writing": {
+      "axis": 0,
+      "path": 1.0,
+      "source_frequency": 1.0,
+      "peak": 1.0,
+      "working_fraction": 1.0,
+      "feed": {
+        "copper": 10.0,
+        "iron": 10.0,
+        "other": 80.0
+      },
+      "target": {
+        "copper": 7.0,
+        "iron": 0.6000000000000001,
+        "other": 1.6000000000000003
+      },
+      "mixed_residue": {
+        "copper": 3.0,
+        "iron": 9.4,
+        "other": 78.4
+      },
+      "copper_recovery": 0.7,
+      "copper_purity": 0.7608695652173912
+    }
+  },
+  "training_records": [
+    {
+      "id": "training-0-0",
+      "x": 0.0,
+      "y": 0.99,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-0-1",
+      "x": 0.0,
+      "y": 1.0,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-0-2",
+      "x": 0.0,
+      "y": 1.01,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-1-0",
+      "x": 0.5,
+      "y": 1.21,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-1-1",
+      "x": 0.5,
+      "y": 1.22,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-1-2",
+      "x": 0.5,
+      "y": 1.23,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-2-0",
+      "x": 1.0,
+      "y": 1.47,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-2-1",
+      "x": 1.0,
+      "y": 1.48,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-2-2",
+      "x": 1.0,
+      "y": 1.49,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-3-0",
+      "x": 1.5,
+      "y": 1.77,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-3-1",
+      "x": 1.5,
+      "y": 1.78,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    },
+    {
+      "id": "training-3-2",
+      "x": 1.5,
+      "y": 1.79,
+      "condition": "fixed_batch_axis_T20",
+      "valid": true
+    }
+  ],
+  "fit": {
+    "a": 0.9800000000000001,
+    "b": 0.52,
+    "count": 12,
+    "x_window": [
+      0.0,
+      1.5
+    ],
+    "condition": "fixed_batch_axis_T20"
+  },
+  "comparisons": [
+    {
+      "name": "留样",
+      "load": 1.25,
+      "temperature": 20,
+      "prediction": 1.6300000000000001,
+      "observation": 1.625,
+      "absolute_error": 0.0050000000000001155,
+      "inside_validated_conditions": true
+    },
+    {
+      "name": "超出载荷窗",
+      "load": 2.5,
+      "temperature": 20,
+      "prediction": 2.2800000000000002,
+      "observation": 2.5,
+      "absolute_error": 0.21999999999999975,
+      "inside_validated_conditions": false
+    },
+    {
+      "name": "升温后",
+      "load": 1.25,
+      "temperature": 30,
+      "prediction": 1.6300000000000001,
+      "observation": 1.825,
+      "absolute_error": 0.19499999999999984,
+      "inside_validated_conditions": false
+    }
+  ],
+  "power_relative_G": {
+    "crushing": 0.2,
+    "mixing": 0.15,
+    "heating": 0.3,
+    "measurement_aux": 0.05
+  },
+  "checks": [
+    {
+      "name": "相向冲量为零但定向沉积非零",
+      "passed": true
+    },
+    {
+      "name": "该路径例子的输入能量闭合",
+      "passed": true
+    },
+    {
+      "name": "写入后的结构非负且迹为1",
+      "passed": true
+    },
+    {
+      "name": "零剂量与可恢复加载不改写结构",
+      "passed": true
+    },
+    {
+      "name": "残余应力松弛可与持久结构分开",
+      "passed": true
+    },
+    {
+      "name": "安装方向改变同一晶体的机械峰位",
+      "passed": true
+    },
+    {
+      "name": "该分离工况的铜回收从4增至7",
+      "passed": true
+    },
+    {
+      "name": "各工况逐组分守恒且各流非负",
+      "passed": true
+    },
+    {
+      "name": "旋转或断开路径会失去这个工况的改善",
+      "passed": true
+    },
+    {
+      "name": "可调源也能匹配旧晶体且不强制材料升级",
+      "passed": true
+    },
+    {
+      "name": "12条训练记录得到实际最小二乘结果",
+      "passed": true
+    },
+    {
+      "name": "独立留样在窗内误差较小",
+      "passed": true
+    },
+    {
+      "name": "外推与改变温度会暴露模型边界",
+      "passed": true
+    },
+    {
+      "name": "相同x不能伪造可识别斜率",
+      "passed": true
+    },
+    {
+      "name": "重复无效混条件及超容量记录被拒绝",
+      "passed": true
+    },
+    {
+      "name": "候选首套产线保留30%发电余量",
+      "passed": true
+    }
+  ]
+}

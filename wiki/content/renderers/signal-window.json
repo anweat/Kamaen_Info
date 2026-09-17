@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "id": "signal-window",
+  "title": "信号观察窗",
+  "entry": "renderers/signal-window.html"
+}
+

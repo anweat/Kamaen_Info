@@ -1,0 +1,1076 @@
+{
+  "version": "L3-design-catalog",
+  "imports": {
+    "B片": "区域处理晶片1片；E1母批/局部特化及R4区域工艺",
+    "B构": "金属/绝缘结构件1份；已有熔炼、成型、装配工艺",
+    "B光": "相容光路组件1套；已有源/导波/调制中按用途实际选配",
+    "B控": "本地控制组件1件；已验证门控/保持或B01能力，按任务实际容量选配",
+    "B读": "激励/参考/读出组件1套；已校准的实际测头与接口",
+    "B接": "相容接触/导线件1份；电、光、力端口分别选配",
+    "B热": "换热/排热组件1件；已有金属热路与实际散热能力",
+    "B封": "壳体/密封/绝缘件1份；已有有机与玻璃/金属工艺",
+    "B驱": "普通驱动/循环/加载组件1件；E1工艺与电气控制",
+    "B介": "净水与普通有机馏分1批；已有净化/分离产物",
+    "B存": "持久记录组件1件；R4页载片/普通记录设备，实际容量核算",
+    "B储": "普通供能储备接口1套；已有供给/储能，不依赖视界",
+    "B末": "可再取得末地类基材1份；已有维度探索与基底加工，非唯一龙蛋"
+  },
+  "items": [
+    {
+      "id": "response_head",
+      "name": "回响作业头",
+      "kind": "device",
+      "capability": "responsive_tool",
+      "inputs": {
+        "B片": 2,
+        "B控": 1,
+        "B读": 1,
+        "B驱": 1,
+        "B接": 2,
+        "B封": 1
+      },
+      "process": "原工位拼装、用途测试、封装；参照L2.1",
+      "use": "生产、工具和移动载具的响应式执行"
+    },
+    {
+      "id": "pattern_wafer",
+      "name": "双区域谱纹件",
+      "kind": "material",
+      "capability": "pattern",
+      "inputs": {
+        "B片": 2,
+        "B接": 1
+      },
+      "process": "分片定向/锁定后连接；粗版先行，单片版按区域模板另选工艺",
+      "use": "独立区域与耦合作用，后续部件共同基材"
+    },
+    {
+      "id": "memory_pattern",
+      "name": "忆形晶片",
+      "kind": "material",
+      "capability": "pattern",
+      "inputs": {
+        "pattern_wafer": 1,
+        "B控": 1,
+        "B接": 1
+      },
+      "process": "安装写读/保持接口并复测；首版易失，不宣称非易失",
+      "use": "状态与材料作用结合"
+    },
+    {
+      "id": "pattern_writer_head",
+      "name": "谱纹织构头",
+      "kind": "device",
+      "capability": "pattern",
+      "inputs": {
+        "B片": 1,
+        "B驱": 1,
+        "B读": 1,
+        "B构": 2,
+        "B接": 2
+      },
+      "process": "已有局部作用件和定位夹具组装；不用高级谱纹自举",
+      "use": "局部处理与模板复制"
+    },
+    {
+      "id": "pattern_master",
+      "name": "谱纹母版",
+      "kind": "material",
+      "capability": "pattern",
+      "inputs": {
+        "B片": 1,
+        "B构": 1
+      },
+      "process": "将已验证区域模板制造成实际可复用工装",
+      "use": "批量复制，方案数据另存"
+    },
+    {
+      "id": "field_anchor_part",
+      "name": "功能锚",
+      "kind": "device",
+      "capability": "field_anchor",
+      "inputs": {
+        "pattern_wafer": 1,
+        "B光": 1,
+        "B构": 2,
+        "B接": 2
+      },
+      "process": "组装指定作用/引导或读出端，测方向与作用核",
+      "use": "织相工场及环境作用布置"
+    },
+    {
+      "id": "field_workshop_instance",
+      "name": "织相工场实例",
+      "kind": "assembly",
+      "capability": "field_workshop",
+      "inputs": {
+        "field_anchor_part": 2,
+        "response_head": 1,
+        "B控": 1,
+        "B热": 1,
+        "B储": 1
+      },
+      "process": "已取得实体按实际平面/路径安装，清点输入为包含关系",
+      "use": "局部或并行工艺，不自动产生任意场"
+    },
+    {
+      "id": "world_slice_instance",
+      "name": "世界切片实例",
+      "kind": "assembly",
+      "capability": "world_slice",
+      "inputs": {
+        "field_workshop_instance": 1,
+        "B读": 1,
+        "B驱": 1
+      },
+      "process": "安装所需环境作用件，装入实际对象；仅重建已能控制条件",
+      "use": "条件复现、材料/培育/行为用途"
+    },
+    {
+      "id": "echo_atlas",
+      "name": "回响图",
+      "kind": "data",
+      "capability": "regional_boundary",
+      "inputs": {},
+      "process": "实际测站/工具记录按来源汇聚，持久存储另占空间",
+      "use": "找位置、追踪现象和指导部署"
+    },
+    {
+      "id": "world_reference_record",
+      "name": "远端参照记录",
+      "kind": "data",
+      "capability": "world_reference",
+      "inputs": {},
+      "process": "初始星录和谱尺实测，保留时间/方向/误差",
+      "use": "独立参照与跨区域关系"
+    },
+    {
+      "id": "cold_medium",
+      "name": "封装冷媒",
+      "kind": "material",
+      "capability": "cryo",
+      "inputs": {
+        "B介": 1,
+        "B封": 1
+      },
+      "process": "普通分离/反应工位与可复用晶体触媒；游戏工质",
+      "use": "首套普通低温循环"
+    },
+    {
+      "id": "interface_prism",
+      "name": "接界棱镜",
+      "kind": "material",
+      "capability": "cross",
+      "inputs": {
+        "topological_insulator_crystal": 1,
+        "pattern_wafer": 1,
+        "B光": 1
+      },
+      "process": "按已识别边界工作窗处理并验证，知识不消耗",
+      "use": "受限模式耦合"
+    },
+    {
+      "id": "cross_record",
+      "name": "互证谱册",
+      "kind": "data",
+      "capability": "cross",
+      "inputs": {},
+      "process": "材料、区域、远端参照的独立记录共同约束",
+      "use": "边界解释与适用范围"
+    },
+    {
+      "id": "quasiparticle_lattice",
+      "name": "准粒子晶格",
+      "kind": "material",
+      "capability": "phase",
+      "inputs": {
+        "pattern_wafer": 1
+      },
+      "process": "C1低温腔与已登记激励/场工艺，源/控制可复用",
+      "use": "支持某类可用模式"
+    },
+    {
+      "id": "propagator_plate",
+      "name": "传播子片",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "材料模式响应实测/解释记录，须列适用范围",
+      "use": "响应核与寿命等模型内容"
+    },
+    {
+      "id": "cooper_pair_seed",
+      "name": "库珀对种子",
+      "kind": "material",
+      "capability": "phase",
+      "inputs": {
+        "B片": 2,
+        "B接": 1
+      },
+      "process": "普通C1工位制实体配对态预制件；保持态需工作环境",
+      "use": "稳定环前体，不消耗电子数据"
+    },
+    {
+      "id": "feynman_vertex_plate",
+      "name": "费曼顶点片",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "过程候选和有效输入输出约束，保存证据版本",
+      "use": "有效相互作用卡"
+    },
+    {
+      "id": "feynman_process_blueprint",
+      "name": "费曼过程蓝图",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "以记录与受支持过程组合，编译服务检查",
+      "use": "过程预测与实际工艺条件"
+    },
+    {
+      "id": "superconducting_kamaen_ring",
+      "name": "超导卡玛恩环",
+      "kind": "material",
+      "capability": "phase",
+      "inputs": {
+        "cooper_pair_seed": 1,
+        "B构": 1,
+        "B接": 2
+      },
+      "process": "普通C1腔内成环/接触与受限低阻态验证；不需视界框架",
+      "use": "低温控制与约束材料"
+    },
+    {
+      "id": "topological_insulator_crystal",
+      "name": "拓扑绝缘晶体",
+      "kind": "material",
+      "capability": "phase",
+      "inputs": {
+        "pattern_wafer": 1,
+        "B封": 1
+      },
+      "process": "相变工位的场/退火与边缘响应验证",
+      "use": "指定模式的隔离/传输"
+    },
+    {
+      "id": "phase_change_memory_crystal",
+      "name": "相变记忆晶体",
+      "kind": "material",
+      "capability": "phase",
+      "inputs": {
+        "pattern_wafer": 1,
+        "B接": 1
+      },
+      "process": "相容局部写热/结构工艺，断供读回与循环验证",
+      "use": "非易失结构态，与短期保持独立"
+    },
+    {
+      "id": "quasiparticle_filter",
+      "name": "准粒子滤波器",
+      "kind": "device",
+      "capability": "phase",
+      "inputs": {
+        "quasiparticle_lattice": 1,
+        "topological_insulator_crystal": 1,
+        "B接": 2
+      },
+      "process": "带宽/方向与插损标定",
+      "use": "选模激励、读出和工艺"
+    },
+    {
+      "id": "tunnel_linker",
+      "name": "隧穿链路器",
+      "kind": "device",
+      "capability": "bounded_link",
+      "inputs": {
+        "topological_insulator_crystal": 1,
+        "pattern_wafer": 1,
+        "B控": 1,
+        "B接": 2
+      },
+      "process": "两只实际端点分别制造，先用受支持小范围连接；弦锚提供后续升级",
+      "use": "保留隧穿串联器/4维电路桥功能变体"
+    },
+    {
+      "id": "cryo_condensation_chamber",
+      "name": "低温凝聚腔",
+      "kind": "device",
+      "capability": "cryo",
+      "inputs": {
+        "B构": 4,
+        "B封": 2,
+        "B驱": 1,
+        "B热": 2,
+        "B控": 1,
+        "cold_medium": 1
+      },
+      "process": "普通循环/密封与排热装配，C1设计目标120K",
+      "use": "独立低温工艺，不先需超导或视界"
+    },
+    {
+      "id": "quasiparticle_detector",
+      "name": "准粒子捕获器",
+      "kind": "device",
+      "capability": "effective",
+      "inputs": {
+        "B片": 1,
+        "B读": 1,
+        "B光": 1,
+        "B接": 1
+      },
+      "process": "指定源/模式/读出配置，使用其实际所需环境",
+      "use": "测响应，不捕获抽象传播子实体"
+    },
+    {
+      "id": "feynman_compiler",
+      "name": "费曼过程编译台",
+      "kind": "service",
+      "capability": "effective",
+      "inputs": {},
+      "process": "已有节点上的有预算检查/求值服务；专用壳体为可选",
+      "use": "统一终端的过程视图"
+    },
+    {
+      "id": "topology_furnace",
+      "name": "拓扑相变炉",
+      "kind": "device",
+      "capability": "phase",
+      "inputs": {
+        "B驱": 1,
+        "B控": 1,
+        "B构": 2,
+        "B热": 1,
+        "B读": 1
+      },
+      "process": "既有退火工位加实际场/读出模块，按材料需要接低温腔",
+      "use": "相变/边缘通道材料工艺"
+    },
+    {
+      "id": "horizon_framework_mk1",
+      "name": "III型框架雏形",
+      "kind": "assembly",
+      "capability": "cryo",
+      "inputs": {
+        "cryo_condensation_chamber": 1,
+        "B控": 1,
+        "B读": 1
+      },
+      "process": "已独立工作模块的组合配置，不增加免费制冷或相干能力",
+      "use": "材料与模式研究工装，不是人造视界"
+    },
+    {
+      "id": "single_photon_source",
+      "name": "单光子源",
+      "kind": "device",
+      "capability": "q_lab",
+      "inputs": {
+        "B片": 1,
+        "B光": 2,
+        "B控": 1,
+        "B接": 1
+      },
+      "process": "已支持发光/参量源制造与实际状态/计数资格检查",
+      "use": "有限量子光任务"
+    },
+    {
+      "id": "initial_counter",
+      "name": "初级计数头",
+      "kind": "device",
+      "capability": "q_lab",
+      "inputs": {
+        "B片": 1,
+        "B读": 1,
+        "B控": 1,
+        "B接": 1
+      },
+      "process": "精密结区/读出与暗事件、效率、时间标定",
+      "use": "首次计数，不依赖SNSPD"
+    },
+    {
+      "id": "snspd_detector",
+      "name": "SNSPD探测器",
+      "kind": "device",
+      "capability": "snspd",
+      "inputs": {
+        "superconducting_kamaen_ring": 1,
+        "B片": 1,
+        "B读": 1,
+        "B接": 1
+      },
+      "process": "超导材料薄膜/结构加工，工作时接对应低温环境",
+      "use": "特定低温计数升级"
+    },
+    {
+      "id": "quantum_optical_coprocessor_core",
+      "name": "量子光学协处理核心",
+      "kind": "device",
+      "capability": "q_prepare",
+      "inputs": {
+        "single_photon_source": 1,
+        "pattern_wafer": 1,
+        "B光": 4,
+        "B控": 1
+      },
+      "process": "按模板组装实际支持的制备/控制通道；高级低温模块可后装",
+      "use": "固定采样与有限态过程分能力声明"
+    },
+    {
+      "id": "cryo_control_plate",
+      "name": "低温控制片",
+      "kind": "device",
+      "capability": "cryo",
+      "inputs": {
+        "B片": 1,
+        "B控": 1,
+        "B读": 1
+      },
+      "process": "测温/控制接口组装及相应环境验证",
+      "use": "低温闭环，不从冷却数据直接合成"
+    },
+    {
+      "id": "coherent_control_line",
+      "name": "相干控制线",
+      "kind": "device",
+      "capability": "q_prepare",
+      "inputs": {
+        "superconducting_kamaen_ring": 1,
+        "B接": 2
+      },
+      "process": "实际相位/时序传输路径，需材料保持环境",
+      "use": "特定低噪控制升级"
+    },
+    {
+      "id": "entanglement_coupler_plate",
+      "name": "纠缠耦合片",
+      "kind": "device",
+      "capability": "q_prepare",
+      "inputs": {
+        "topological_insulator_crystal": 1,
+        "B光": 2,
+        "B接": 1
+      },
+      "process": "支持的态制备工艺和联合测量验证",
+      "use": "有限态模板的实体作用组件"
+    },
+    {
+      "id": "wavefunction_cache_page",
+      "name": "波函数缓存页",
+      "kind": "data",
+      "capability": "q_hybrid",
+      "inputs": {},
+      "process": "真实存储中的制备指令、任务引用和测量摘要",
+      "use": "不携带可复制未知量子态"
+    },
+    {
+      "id": "quantum_error_correction_plate",
+      "name": "量子误差校验片",
+      "kind": "device",
+      "capability": "qec",
+      "inputs": {
+        "superconducting_kamaen_ring": 1,
+        "B控": 1,
+        "B读": 1
+      },
+      "process": "先声明编码/综合征/译码接口，不以数量直接给码距",
+      "use": "有明确范围的校验组件"
+    },
+    {
+      "id": "quasiparticle_path_sample",
+      "name": "准粒子路径样本",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "实际模式观测与推断的分开记录",
+      "use": "有限过程比较，非观察虚粒子轨迹"
+    },
+    {
+      "id": "synthesis_parameter_curve",
+      "name": "合成参数曲线",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "经典或相容协处理求值得到候选，经实际试制验收",
+      "use": "实际工艺程序的参数内容"
+    },
+    {
+      "id": "meso_synthesis_protocol",
+      "name": "中观合成协议",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "把已验收曲线与目标设备接口、范围一起保存",
+      "use": "可复用执行协议"
+    },
+    {
+      "id": "quantum_optical_coprocessor",
+      "name": "量子光学协处理器",
+      "kind": "assembly",
+      "capability": "q_hybrid",
+      "inputs": {
+        "quantum_optical_coprocessor_core": 1,
+        "initial_counter": 2,
+        "B控": 1,
+        "B热": 1
+      },
+      "process": "按能力模板组织路径/计数与经典服务；SNSPD等为升级",
+      "use": "受支持统计估计与混合任务"
+    },
+    {
+      "id": "cryo_control_cabinet",
+      "name": "低温控制柜",
+      "kind": "assembly",
+      "capability": "cryo",
+      "inputs": {
+        "cryo_control_plate": 1,
+        "B控": 1,
+        "B热": 1,
+        "B构": 2
+      },
+      "process": "实际机柜/托盘/连接与热路，接已有低温装置",
+      "use": "低温控制与记录"
+    },
+    {
+      "id": "wavefunction_sampler",
+      "name": "波函数采样仪",
+      "kind": "device",
+      "capability": "q_hybrid",
+      "inputs": {
+        "initial_counter": 2,
+        "B光": 1,
+        "B控": 1
+      },
+      "process": "支持测量设置的实体读出；只输出可测统计",
+      "use": "过程判别和估计"
+    },
+    {
+      "id": "error_correction_array",
+      "name": "误差校验阵列",
+      "kind": "assembly",
+      "capability": "qec",
+      "inputs": {
+        "quantum_error_correction_plate": 2,
+        "B控": 1,
+        "B接": 2
+      },
+      "process": "有限编码模板实际连线与译码预算；示例份数不承诺码距",
+      "use": "编码研究与特定差错处置"
+    },
+    {
+      "id": "meso_synthesis_scheduler",
+      "name": "中观合成调度器",
+      "kind": "service",
+      "capability": "effective",
+      "inputs": {},
+      "process": "已有计算节点、持久作业记录和真实工场接口",
+      "use": "分发曲线与接收单次执行结果"
+    },
+    {
+      "id": "gorguth_string_residue",
+      "name": "戈古尔斯弦残迹",
+      "kind": "material",
+      "capability": "string",
+      "inputs": {
+        "B片": 1,
+        "B末": 1
+      },
+      "process": "用接界工装在已识别区域受限耦合；消耗载体，知识可复用",
+      "use": "实体残迹及后续锚定"
+    },
+    {
+      "id": "gorguth_string",
+      "name": "戈古尔斯弦",
+      "kind": "material",
+      "capability": "string",
+      "inputs": {
+        "gorguth_string_residue": 1
+      },
+      "process": "已有弦锚定器与普通供给稳定载体；维持条件保留",
+      "use": "边界作用媒介"
+    },
+    {
+      "id": "horizon_constraint_plate",
+      "name": "视界约束片",
+      "kind": "material",
+      "capability": "horizon_parts",
+      "inputs": {
+        "superconducting_kamaen_ring": 1,
+        "topological_insulator_crystal": 1,
+        "B构": 1,
+        "B接": 2
+      },
+      "process": "初级版普通连续连接成形，不要求隧穿或完整视界",
+      "use": "边界约束与后续部件"
+    },
+    {
+      "id": "entropy_pump",
+      "name": "熵流泵",
+      "kind": "device",
+      "capability": "horizon_parts",
+      "inputs": {
+        "horizon_constraint_plate": 1,
+        "B驱": 1,
+        "B热": 1,
+        "B控": 1
+      },
+      "process": "前序工位装配并接声明的抽取/回流通道",
+      "use": "边界模式的能量/物料路径，非万能熵数值"
+    },
+    {
+      "id": "holographic_membrane",
+      "name": "全息信息膜",
+      "kind": "material",
+      "capability": "horizon_parts",
+      "inputs": {
+        "B片": 1,
+        "B封": 1,
+        "B接": 1
+      },
+      "process": "普通基膜经前序刻写头加工，初始容量保守",
+      "use": "实体页载体；高密度由约束工艺升级"
+    },
+    {
+      "id": "hawking_sampler",
+      "name": "霍金采样器",
+      "kind": "device",
+      "capability": "mode_power",
+      "inputs": {
+        "B读": 1,
+        "quasiparticle_filter": 1,
+        "B光": 1
+      },
+      "process": "组装视界公设通道的读出，采样/回收账分开",
+      "use": "观测与特定回收接口"
+    },
+    {
+      "id": "penrose_accretion_coil",
+      "name": "彭罗斯吸积线圈",
+      "kind": "device",
+      "capability": "mode_power",
+      "inputs": {
+        "superconducting_kamaen_ring": 2,
+        "B构": 2,
+        "B控": 1
+      },
+      "process": "有实体进料/回流与负载的公设抽取组件",
+      "use": "能量转换通道"
+    },
+    {
+      "id": "artificial_horizon_core",
+      "name": "人造视界核心",
+      "kind": "device",
+      "capability": "horizon",
+      "inputs": {
+        "gorguth_string": 1,
+        "horizon_constraint_plate": 2,
+        "B构": 2
+      },
+      "process": "在已组装框架内用普通外部供给成形",
+      "use": "同一平台的边界运行实体"
+    },
+    {
+      "id": "emergency_quencher",
+      "name": "紧急熄灭器",
+      "kind": "device",
+      "capability": "horizon_parts",
+      "inputs": {
+        "B驱": 1,
+        "B控": 1,
+        "B储": 1,
+        "B热": 1
+      },
+      "process": "前序工位装配独立隔离/卸载/储备接口，不先依赖熵流泵",
+      "use": "受控降载与停止"
+    },
+    {
+      "id": "string_anchor",
+      "name": "弦锚定器",
+      "kind": "device",
+      "capability": "string",
+      "inputs": {
+        "topological_insulator_crystal": 1,
+        "B末": 1,
+        "B控": 1,
+        "B储": 1
+      },
+      "process": "前序工位制成并匹配已认识区域；不先消耗戈古尔斯弦",
+      "use": "稳定实体残迹"
+    },
+    {
+      "id": "holographic_membrane_writer",
+      "name": "全息膜刻写器",
+      "kind": "device",
+      "capability": "horizon_parts",
+      "inputs": {
+        "B光": 2,
+        "B控": 1,
+        "B存": 1,
+        "B接": 1
+      },
+      "process": "普通精密刻写头起步，不用成品膜制造首台",
+      "use": "膜的写入/读取，高密度为升级"
+    },
+    {
+      "id": "horizon_framework",
+      "name": "III型人造视界框架",
+      "kind": "assembly",
+      "capability": "horizon",
+      "inputs": {
+        "horizon_constraint_plate": 4,
+        "field_anchor_part": 2,
+        "string_anchor": 1,
+        "emergency_quencher": 1,
+        "B控": 1,
+        "B热": 2,
+        "B储": 1
+      },
+      "process": "安装关系与源/载体成形位置；核心在其中形成，非先拿核心造框架",
+      "use": "实际边界装配平台"
+    },
+    {
+      "id": "black_hole_residue",
+      "name": "黑洞解析残渣",
+      "kind": "byproduct",
+      "capability": "horizon",
+      "inputs": {},
+      "process": "已运行视界的未转化份额或有损退役载体；按来源账本收料",
+      "use": "回收基材，不能返还已转成输出的质量"
+    },
+    {
+      "id": "long_term_photonic_memory",
+      "name": "长期光存储单元",
+      "kind": "device",
+      "capability": "advanced_optics",
+      "inputs": {
+        "phase_change_memory_crystal": 1,
+        "holographic_membrane": 1,
+        "B光": 2,
+        "B控": 1
+      },
+      "process": "实体光写读存储，保持/刷新/容量分别验证",
+      "use": "长期档案层的可选实现"
+    },
+    {
+      "id": "wdm_multiplexer",
+      "name": "WDM复用器",
+      "kind": "device",
+      "capability": "advanced_optics",
+      "inputs": {
+        "B光": 4,
+        "pattern_wafer": 1,
+        "B控": 1
+      },
+      "process": "分波段端口与相容滤波组装，校对串扰/总带宽",
+      "use": "多波段传输"
+    },
+    {
+      "id": "all_optical_switch_core",
+      "name": "全光交换核",
+      "kind": "device",
+      "capability": "advanced_optics",
+      "inputs": {
+        "pattern_wafer": 2,
+        "B光": 4,
+        "B控": 1,
+        "horizon_constraint_plate": 1
+      },
+      "process": "实测非线性开关/相容控制与路由，不替换所有电气节点",
+      "use": "可选全光交换服务"
+    },
+    {
+      "id": "horizon_energy_buffer",
+      "name": "视界能量缓存",
+      "kind": "device",
+      "capability": "horizon",
+      "inputs": {
+        "black_hole_residue": 1,
+        "pattern_wafer": 1,
+        "B储": 1,
+        "B封": 1
+      },
+      "process": "仅在真实残渣取得后制造，充电按实际输入结算",
+      "use": "后续储备升级，首台使用普通储备"
+    },
+    {
+      "id": "holographic_data_slice",
+      "name": "全息数据片",
+      "kind": "data",
+      "capability": "mode_store",
+      "inputs": {},
+      "process": "实际膜中已写入页的索引/导出，引用实例与版本",
+      "use": "页访问或数据副本，占真实容量"
+    },
+    {
+      "id": "entropy_gradient_result",
+      "name": "熵梯度结果",
+      "kind": "data",
+      "capability": "mode_compute",
+      "inputs": {},
+      "process": "有限求解器输出候选与约束残差、停止原因",
+      "use": "有范围的优化建议"
+    },
+    {
+      "id": "microstate_table",
+      "name": "微观态枚举表",
+      "kind": "data",
+      "capability": "effective",
+      "inputs": {},
+      "process": "受支持生成器与真实求值预算，可经典求值",
+      "use": "候选空间记录"
+    },
+    {
+      "id": "dimension_rule_candidate",
+      "name": "维度规则候选",
+      "kind": "data",
+      "capability": "rules",
+      "inputs": {},
+      "process": "有限规则与用途约束搜索；经典或视界服务均可",
+      "use": "可执行范围内的世界参数组合"
+    },
+    {
+      "id": "black_hole_compute_core",
+      "name": "黑洞运算核心",
+      "kind": "device",
+      "capability": "mode_compute",
+      "inputs": {
+        "horizon_constraint_plate": 1,
+        "B控": 1,
+        "B存": 1,
+        "B光": 1
+      },
+      "process": "普通工位装配视界任务接口，运行时接实际视界",
+      "use": "有限求值，不消耗整台视界核心另复制一台"
+    },
+    {
+      "id": "entropy_rectifier",
+      "name": "熵差整流器",
+      "kind": "device",
+      "capability": "mode_power",
+      "inputs": {
+        "entropy_pump": 1,
+        "B控": 1,
+        "B热": 1
+      },
+      "process": "已有抽取通道的升级，和其他输出共用同一输入账",
+      "use": "特定能量回收"
+    },
+    {
+      "id": "horizon_cooling_tower",
+      "name": "视界冷却塔",
+      "kind": "assembly",
+      "capability": "horizon_parts",
+      "inputs": {
+        "cryo_condensation_chamber": 1,
+        "B热": 4,
+        "B驱": 1
+      },
+      "process": "已有制冷/换热并联扩展，按实际容量结算",
+      "use": "热管理升级，不是首次制冷来源"
+    },
+    {
+      "id": "horizon_address_indexer",
+      "name": "视界地址索引器",
+      "kind": "service",
+      "capability": "mode_store",
+      "inputs": {},
+      "process": "实际计算/持久存储上的页映射与提交服务",
+      "use": "索引不产生免费容量"
+    },
+    {
+      "id": "world_heart_frequency",
+      "name": "世界之心频率",
+      "kind": "data",
+      "capability": "heart",
+      "inputs": {},
+      "process": "材料、区域、远端参照、边界运行与整合采集的特征记录",
+      "use": "可再取得的世界描述，不包含整个存档"
+    },
+    {
+      "id": "dimension_parameter_matrix",
+      "name": "维度参数矩阵",
+      "kind": "data",
+      "capability": "rules",
+      "inputs": {},
+      "process": "七组受支持参数、来源、约束与不确定范围",
+      "use": "创世配置"
+    },
+    {
+      "id": "genesis_blueprint",
+      "name": "创世蓝图",
+      "kind": "data",
+      "capability": "genesis",
+      "inputs": {},
+      "process": "世界之心/弦关系/规则候选参与编译，知识不消耗",
+      "use": "版本化世界方案"
+    },
+    {
+      "id": "spatial_anchor",
+      "name": "空间锚",
+      "kind": "device",
+      "capability": "return_anchor",
+      "inputs": {
+        "B末": 1,
+        "horizon_constraint_plate": 1,
+        "B控": 1,
+        "B储": 1
+      },
+      "process": "首版普通储备、母世界独立返回接口，视界电池是升级",
+      "use": "真实端点与救援能力"
+    },
+    {
+      "id": "rule_interferometer",
+      "name": "规则干涉器",
+      "kind": "device",
+      "capability": "rules",
+      "inputs": {
+        "interface_prism": 1,
+        "B读": 1,
+        "B控": 1,
+        "holographic_membrane": 1
+      },
+      "process": "实际已支持条件的读出/约束接口",
+      "use": "规则组合的可观测验证"
+    },
+    {
+      "id": "compiled_dimension_core",
+      "name": "已编译维度核心",
+      "kind": "device",
+      "capability": "genesis",
+      "inputs": {
+        "B片": 2,
+        "horizon_constraint_plate": 2,
+        "B存": 1,
+        "B控": 1,
+        "B储": 1
+      },
+      "process": "使用已验收蓝图写入实体并预留新实例；数据不当原料",
+      "use": "一个绑定实例的世界核心"
+    },
+    {
+      "id": "giant_node_framework",
+      "name": "巨型节点框架",
+      "kind": "assembly",
+      "capability": "closure",
+      "inputs": {
+        "field_anchor_part": 4,
+        "horizon_constraint_plate": 2,
+        "B控": 2,
+        "B存": 2,
+        "B读": 2
+      },
+      "process": "前序模块组合并连接实际集群/参照；先有装置再采集世界之心",
+      "use": "整合采集与后续维护"
+    },
+    {
+      "id": "genesis_compiler",
+      "name": "创世编译台",
+      "kind": "service",
+      "capability": "genesis",
+      "inputs": {},
+      "process": "已有节点执行有预算的检查、预演与实体核心写入作业",
+      "use": "视界协处理可选，普通有限基线可用"
+    },
+    {
+      "id": "dimension_ignition_ring",
+      "name": "维度点火环",
+      "kind": "assembly",
+      "capability": "world",
+      "inputs": {
+        "spatial_anchor": 2,
+        "B构": 4,
+        "B控": 1,
+        "B储": 2
+      },
+      "process": "核心为插入的绑定对象；先检查母世界返回与空闲槽",
+      "use": "创建提交和入口，不复制核心"
+    },
+    {
+      "id": "dimension_maintenance_tower",
+      "name": "维度维护塔",
+      "kind": "assembly",
+      "capability": "maintain",
+      "inputs": {
+        "giant_node_framework": 1,
+        "spatial_anchor": 1,
+        "B热": 1
+      },
+      "process": "框架切换维护配置或另造实例，连接已创建世界",
+      "use": "分级降载、休眠、恢复与返回"
+    }
+  ],
+  "aliases": {
+    "quantum_coprocessor_core": "quantum_optical_coprocessor_core",
+    "quantum_coprocessor": "quantum_optical_coprocessor"
+  },
+  "old_source_ids": [
+    "all_optical_switch_core",
+    "artificial_horizon_core",
+    "black_hole_compute_core",
+    "black_hole_residue",
+    "coherent_control_line",
+    "compiled_dimension_core",
+    "cooper_pair_seed",
+    "cryo_condensation_chamber",
+    "cryo_control_cabinet",
+    "cryo_control_plate",
+    "dimension_ignition_ring",
+    "dimension_maintenance_tower",
+    "dimension_parameter_matrix",
+    "dimension_rule_candidate",
+    "emergency_quencher",
+    "entanglement_coupler_plate",
+    "entropy_gradient_result",
+    "entropy_pump",
+    "entropy_rectifier",
+    "error_correction_array",
+    "feynman_compiler",
+    "feynman_process_blueprint",
+    "feynman_vertex_plate",
+    "genesis_blueprint",
+    "genesis_compiler",
+    "giant_node_framework",
+    "gorguth_string",
+    "gorguth_string_residue",
+    "hawking_sampler",
+    "holographic_data_slice",
+    "holographic_membrane",
+    "holographic_membrane_writer",
+    "horizon_address_indexer",
+    "horizon_constraint_plate",
+    "horizon_cooling_tower",
+    "horizon_energy_buffer",
+    "horizon_framework",
+    "horizon_framework_mk1",
+    "long_term_photonic_memory",
+    "meso_synthesis_protocol",
+    "meso_synthesis_scheduler",
+    "microstate_table",
+    "penrose_accretion_coil",
+    "phase_change_memory_crystal",
+    "propagator_plate",
+    "quantum_coprocessor",
+    "quantum_coprocessor_core",
+    "quantum_error_correction_plate",
+    "quantum_optical_coprocessor",
+    "quantum_optical_coprocessor_core",
+    "quasiparticle_detector",
+    "quasiparticle_filter",
+    "quasiparticle_lattice",
+    "quasiparticle_path_sample",
+    "rule_interferometer",
+    "single_photon_source",
+    "snspd_detector",
+    "spatial_anchor",
+    "string_anchor",
+    "superconducting_kamaen_ring",
+    "synthesis_parameter_curve",
+    "topological_insulator_crystal",
+    "topology_furnace",
+    "tunnel_linker",
+    "wavefunction_cache_page",
+    "wavefunction_sampler",
+    "wdm_multiplexer",
+    "world_heart_frequency"
+  ],
+  "quantity_semantics": "样机工程份；不等于全程原版原料平衡；装配为实物包含，资料/工装条件可复用"
+}

@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kamaen entity v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "title",
+    "summary",
+    "status",
+    "tags"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "kind": {
+      "enum": [
+        "item",
+        "block",
+        "multiblock",
+        "nbt",
+        "model"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "status": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "相对 content 根目录的 Markdown 路径"
+    },
+    "visual": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "sprite",
+            "block"
+          ]
+        },
+        "asset": {
+          "type": "string"
+        },
+        "top": {
+          "type": "string"
+        },
+        "side": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset",
+          "caption"
+        ],
+        "properties": {
+          "asset": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "target",
+          "label"
+        ],
+        "properties": {
+          "target": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "scene": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "model": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "renderer": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_:.\\/-]+$",
+      "minLength": 1,
+      "maxLength": 150
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "description"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "default": {},
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "$schema": {
+      "type": "string"
+    },
+    "designRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "document",
+          "label"
+        ],
+        "properties": {
+          "document": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+[.]md$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "legacyId": {
+            "$ref": "#/properties/id"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "runtimeRef": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"
+    },
+    "lifecycle": {
+      "type": "object",
+      "required": [
+        "design",
+        "runtime",
+        "art",
+        "verification"
+      ],
+      "properties": {
+        "design": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "runtime": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "art": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "verification": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

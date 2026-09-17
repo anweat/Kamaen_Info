@@ -1,0 +1,218 @@
+.development-page {
+  max-width: 1240px;
+  margin: auto;
+}
+.development-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+.development-heading h1 {
+  font-size: 36px;
+  margin: 14px 0 22px;
+}
+.development-heading p {
+  color: #94abb9;
+  line-height: 1.8;
+}
+.development-heading > button {
+  padding: 10px;
+  margin-top: 8px;
+}
+.development-version {
+  display: flex;
+  gap: 28px;
+  border-top: 1px solid #2a3e4c;
+  border-bottom: 1px solid #2a3e4c;
+  padding: 20px 0;
+  margin: 24px 0;
+  font: 10px var(--mono);
+  color: #7895a5;
+  flex-wrap: wrap;
+}
+.development-version b {
+  font-size: 17px;
+  color: #c1dbd7;
+  margin-left: 10px;
+}
+.development-version small {
+  margin-left: 10px;
+}
+.development-origin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.development-origin code {
+  color: #acc9c8;
+  overflow-wrap: anywhere;
+}
+.development-origin small {
+  color: #7895a5;
+}
+.development-tools {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.development-tools article {
+  background: #111f2a;
+  border: 1px solid #263c4a;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tool-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #9dbcb8;
+}
+.tool-top small {
+  font-size: 10px;
+  color: #c5ad84;
+}
+.tool-top small[data-ready="true"] {
+  color: #99c9ad;
+}
+.development-tools h2 {
+  font-size: 16px;
+  margin: 20px 0 8px;
+}
+.development-tools p {
+  font-size: 12px;
+  color: #9db1be;
+  line-height: 1.8;
+  min-height: 44px;
+  margin-top: 0;
+}
+.development-tools button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: auto;
+  padding: 9px 12px;
+  font-size: 11px;
+}
+.development-tools details {
+  font-size: 10px;
+  color: #7692a3;
+  margin-top: 15px;
+  width: 100%;
+}
+.development-tools code {
+  display: block;
+  overflow-wrap: anywhere;
+  padding-top: 10px;
+  color: #9bb6be;
+  line-height: 1.6;
+}
+.workbench-notice {
+  border-left: 2px solid #76a89c;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #aac5c9;
+  background: #142730;
+  min-height: 42px;
+}
+.development-pipeline {
+  margin: 40px 0;
+}
+.development-pipeline h2,
+.development-commands h2,
+.development-reference h2 {
+  font-size: 19px;
+}
+.development-pipeline ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 0;
+  list-style: none;
+  gap: 22px;
+}
+.development-pipeline li {
+  border-top: 1px solid #48675e;
+  padding-top: 16px;
+}
+.development-pipeline b {
+  font-size: 12px;
+  color: #a8ccc1;
+}
+.development-pipeline span {
+  display: block;
+  margin-top: 12px;
+  color: #8da7b7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.development-commands {
+  border-top: 1px solid #293e4c;
+  padding-top: 20px;
+}
+.development-commands h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.development-commands p,
+.development-reference p {
+  font-size: 12px;
+  color: #90aab9;
+  line-height: 1.8;
+}
+.development-commands > div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  padding: 13px 0;
+  border-bottom: 1px solid #203340;
+  font-size: 12px;
+}
+.development-commands code {
+  overflow-wrap: anywhere;
+  color: #b3d4c9;
+}
+.development-reference {
+  margin-top: 35px;
+}
+.development-reference a {
+  font-size: 12px;
+  color: #a7cbbb;
+  margin-right: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 1150px) {
+  .development-tools {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .development-pipeline ol {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .development-heading h1 {
+    font-size: 27px;
+  }
+  .development-tools {
+    grid-template-columns: 1fr;
+  }
+  .development-pipeline ol {
+    grid-template-columns: 1fr;
+  }
+  .development-commands > div {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .development-version {
+    gap: 16px;
+  }
+  .development-origin {
+    flex-direction: column;
+  }
+}
